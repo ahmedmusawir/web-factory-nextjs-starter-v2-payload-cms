@@ -1,4 +1,4 @@
-# Stark Web Factory starter
+# Stark Web Factory starter w/ Payload CMS, GCS Buckets & Turso SQLite DB
 
 A small Next.js App Router starter for Stark Workbench and Web Factory: React, TypeScript and Tailwind CSS 3, with local content and images. No secrets, environment variables, external fonts or backend are required.
 
