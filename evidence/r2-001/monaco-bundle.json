@@ -1,0 +1,21 @@
+{
+  "installedMonaco": "0.57.0",
+  "installedDOMPurify": "3.4.15",
+  "vendorPath": "node_modules/monaco-editor/esm/vs/base/browser/dompurify/dompurify.js",
+  "vendorSHA256": "493e9f430fbdde595f9e12ff46aa5b3606a514d5c8556eb144da69612f77fc8e",
+  "bundledVersion": "3.4.15",
+  "inspectedProductionJSFiles": 69,
+  "staticMatches": {
+    "DOMPurify": [],
+    "SAFE_FOR_TEMPLATES": [],
+    "3.4.15": [],
+    "cdn.jsdelivr.net/npm/monaco-editor@0.55.1": [
+      ".next/static/chunks/0zdr0o21imyne.js"
+    ]
+  },
+  "serverTraceMatches": [],
+  "installedMonacoSanitizerEnablesSafeForTemplates": false,
+  "installedMonacoSanitizerEnablesInPlace": false,
+  "loaderConfiguration": "var config = {\n  paths: {\n    vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.55.1/min/vs'\n  }\n};\n\nexport { config as default };",
+  "limitations": "Marker and trace inspection is build-specific, not an exploit test or proof of absence of every renamed implementation. Browser evidence separately records authenticated lazy loading with external requests blocked."
+}

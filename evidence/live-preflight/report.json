@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-11-14T06:36:33.720Z",
+  "status": "BLOCKED",
+  "validationError": "Turso requires an explicit test, preview, or production environment",
+  "configuredModes": {
+    "APP_ENV": "local",
+    "DATABASE_KIND": "turso",
+    "MEDIA_STORAGE": "r2"
+  },
+  "allowedModes": {
+    "APP_ENV": [
+      "local",
+      "test",
+      "preview",
+      "production"
+    ],
+    "DATABASE_KIND": [
+      "sqlite",
+      "turso"
+    ],
+    "MEDIA_STORAGE": [
+      "local",
+      "r2"
+    ]
+  },
+  "requiredModes": {
+    "APP_ENV": "test",
+    "DATABASE_KIND": "turso",
+    "MEDIA_STORAGE": "r2"
+  },
+  "missing": [
+    "R2_TARGET_BUCKET"
+  ],
+  "credentialPresence": {
+    "DATABASE_AUTH_TOKEN": true,
+    "PAYLOAD_SECRET": true,
+    "R2_ACCESS_KEY_ID": true,
+    "R2_SECRET_ACCESS_KEY": true
+  },
+  "databaseTargetMatches": true,
+  "bucketTargetMatches": false,
+  "targetFingerprints": {
+    "DATABASE_TARGET_HOST": "0e7f1fc4c8b166c2",
+    "R2_BUCKET": "5f6ca808534faf1a"
+  },
+  "envLocalIgnored": true,
+  "envLocalMode": "600",
+  "cliUsesEnvLocal": true,
+  "syntaxAfterDiagnosticCorrections": "PASS",
+  "writeGuardsMissing": [
+    "MIGRATION_TARGET_HOST",
+    "BOOTSTRAP_TARGET_HOST"
+  ],
+  "remoteRequestsPerformed": false,
+  "environmentFileEdited": false,
+  "notes": [
+    "Diagnostic corrections were in-memory only: APP_ENV=test; R2_TARGET_BUCKET=existing R2_BUCKET. They do not constitute a preflight pass.",
+    "MEDIA_PREFIX is unused remotely; R2_PREFIX is present. API endpoint and r2.dev delivery origin passed diagnostic syntax validation.",
+    "Presence and target equality do not prove credential validity, token scope, bucket existence or public access settings.",
+    "No migration, bootstrap, upload or deployment ran."
+  ],
+  "localChecks": {
+    "npm install --save-exact @next/env@16.4.3 --offline --ignore-scripts --no-audit --cache /tmp/stark-npm-cache": "PASS; existing pinned package, no network install",
+    "npm run typecheck": "PASS",
+    "npm run lint": "PASS; zero warnings",
+    "npm run test:unit": "PASS; seven tests",
+    "git diff --check": "PASS",
+    "configured-secret scan": "PASS; configured values absent from Git-visible files"
+  },
+  "retainedFailures": [
+    "Initial native ESM named import of the CommonJS loader failed; corrected to default import.",
+    "Sandbox fixture child stdout was empty; local tests outside the sandbox passed.",
+    "Initial test tuple inferred nullable NODE_ENV; corrected with a const tuple, then typecheck passed.",
+    "Sandbox Node Git child inspection returned EPERM; read-only inspection outside the sandbox passed."
+  ],
+  "branch": "feat/p1-payload-turso-gcs-poc",
+  "head": "7715f6de3850e210b5b52a5049a6f1144a50c04c",
+  "filesChangedThisPreflight": [
+    "scripts/load-env.ts",
+    "tests/unit/load-env.test.ts",
+    "package.json",
+    "package-lock.json",
+    "docs/CLOUD-SETUP.md",
+    "docs/MISSION-001-HANDOFF.md",
+    "evidence/live-preflight/"
+  ]
+}

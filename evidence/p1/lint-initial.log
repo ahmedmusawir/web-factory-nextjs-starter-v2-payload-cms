@@ -1,0 +1,26 @@
+
+> stark-web-factory-starter@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/QAM/evidence/qa-q2/20261028T081836Z/qa-dependency-check.cjs
+  1:10  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  1:30  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  1:54  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  1:80  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  8:11  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/QAM/evidence/qa-q2/20261028T081836Z/qa-independent-initial.cjs
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:22  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  4:20  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/QAM/evidence/qa-q2/20261028T081836Z/qa-independent.cjs
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:22  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  4:20  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+✖ 13 problems (13 errors, 0 warnings)
+

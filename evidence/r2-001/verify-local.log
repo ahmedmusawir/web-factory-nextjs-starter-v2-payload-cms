@@ -1,0 +1,83 @@
+
+> stark-web-factory-starter@0.1.0 verify:local
+> node --import tsx scripts/verify-local.ts
+
+[11:22:35] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[11:22:35] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[11:22:35] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (280ms)[39m
+[11:22:36] [32mINFO[39m: [36mDone.[39m
+[2m[WebServer] [22m(node:527015) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:527034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:527034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register (3.1s)
+
+  1 passed (5.8s)
+Initial administrator created. Log in at /admin. Credentials were not logged.
+[2m[WebServer] [22m(node:527373) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:527392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:527392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+Browser admin login passed
+Page create form opened
+Page fields filled
+Page published through the browser and readable anonymously
+Image upload, variant metadata, private/public delivery and key protection passed
+Content, GraphQL, draft isolation, denied writes, upload limits and settings checks passed
+Editor can create content and cannot promote itself or create users
+  ✓  2 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (7.1s)
+  ✓  3 [desktop] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts (5.4s)
+(node:527634) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:527634) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [desktop] › tests/home.spec.ts:3:1 › homepage, accessible navigation and responsive layout (1.3s)
+(node:527726) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:527726) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  5 [mobile] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+  -  6 [mobile] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence
+  -  7 [mobile] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts
+(node:527826) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:527826) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  8 [mobile] › tests/home.spec.ts:3:1 › homepage, accessible navigation and responsive layout (1.6s)
+
+  4 skipped
+  4 passed (21.9s)
+[2m[WebServer] [22m(node:527968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:527987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:527987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Browser admin login passed
+  ✓  1 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (3.2s)
+
+  1 passed (5.6s)
+[11:23:24] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[11:23:24] [32mINFO[39m: [36mDone.[39m
+[11:23:28] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+┌────────────────────────────┬───────┬─────┐
+│[37m [0m[01m                      Name[0m │[37m [0m[01mBatch[0m │[37m [0m[01mRan[0m │
+├────────────────────────────┼───────┼─────┤
+│[37m [0m[32m20261114_040213_foundation[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+└────────────────────────────┴───────┴─────┘
+[11:23:28] [32mINFO[39m: [36mDone.[39m
+LOCAL PASS: browser workflow, access controls, fresh-server persistence, and repeat migration.

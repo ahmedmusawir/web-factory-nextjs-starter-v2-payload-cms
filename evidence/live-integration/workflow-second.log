@@ -1,0 +1,7 @@
+PASS: approved targets and empty POC content verified
+PASS: public first-register denied on empty remote database
+PASS: CLI admin bootstrap with memory-only random credentials
+PASS: Chromium page creation and publication; authenticated update
+PASS: private upload rejected before any R2 object or media record
+FAIL: Chromium public R2 upload; details limited to error type NoSuchKey
+PASS: owned content, images, R2 objects and temporary administrator removed; settings restored

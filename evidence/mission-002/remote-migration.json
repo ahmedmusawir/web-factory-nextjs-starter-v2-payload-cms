@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "migrations": [
+    {
+      "name": "20261114_040213_foundation",
+      "batch": 1
+    },
+    {
+      "name": "20261114_072417_website",
+      "batch": 2
+    }
+  ],
+  "preservedCounts": {
+    "pages": 0,
+    "posts": 0,
+    "media": 0,
+    "users": 0,
+    "site_settings": 1
+  },
+  "tables": [
+    "_pages_v",
+    "_pages_v_version_sections",
+    "_posts_v",
+    "media",
+    "pages",
+    "pages_sections",
+    "payload_kv",
+    "payload_locked_documents",
+    "payload_locked_documents_rels",
+    "payload_migrations",
+    "payload_preferences",
+    "payload_preferences_rels",
+    "posts",
+    "site_settings",
+    "site_settings_sections",
+    "users",
+    "users_sessions"
+  ],
+  "note": "Post-migration connection closed; separate read-only inspection confirmed migration completed in batch 2. No migration rerun."
+}

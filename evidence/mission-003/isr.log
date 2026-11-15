@@ -1,0 +1,13 @@
+PASS: Chromium editor login; Tony administrator untouched
+PASS: seven original pages, blog listing and article return full-route cache HIT
+Verification failed: expect(locator).toContainText(expected) failed
+
+Locator: locator('h1')
+Expected substring: "Private draft 4f09545b-7280-4180-859b-8bf555532b3a"
+Error: strict mode violation: locator('h1') resolved to 2 elements:
+    1) <h1>Private draft 4f09545b-7280-4180-859b-8bf555532b3a</h1> aka getByRole('heading', { name: 'Private draft 4f09545b-7280-' })
+    2) <h1>Content Scaling: Strategies for Growing Your Audi…</h1> aka getByRole('heading', { name: 'Content Scaling: Strategies' })
+
+Call log:
+  - Expect
+Evidence: evidence/mission-003/live-4f09545b-7280-4180-859b-8bf555532b3a

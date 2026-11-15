@@ -1,0 +1,12 @@
+{
+  "installedMonaco": "0.57.0",
+  "registryLatestStable": "0.57.0",
+  "bundledDOMPurify": "3.4.15",
+  "bundleSHA256": "493e9f430fbdde595f9e12ff46aa5b3606a514d5c8556eb144da69612f77fc8e",
+  "productionRelease": "BLOCKED",
+  "remediation": "No supported stable Monaco fix identified; no override or vendored patch applied",
+  "sources": [
+    "https://github.com/microsoft/monaco-editor/releases",
+    "https://registry.npmjs.org/monaco-editor/latest"
+  ]
+}

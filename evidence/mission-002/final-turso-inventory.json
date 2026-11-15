@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "database": "web-factory-v2-poc-db",
+  "counts": {
+    "users": 0,
+    "users_sessions": 0,
+    "pages": 7,
+    "pages_sections": 32,
+    "posts": 0,
+    "media": 12,
+    "site_settings": 1,
+    "site_settings_sections": 2,
+    "payload_migrations": 2
+  },
+  "pages": [
+    {
+      "id": 1,
+      "slug": "contact",
+      "template": "contact",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:contact"
+    },
+    {
+      "id": 2,
+      "slug": "home",
+      "template": "home",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:home"
+    },
+    {
+      "id": 3,
+      "slug": "ppc",
+      "template": "ppc",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:ppc"
+    },
+    {
+      "id": 4,
+      "slug": "seo-services",
+      "template": "seo-services",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:seo-services"
+    },
+    {
+      "id": 5,
+      "slug": "web-development",
+      "template": "web-development",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:web-development"
+    },
+    {
+      "id": 6,
+      "slug": "website-design",
+      "template": "website-design",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:website-design"
+    },
+    {
+      "id": 7,
+      "slug": "website-support",
+      "template": "website-support",
+      "_status": "published",
+      "source_i_d": "web-factory-poc-site-1:page:website-support"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "source_i_d": "web-factory-poc-site-1:media:conversation.svg",
+      "alt": "Two original sculptural speech bubbles represent a conversation.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/0d356135-b986-41f2-991c-18eab5e17940.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "id": 2,
+      "source_i_d": "web-factory-poc-site-1:media:logo.png",
+      "alt": "Cyberize Group",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/4df321b0-32a5-41dd-9e38-54b6e6977467.png",
+      "mime_type": "image/png",
+      "width": 260,
+      "height": 84
+    },
+    {
+      "id": 3,
+      "source_i_d": "web-factory-poc-site-1:media:agency-connected.svg",
+      "alt": "Three equal-sized sculptural panels—design and development, support and maintenance, and website traffic through SEO and PPC—joined by one flowing orange path.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/11cc8714-0c37-4259-9cb0-8b2f0411be63.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 640
+    },
+    {
+      "id": 4,
+      "source_i_d": "web-factory-poc-site-1:media:search-field.svg",
+      "alt": "An organic-search field and a paid-search message show different routes to a relevant website.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/3206f9f8-7d6a-440d-9220-c4a927fb9895.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 5,
+      "source_i_d": "web-factory-poc-site-1:media:click-path.svg",
+      "alt": "An oversized cursor and a landing page are connected by a winding orange path.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/65070a41-5b20-415b-911e-e15caa4be163.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 1050
+    },
+    {
+      "id": 6,
+      "source_i_d": "web-factory-poc-site-1:media:campaign-plan.svg",
+      "alt": "Campaign notes identify the business, audience, keywords and message beside a landing-page plan and an approval check.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/9714713f-09ea-41c0-8c8e-20f675d402ba.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 7,
+      "source_i_d": "web-factory-poc-site-1:media:seo-routes.svg",
+      "alt": "A flowing search-channel path links a question with relevant content, ",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/20f3ee5d-d06c-4112-b77a-12aac737484a.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 8,
+      "source_i_d": "web-factory-poc-site-1:media:content-constellation.svg",
+      "alt": "One core message connects with written content, video, audio and ways to share.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/11412938-ca41-4196-a5df-784e194cddfc.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 9,
+      "source_i_d": "web-factory-poc-site-1:media:connected-web.svg",
+      "alt": "An original illustrative website and mobile layout linked by an orange ribbon.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/773627f5-bbed-4e1f-9d61-45efb228099c.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 10,
+      "source_i_d": "web-factory-poc-site-1:media:design-lab.svg",
+      "alt": "A wireframe blueprint beside an illustrative finished website shows design moving toward development.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/b63ba912-e954-460a-b0a5-e779bf277f71.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 11,
+      "source_i_d": "web-factory-poc-site-1:media:development-bridge.svg",
+      "alt": "An illustrative code panel connects content and function to a designed web page.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/b1495123-ec8f-4a07-9f64-bf8ea448e7b5.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    },
+    {
+      "id": 12,
+      "source_i_d": "web-factory-poc-site-1:media:care-detail.svg",
+      "alt": "A website change list with pages, menus and color updates sits beside a shield representing maintenance and security upkeep.",
+      "prefix": "stark-poc/web-factory-poc-site-1",
+      "object_key": "stark-poc/web-factory-poc-site-1/e682c9f7-4e29-4bb9-b21c-b1ece4a6d027.png",
+      "mime_type": "image/png",
+      "width": 1200,
+      "height": 760
+    }
+  ],
+  "relationships": [
+    {
+      "slug": "contact",
+      "key": "contact.conversation",
+      "img_src1_id": 1
+    },
+    {
+      "slug": "home",
+      "key": "home.agency",
+      "img_src1_id": 3
+    },
+    {
+      "slug": "home",
+      "key": "home.traffic",
+      "img_src1_id": 4
+    },
+    {
+      "slug": "ppc",
+      "key": "ppc.ppc-section-1",
+      "img_src1_id": 5
+    },
+    {
+      "slug": "ppc",
+      "key": "ppc.planning",
+      "img_src1_id": 6
+    },
+    {
+      "slug": "seo-services",
+      "key": "seo.search",
+      "img_src1_id": 7
+    },
+    {
+      "slug": "seo-services",
+      "key": "seo.content",
+      "img_src1_id": 8
+    },
+    {
+      "slug": "web-development",
+      "key": "web-development.development",
+      "img_src1_id": 11
+    },
+    {
+      "slug": "website-design",
+      "key": "web-design.design",
+      "img_src1_id": 9
+    },
+    {
+      "slug": "website-design",
+      "key": "web-design.blueprint",
+      "img_src1_id": 10
+    },
+    {
+      "slug": "website-support",
+      "key": "website-support.upkeep",
+      "img_src1_id": 12
+    }
+  ],
+  "migrations": [
+    {
+      "name": "20261114_040213_foundation",
+      "batch": 1
+    },
+    {
+      "name": "20261114_072417_website",
+      "batch": 2
+    }
+  ]
+}

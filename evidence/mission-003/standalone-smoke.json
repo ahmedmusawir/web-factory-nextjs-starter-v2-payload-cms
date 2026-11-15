@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "node": "v22.23.5",
+  "bind": "127.0.0.1:3005",
+  "results": [
+    {
+      "path": "/health/ready",
+      "status": 200
+    },
+    {
+      "path": "/admin/login",
+      "status": 200
+    },
+    {
+      "path": "/api/posts?limit=1",
+      "status": 200
+    },
+    {
+      "path": "/blog",
+      "status": 200
+    },
+    {
+      "path": "/cyberize/assets/Manrope.ttf",
+      "status": 200
+    }
+  ],
+  "dockerImageBuilt": false
+}

@@ -1,0 +1,9 @@
+PASS: approved targets and empty POC content verified
+PASS: public first-register denied on empty remote database
+PASS: CLI admin bootstrap with memory-only random credentials
+PASS: Chromium page creation and publication; authenticated update
+PASS: private upload rejected before any R2 object or media record
+PASS: Chromium R2 upload, original/thumbnail objects, public byte delivery, Turso metadata; no local bytes
+PASS: posts, drafts, settings, media relationships and unauthorized write/read denial
+PASS: fresh-process browser login, content, settings, relationship and R2 bytes persisted
+PASS: owned content, images, R2 objects and temporary administrator removed; settings restored

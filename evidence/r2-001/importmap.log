@@ -1,0 +1,10 @@
+
+> stark-web-factory-starter@0.1.0 generate:importmap
+> npm run payload -- generate:importmap
+
+
+> stark-web-factory-starter@0.1.0 payload
+> node --import tsx scripts/payload-cli.ts generate:importmap
+
+Generating import map
+Writing import map to /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/app/(payload)/admin/importMap.js

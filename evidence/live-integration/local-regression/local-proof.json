@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-11-14T07:00:15.595Z",
+  "database": "file:./.data/test/fa4032ba-e80d-4bc5-b42b-62b3b0133cfc.db",
+  "tables": [
+    "_pages_v",
+    "_posts_v",
+    "media",
+    "pages",
+    "payload_kv",
+    "payload_locked_documents",
+    "payload_locked_documents_rels",
+    "payload_migrations",
+    "payload_preferences",
+    "payload_preferences_rels",
+    "posts",
+    "site_settings",
+    "users",
+    "users_sessions"
+  ],
+  "counts": {
+    "users": 2,
+    "users_sessions": 4,
+    "pages": 3,
+    "posts": 2,
+    "media": 1,
+    "site_settings": 1,
+    "payload_migrations": 1
+  },
+  "browser": "Chromium",
+  "phases": [
+    "empty-database registration denied",
+    "CLI bootstrap",
+    "browser and REST editing/access checks",
+    "fresh-process restart persistence",
+    "repeat migration no-op"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "users": 1,
+    "pages": 7,
+    "posts": 0,
+    "media": 12
+  },
+  "environment": "test",
+  "approvedTargets": true,
+  "migrations": [
+    {
+      "name": "20261114_040213_foundation"
+    },
+    {
+      "name": "20261114_072417_website"
+    }
+  ]
+}

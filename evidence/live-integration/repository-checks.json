@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-14T07:00:41.723Z",
+  "branch": "feat/p1-payload-turso-gcs-poc",
+  "head": "7715f6de3850e210b5b52a5049a6f1144a50c04c",
+  "priorEvidenceFilesPreserved": 71,
+  "initialMigrationUnchanged": true,
+  "envLocalIgnored": true,
+  "envLocalMode": "600",
+  "secretScan": "PASS: configured secrets absent from Git-visible files and browser JS",
+  "browserJSFilesScanned": 69,
+  "secretScanLimit": "Known-value scan, not independent security certification",
+  "diffWhitespace": "PASS",
+  "port3001": "No listener",
+  "committed": false,
+  "pushed": false,
+  "deployed": false
+}

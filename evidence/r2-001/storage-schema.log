@@ -1,0 +1,1 @@
+PASS: local and R2 modes expose identical persisted field structures. No storage client operation was performed.

@@ -1,0 +1,121 @@
+{
+  "runID": "5576c364-aa38-45bd-b4c1-1855f1da1e8b",
+  "started": "2026-11-14T06:54:01.155Z",
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "credentialsArchived": false,
+  "readOnlyRetries": 1,
+  "mediaUploadHTTPStatus": 201,
+  "mediaObjectMetadata": {
+    "objectKey": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+    "filename": "bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+    "storedPrefix": "stark-poc",
+    "internalObjectKey": null,
+    "thumbnailFilename": "bffdd417-55ad-4f48-864b-f2abebd372e3-400x300.png"
+  },
+  "mediaObjectsAfterUpload": [
+    {
+      "key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3-400x300.png",
+      "bytes": 2476
+    },
+    {
+      "key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+      "bytes": 8593
+    }
+  ],
+  "images": [
+    {
+      "key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+      "width": 800,
+      "bytes": 8593,
+      "publicStatus": 200,
+      "sha256": "13b322ac28789925d07e4e99bd7976f4def152735bc7773164d9b08da4340d64"
+    },
+    {
+      "key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3-400x300.png",
+      "width": 400,
+      "bytes": 2476,
+      "publicStatus": 200,
+      "sha256": "8bfb29559c72f60c4510a7ac60637f323a0e0a80538e6866cb8cdd740de925b3"
+    }
+  ],
+  "tursoMediaMetadata": {
+    "id": 1,
+    "object_key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+    "filename": "bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+    "mime_type": "image/png",
+    "width": 800,
+    "height": 600,
+    "sizes_thumbnail_filename": "bffdd417-55ad-4f48-864b-f2abebd372e3-400x300.png"
+  },
+  "preRestartCounts": {
+    "users": 1,
+    "pages": 2,
+    "posts": 2,
+    "media": 1,
+    "site_settings": 1
+  },
+  "imagesAfterRestart": [
+    {
+      "key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3.png",
+      "width": 800,
+      "bytes": 8593,
+      "publicStatus": 200,
+      "sha256": "13b322ac28789925d07e4e99bd7976f4def152735bc7773164d9b08da4340d64"
+    },
+    {
+      "key": "stark-poc/bffdd417-55ad-4f48-864b-f2abebd372e3-400x300.png",
+      "width": 400,
+      "bytes": 2476,
+      "publicStatus": 200,
+      "sha256": "8bfb29559c72f60c4510a7ac60637f323a0e0a80538e6866cb8cdd740de925b3"
+    }
+  ],
+  "integration": "PASS",
+  "cleanup": "PASS",
+  "finalCounts": {
+    "users": 0,
+    "users_sessions": 0,
+    "pages": 0,
+    "_pages_v": 0,
+    "posts": 0,
+    "_posts_v": 0,
+    "media": 0,
+    "site_settings": 1,
+    "payload_migrations": 1
+  },
+  "ownedFixtureIDs": [
+    {
+      "collection": "pages",
+      "id": 1
+    },
+    {
+      "collection": "media",
+      "id": 1
+    },
+    {
+      "collection": "posts",
+      "id": 1
+    },
+    {
+      "collection": "pages",
+      "id": 2
+    },
+    {
+      "collection": "posts",
+      "id": 2
+    }
+  ],
+  "finished": "2026-11-14T06:54:55.687Z",
+  "stages": [
+    "approved targets and empty POC content verified",
+    "public first-register denied on empty remote database",
+    "CLI admin bootstrap with memory-only random credentials",
+    "Chromium page creation and publication; authenticated update",
+    "private upload rejected before any R2 object or media record",
+    "Chromium R2 upload, original/thumbnail objects, public byte delivery, Turso metadata; no local bytes",
+    "posts, drafts, settings, media relationships and unauthorized write/read denial",
+    "fresh-process browser login, content, settings, relationship and R2 bytes persisted",
+    "owned content, images, R2 objects and temporary administrator removed; settings restored"
+  ]
+}

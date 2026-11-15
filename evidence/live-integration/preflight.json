@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-11-14T06:47:37.677Z",
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "mode": {
+    "APP_ENV": "test",
+    "DATABASE_KIND": "turso",
+    "MEDIA_STORAGE": "r2"
+  },
+  "allTargetGuardsMatch": true,
+  "requiredSecretsPresent": true,
+  "envLocalMode": "600",
+  "migration": {
+    "name": "20261114_040213_foundation",
+    "sha256": "20c6514747b9a4270ac10636912ad412fcac2a6784fe1cb88fea7ece1c8b729c",
+    "upStatements": 70,
+    "onlyCreateTablesAndIndexes": true,
+    "downWillNotRun": true
+  },
+  "remoteAccessAttempted": false
+}

@@ -1,0 +1,220 @@
+{
+  "runID": "aabdfe2b-845e-435d-88db-26817fe46f7f",
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "prefix": "stark-poc/web-factory-poc-site-1/",
+  "credentialsArchived": false,
+  "media": [
+    {
+      "id": 12,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/8a356bb6-23a0-4d6b-8572-d8bbfddbf85f.png",
+          "bytes": 141322,
+          "sha256": "e135fced100aaf2489f1a183d822c6aae75545242bab9bf9e1ce862685a42e74",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/8a356bb6-23a0-4d6b-8572-d8bbfddbf85f-400x300.png",
+          "bytes": 52649,
+          "sha256": "25ead420129289c827e38a0376cd3c3ef418ed73c3b87d8d4d08d4668a34d195",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/84d0f133-213b-46dc-ae3c-4bb37ee43052.png",
+          "bytes": 165651,
+          "sha256": "19e388c2a755914c75fbc3f8b979b1e388214d94a2e6ef4d3bc8187edfcf740b",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/84d0f133-213b-46dc-ae3c-4bb37ee43052-400x300.png",
+          "bytes": 49349,
+          "sha256": "afc2d1803abc5d05423bbc3a9a35134971a2ce5d5009e1a76d63df990521f848",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/a8c5a40b-8e65-4214-8a40-a623a890dd08.png",
+          "bytes": 165823,
+          "sha256": "6f047b36d54b43e9050a809a1bddd52d687258e585525b70c10ae4b12bb54d61",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/a8c5a40b-8e65-4214-8a40-a623a890dd08-400x300.png",
+          "bytes": 51840,
+          "sha256": "6f875ff4066bd5a2a05d03ccdba6af86ca841957fb1b6d2be12f332b316b8786",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/57d10c69-92cb-46de-b21f-207b0629f3b4.png",
+          "bytes": 240645,
+          "sha256": "67dd5575062501c0a12f7975dac2a663c4bea0fc6f9bf8d7cb7cf0b803fcfc8d",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/57d10c69-92cb-46de-b21f-207b0629f3b4-400x300.png",
+          "bytes": 85352,
+          "sha256": "216e982662e83ebc6404a8813dcd01594fc5eb93ced2f28e419536d193e0241c",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/f6febb76-7bdd-4907-b3f7-2e4494c92e52.png",
+          "bytes": 102358,
+          "sha256": "e429f0682e798031935331d5766b65b76b54f5206abda07506767695cafa64d7",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/f6febb76-7bdd-4907-b3f7-2e4494c92e52-400x300.png",
+          "bytes": 31633,
+          "sha256": "c579c8365e10d9cbbaba20fdbe84e10120572acce822532ee1da2f4c4ab5c3d2",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/dc26d1f2-a004-448f-aba8-bee80a3aa5eb.png",
+          "bytes": 147994,
+          "sha256": "5d734c0b03d5910277f0317f7f9adc23a4e8343dd4773706392e3868fc5b8380",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/dc26d1f2-a004-448f-aba8-bee80a3aa5eb-400x300.png",
+          "bytes": 48402,
+          "sha256": "db18b1228e4fe2d271db4fdd7eb23a333e2f545378e4251e5fcecb8d7558fb34",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/fa708e2e-2573-418f-8c85-a01922ca9513.png",
+          "bytes": 190478,
+          "sha256": "1cbb8b0f6b27c722ec807a742f008a41f94aa7195e31ecf24c8386204b15cc20",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/fa708e2e-2573-418f-8c85-a01922ca9513-400x300.png",
+          "bytes": 56363,
+          "sha256": "2756777f0822b7771152a5b2d5f8024b0dabe40842bfd17c6430a09d94e8115e",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/8c1149c9-c88c-458c-9c4b-f850377a5f73.png",
+          "bytes": 209223,
+          "sha256": "f9ee0f1229f38ad8993e927190b794fcc5d89d62cb58021aa0911e6d0d10149f",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/8c1149c9-c88c-458c-9c4b-f850377a5f73-400x300.png",
+          "bytes": 52353,
+          "sha256": "1a7fa96c8c2bbe10e2a9a1cf5288f8b710ee85b31c6a240a26ad621bc92e098b",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/3057a45b-74e3-4098-8a54-610660defe37.png",
+          "bytes": 142071,
+          "sha256": "cf097278e6ac841c93e296f4daf5f074b978814dcbdb7fe6ef3d84c4f75e4b08",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/3057a45b-74e3-4098-8a54-610660defe37-400x300.png",
+          "bytes": 44500,
+          "sha256": "f4562cbbbde9ff51e289c5bad8707102611d80bb15bd5e634df23162da7fed6d",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/2a2c6dcc-da0e-4b3a-b938-fa53062c9070.png",
+          "bytes": 204223,
+          "sha256": "be8446103d237f031670b396ad83c5d1120605dede9d9f52a2f96f64161bdcd3",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/2a2c6dcc-da0e-4b3a-b938-fa53062c9070-400x300.png",
+          "bytes": 69697,
+          "sha256": "a0de7e5706a0307e3808806f0f923330d0f9b54c4f35f543db85f0c519268376",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/4df321b0-32a5-41dd-9e38-54b6e6977467.png",
+          "bytes": 2216,
+          "sha256": "b96e695b72d2b4dc192745d0a90a2b5d62c9dd094e3a684ed0264403a9275256",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/4df321b0-32a5-41dd-9e38-54b6e6977467-260x84.png",
+          "bytes": 3485,
+          "sha256": "4c825c58fc6117236157c3a3eccc48f46d5428d71385e9cee7871445e79af001",
+          "publicStatus": 200
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "checks": [
+        {
+          "key": "stark-poc/web-factory-poc-site-1/725c6206-b5f2-472b-bf17-de3c4772fbb1.png",
+          "bytes": 150505,
+          "sha256": "1710ecb8381be202974621f0a0b960c3c0117f79db8328eda1ca7bc69266073c",
+          "publicStatus": 200
+        },
+        {
+          "key": "stark-poc/web-factory-poc-site-1/725c6206-b5f2-472b-bf17-de3c4772fbb1-400x300.png",
+          "bytes": 44626,
+          "sha256": "ce98da40b6d8742834970efdaf1a60f0a5e689124a1259644172332dcf5da3b7",
+          "publicStatus": 200
+        }
+      ]
+    }
+  ],
+  "status": "FAIL",
+  "failedStage": "desktop and mobile reference comparison",
+  "errorType": "AssertionError",
+  "stages": [
+    "approved targets and seven imported pages in Turso",
+    "12 media records and 24 original/thumbnail R2 objects deliver matching image bytes"
+  ]
+}

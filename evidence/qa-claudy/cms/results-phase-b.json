@@ -1,0 +1,271 @@
+[
+  {
+    "name": "after restart: published heading persists (anonymous API)",
+    "status": "PASS",
+    "detail": "QA Claudy heading mwg8ig48"
+  },
+  {
+    "name": "after restart: public page renders published heading",
+    "status": "PASS",
+    "detail": "QA Claudy heading mwg8ig48 / All connected."
+  },
+  {
+    "name": "after restart: hero image relationship renders from R2",
+    "status": "PASS",
+    "detail": "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev/stark-poc/web-factory-poc-site-1/11cc8714-0c37-4259-9cb0-8b2f0411be63.png"
+  },
+  {
+    "name": "after restart: post→media relationship persists",
+    "status": "PASS"
+  },
+  {
+    "name": "after restart: R2 bytes identical",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "after restart: settings + logo relationship persist",
+    "status": "PASS"
+  },
+  {
+    "name": "after restart: existing session still valid (stable secret, Turso sessions)",
+    "status": "PASS"
+  },
+  {
+    "name": "after restart: fresh browser login works",
+    "status": "PASS"
+  },
+  {
+    "name": "anonymous PATCH /api/posts/1 denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous DELETE /api/posts/1 denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous PATCH /api/pages/2 denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous POST /api/pages denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous PATCH /api/media/13 denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous DELETE /api/media/13 denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous POST /api/globals/site-settings denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GET /api/users denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GET /api/users/1 denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous POST /api/users denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous POST /api/users/first-register denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GET /api/payload-preferences denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GET /api/posts/versions denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GET /api/globals/site-settings/versions denied",
+    "status": "PASS",
+    "detail": 404
+  },
+  {
+    "name": "anonymous GET /api/payload-locked-documents denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GET /api/payload-migrations denied",
+    "status": "FAIL",
+    "detail": 501
+  },
+  {
+    "name": "anonymous GET /api/payload-kv denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous GraphQL Users denied",
+    "status": "PASS",
+    "detail": "{\"errors\":[{\"extensions\":{\"name\":\"Forbidden\",\"statusCode\":403},\"locations\":[{\"line\":1,\"column\":3}],\"message\":\"You are no"
+  },
+  {
+    "name": "anonymous GraphQL mutation denied",
+    "status": "PASS"
+  },
+  {
+    "name": "anonymous /api/users/me has no user",
+    "status": "PASS"
+  },
+  {
+    "name": "anonymous /api/access canAccessAdmin false",
+    "status": "FAIL"
+  },
+  {
+    "name": "wrong password rejected",
+    "status": "PASS",
+    "detail": 401
+  },
+  {
+    "name": "disposable post unmodified after denied writes",
+    "status": "PASS"
+  },
+  {
+    "name": "anonymous cannot read draft post (REST, draft flag, public route, listing)",
+    "status": "PASS",
+    "detail": [
+      404,
+      404,
+      404
+    ]
+  },
+  {
+    "name": "Payload media file route (anonymous, public record)",
+    "status": "INFO",
+    "detail": "200 image/png"
+  },
+  {
+    "name": "admin can create editor",
+    "status": "PASS",
+    "detail": 201
+  },
+  {
+    "name": "editor login",
+    "status": "PASS"
+  },
+  {
+    "name": "editor cannot create users",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "editor cannot escalate own role",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "editor sees only own user record",
+    "status": "PASS",
+    "detail": 1
+  },
+  {
+    "name": "editor cannot delete content",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "editor cannot delete media",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "editor can edit content",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "credential scan of 95 responses/static files (76 static)",
+    "status": "PASS",
+    "detail": []
+  },
+  {
+    "name": "user API omits password hash/salt",
+    "status": "PASS"
+  },
+  {
+    "name": "response headers",
+    "status": "INFO",
+    "detail": {
+      "x-powered-by": "Next.js, Payload",
+      "csp": null,
+      "xfo": null,
+      "xcto": null
+    }
+  },
+  {
+    "name": "original Home heading restored via admin UI and published",
+    "status": "PASS",
+    "detail": "Digital marketing."
+  },
+  {
+    "name": "delete disposable draft post via Payload",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "delete disposable post via Payload",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "delete disposable editor via Payload",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "delete disposable media via Payload",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "R2 object removed: stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60.png",
+    "status": "PASS"
+  },
+  {
+    "name": "R2 object removed: stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60-400x300.png",
+    "status": "PASS"
+  },
+  {
+    "name": "R2: exactly the 24 website objects remain",
+    "status": "PASS",
+    "detail": 24
+  },
+  {
+    "name": "public URL of deleted object",
+    "status": "INFO",
+    "detail": 404
+  },
+  {
+    "name": "admin browser console/network issues",
+    "status": "PASS",
+    "detail": [
+      "external request: www.gravatar.com"
+    ]
+  }
+]

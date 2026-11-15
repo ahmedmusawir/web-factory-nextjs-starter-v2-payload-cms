@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "prefix": "stark-poc/web-factory-poc-site-1",
+  "migrations": [
+    {
+      "name": "20261114_040213_foundation",
+      "batch": 1
+    }
+  ],
+  "counts": {
+    "pages": 0,
+    "posts": 0,
+    "media": 0,
+    "users": 0,
+    "site_settings": 1
+  },
+  "newPrefixEmpty": true,
+  "additiveStatements": 29,
+  "migrationSHA256": "338692b6eb0fa91513966c3452cab7ec16cb2d7bd98c17dc6075e07481ca0276",
+  "writesPerformed": false
+}

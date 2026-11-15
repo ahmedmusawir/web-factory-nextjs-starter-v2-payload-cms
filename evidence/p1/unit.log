@@ -1,0 +1,26 @@
+
+> stark-web-factory-starter@0.1.0 test:unit
+> node --import tsx --test tests/unit/*.test.ts
+
+TAP version 13
+# Subtest: tests/unit/environment.test.ts
+ok 1 - tests/unit/environment.test.ts
+  ---
+  duration_ms: 410.830353
+  type: 'test'
+  ...
+# Subtest: tests/unit/security-dependencies.test.ts
+ok 2 - tests/unit/security-dependencies.test.ts
+  ---
+  duration_ms: 1663.846668
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1707.020359

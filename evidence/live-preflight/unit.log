@@ -1,0 +1,56 @@
+
+> stark-web-factory-starter@0.1.0 test:unit
+> node --import tsx --test tests/unit/*.test.ts
+
+TAP version 13
+# Subtest: local SQLite/media needs no R2 credentials; test data remains isolated
+ok 1 - local SQLite/media needs no R2 credentials; test data remains isolated
+  ---
+  duration_ms: 1.958216
+  type: 'test'
+  ...
+# Subtest: rejects environment mismatch, traversal, missing secret and deployed local files
+ok 2 - rejects environment mismatch, traversal, missing secret and deployed local files
+  ---
+  duration_ms: 0.566074
+  type: 'test'
+  ...
+# Subtest: remote mode requires complete, identified Turso and R2 settings without fallback
+ok 3 - remote mode requires complete, identified Turso and R2 settings without fallback
+  ---
+  duration_ms: 2.138433
+  type: 'test'
+  ...
+# Subtest: CLI uses Next environment precedence, interpolation, shell isolation and test-mode rules
+ok 4 - CLI uses Next environment precedence, interpolation, shell isolation and test-mode rules
+  ---
+  duration_ms: 743.649718
+  type: 'test'
+  ...
+# Subtest: R2 URLs use delivery origin and stored prefix for originals/variants, with safe encoding
+ok 5 - R2 URLs use delivery origin and stored prefix for originals/variants, with safe encoding
+  ---
+  duration_ms: 0.956015
+  type: 'test'
+  ...
+# Subtest: actual collection hook rejects private R2 create/update before storage, preserves local privacy and keys
+ok 6 - actual collection hook rejects private R2 create/update before storage, preserves local privacy and keys
+  ---
+  duration_ms: 1.342288
+  type: 'test'
+  ...
+# Subtest: Lexical DOM helper remains compatible with the scoped Happy DOM security update
+ok 7 - Lexical DOM helper remains compatible with the scoped Happy DOM security update
+  ---
+  duration_ms: 16.492947
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1441.440959

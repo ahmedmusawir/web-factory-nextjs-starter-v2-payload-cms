@@ -1,0 +1,24 @@
+
+> stark-web-factory-starter@0.1.0 dev
+> next dev --hostname 127.0.0.1 -p 3001
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+- Environments: .env.local
+✓ Ready in 601ms
+✓ Running next.config.mjs took 39ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+○ Compiling / ...
+ GET / 200 in 5.9s (next.js: 396ms, application-code: 5.5s)
+ GET / 200 in 1083ms (next.js: 8ms, application-code: 1075ms)
+ GET /contact 200 in 5.2s (next.js: 4.3s, application-code: 917ms)
+○ Compiling /admin/[[...segments]] ...
+ GET /admin/login 200 in 5.0s (next.js: 3.7s, application-code: 1276ms)
+ GET /api/globals/site-settings 200 in 3.9s (next.js: 3.5s, application-code: 378ms)
+ GET /preview/home 404 in 3.6s (next.js: 3.1s, application-code: 536ms)
+ GET /missing 404 in 940ms (next.js: 27ms, application-code: 913ms)
+ GET / 200 in 641ms (next.js: 2ms, application-code: 639ms)
+[?25h

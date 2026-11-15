@@ -1,0 +1,24 @@
+{
+  "tables": [
+    "_pages_v",
+    "_posts_v",
+    "media",
+    "pages",
+    "payload_kv",
+    "payload_locked_documents",
+    "payload_locked_documents_rels",
+    "payload_migrations",
+    "payload_preferences",
+    "payload_preferences_rels",
+    "posts",
+    "site_settings",
+    "users",
+    "users_sessions"
+  ],
+  "migrations": [
+    {
+      "name": "20261114_040213_foundation",
+      "batch": 1
+    }
+  ]
+}

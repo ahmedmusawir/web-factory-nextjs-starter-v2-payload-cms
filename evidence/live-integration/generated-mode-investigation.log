@@ -1,0 +1,10 @@
+
+> stark-web-factory-starter@0.1.0 generate:types
+> npm run payload -- generate:types
+
+
+> stark-web-factory-starter@0.1.0 payload
+> node --import tsx scripts/payload-cli.ts generate:types
+
+[12:56:38] [32mINFO[39m: [36mCompiling TS types for Collections and Globals...[39m
+[12:56:38] [32mINFO[39m: [36mTypes written to /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/payload-types.ts[39m

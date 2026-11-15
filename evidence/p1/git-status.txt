@@ -1,0 +1,27 @@
+ M .gitignore
+ M README.md
+ D app/globals.css
+ D app/layout.tsx
+ D app/page.tsx
+ M eslint.config.mjs
+ M package-lock.json
+ M package.json
+ M playwright.config.ts
+ M tests/home.spec.ts
+ M tsconfig.json
+?? .env.example
+?? .nvmrc
+?? AGENTS.md
+?? app/(frontend)/
+?? app/(payload)/
+?? cms/
+?? docs/
+?? evidence/
+?? migrations/
+?? next.config.mjs
+?? payload-types.ts
+?? payload.config.ts
+?? scripts/
+?? tests/bootstrap.spec.ts
+?? tests/cms.spec.ts
+?? tests/unit/

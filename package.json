@@ -2,30 +2,63 @@
   "name": "stark-web-factory-starter",
   "version": "0.1.0",
   "private": true,
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": "^22.23.5 || ^24.22.3 || >=26.13.1"
+  },
   "scripts": {
-    "dev": "next dev -p 3001",
+    "dev": "next dev --hostname 127.0.0.1 -p 3001",
     "build": "next build",
-    "start": "next start -p 3001",
+    "start": "next start --hostname 127.0.0.1 -p 3001",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "next typegen && tsc --noEmit",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "payload": "node --import tsx scripts/payload-cli.ts",
+    "db:migrate": "npm run payload -- migrate",
+    "db:status": "npm run payload -- migrate:status",
+    "generate:types": "npm run payload -- generate:types",
+    "generate:importmap": "npm run payload -- generate:importmap",
+    "admin:create": "node --import tsx scripts/create-admin.ts",
+    "test:unit": "node --import tsx --test tests/unit/*.test.ts",
+    "verify:local": "node --import tsx scripts/verify-local.ts",
+    "check:generated": "node --import tsx scripts/check-generated.ts",
+    "site:import": "node --import tsx scripts/import-website.ts",
+    "reference:prepare": "node --import tsx scripts/prepare-reference.ts",
+    "verify:website": "node --import tsx scripts/verify-website.ts"
   },
   "dependencies": {
+    "@next/env": "16.4.3",
+    "@payloadcms/db-sqlite": "3.93.0",
+    "@payloadcms/next": "3.93.0",
+    "@payloadcms/richtext-lexical": "3.93.0",
+    "@payloadcms/storage-s3": "3.93.0",
+    "graphql": "16.15.0",
     "next": "16.4.3",
+    "payload": "3.93.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "sharp": "0.35.5"
   },
   "devDependencies": {
+    "@libsql/client": "0.14.0",
     "@playwright/test": "1.59.1",
     "@types/node": "20.19.43",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
+    "@types/sanitize-html": "2.16.2",
     "autoprefixer": "10.6.2",
     "eslint": "9.39.4",
     "eslint-config-next": "16.4.3",
+    "happy-dom": "21.0.4",
     "postcss": "8.5.23",
+    "sanitize-html": "2.18.2",
     "tailwindcss": "3.4.19",
+    "tsx": "4.23.15",
     "typescript": "5.9.3"
+  },
+  "type": "module",
+  "overrides": {
+    "@lexical/headless@0.50.0": {
+      "happy-dom": "21.0.4"
+    }
   }
 }

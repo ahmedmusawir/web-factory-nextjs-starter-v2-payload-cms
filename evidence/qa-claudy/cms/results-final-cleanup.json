@@ -1,0 +1,43 @@
+[
+  {
+    "name": "delete disposable QA administrator via Payload",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "deleted admin session no longer authenticates",
+    "status": "PASS"
+  },
+  {
+    "name": "final Turso inventory",
+    "status": "PASS",
+    "detail": {
+      "users": 0,
+      "users_sessions": 0,
+      "pages": 7,
+      "pages_sections": 32,
+      "_pages_v": 16,
+      "posts": 0,
+      "_posts_v": 0,
+      "media": 12,
+      "site_settings": 1,
+      "site_settings_sections": 2,
+      "payload_migrations": 2,
+      "payload_locked_documents": 1,
+      "payload_preferences": 7
+    }
+  },
+  {
+    "name": "all 7 pages published in Turso",
+    "status": "PASS"
+  },
+  {
+    "name": "final R2 object count under prefix",
+    "status": "PASS",
+    "detail": 24
+  },
+  {
+    "name": "restored Home text identical to reference",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 12,
+    "sourceID": "web-factory-poc-site-1:media:care-detail.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/8a356bb6-23a0-4d6b-8572-d8bbfddbf85f.png",
+    "key": "stark-poc/web-factory-poc-site-1/e682c9f7-4e29-4bb9-b21c-b1ece4a6d027.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 11,
+    "sourceID": "web-factory-poc-site-1:media:development-bridge.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/84d0f133-213b-46dc-ae3c-4bb37ee43052.png",
+    "key": "stark-poc/web-factory-poc-site-1/b1495123-ec8f-4a07-9f64-bf8ea448e7b5.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 10,
+    "sourceID": "web-factory-poc-site-1:media:design-lab.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/a8c5a40b-8e65-4214-8a40-a623a890dd08.png",
+    "key": "stark-poc/web-factory-poc-site-1/b63ba912-e954-460a-b0a5-e779bf277f71.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 9,
+    "sourceID": "web-factory-poc-site-1:media:connected-web.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/57d10c69-92cb-46de-b21f-207b0629f3b4.png",
+    "key": "stark-poc/web-factory-poc-site-1/773627f5-bbed-4e1f-9d61-45efb228099c.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 8,
+    "sourceID": "web-factory-poc-site-1:media:content-constellation.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/f6febb76-7bdd-4907-b3f7-2e4494c92e52.png",
+    "key": "stark-poc/web-factory-poc-site-1/11412938-ca41-4196-a5df-784e194cddfc.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 7,
+    "sourceID": "web-factory-poc-site-1:media:seo-routes.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/dc26d1f2-a004-448f-aba8-bee80a3aa5eb.png",
+    "key": "stark-poc/web-factory-poc-site-1/20f3ee5d-d06c-4112-b77a-12aac737484a.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 6,
+    "sourceID": "web-factory-poc-site-1:media:campaign-plan.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/fa708e2e-2573-418f-8c85-a01922ca9513.png",
+    "key": "stark-poc/web-factory-poc-site-1/9714713f-09ea-41c0-8c8e-20f675d402ba.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 5,
+    "sourceID": "web-factory-poc-site-1:media:click-path.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/8c1149c9-c88c-458c-9c4b-f850377a5f73.png",
+    "key": "stark-poc/web-factory-poc-site-1/65070a41-5b20-415b-911e-e15caa4be163.png",
+    "width": 1200,
+    "height": 1050
+  },
+  {
+    "id": 4,
+    "sourceID": "web-factory-poc-site-1:media:search-field.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/3057a45b-74e3-4098-8a54-610660defe37.png",
+    "key": "stark-poc/web-factory-poc-site-1/3206f9f8-7d6a-440d-9220-c4a927fb9895.png",
+    "width": 1200,
+    "height": 760
+  },
+  {
+    "id": 3,
+    "sourceID": "web-factory-poc-site-1:media:agency-connected.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/2a2c6dcc-da0e-4b3a-b938-fa53062c9070.png",
+    "key": "stark-poc/web-factory-poc-site-1/617c7456-b5b7-4b58-81c6-e0795ed055a3.png",
+    "width": 1200,
+    "height": 640
+  },
+  {
+    "id": 1,
+    "sourceID": "web-factory-poc-site-1:media:conversation.svg",
+    "previousKey": "stark-poc/web-factory-poc-site-1/725c6206-b5f2-472b-bf17-de3c4772fbb1.png",
+    "key": "stark-poc/web-factory-poc-site-1/0d356135-b986-41f2-991c-18eab5e17940.png",
+    "width": 1200,
+    "height": 900
+  }
+]

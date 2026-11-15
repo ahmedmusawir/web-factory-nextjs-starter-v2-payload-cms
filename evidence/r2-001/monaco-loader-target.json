@@ -1,0 +1,30 @@
+{
+  "monacoVersion": "0.55.1",
+  "dependencies": {
+    "marked": "14.0.0",
+    "dompurify": "3.2.7"
+  },
+  "files": {
+    "package/esm/vs/base/browser/dompurify/dompurify.js": {
+      "sha256": "9b2835fc7de5bd37faff156e83bf060067577a1f09c6620d9f37d5fa5e5970b1",
+      "dompurify_versions": [
+        "3.2.7"
+      ],
+      "safeForTemplatesCalls": 0,
+      "inPlaceCalls": 0
+    },
+    "package/esm/vs/base/browser/domSanitize.js": {
+      "sha256": "fd41b231eb5e191936ed5f84252b4d729a48e722348a82cfae25c45b7308ac7e",
+      "dompurify_versions": [],
+      "safeForTemplatesCalls": 0,
+      "inPlaceCalls": 0
+    },
+    "package/esm/vs/base/browser/markdownRenderer.js": {
+      "sha256": "580d38fcccce3aaa35113903be1d5bffe52ab197be28ecab1de68b62af9830d4",
+      "dompurify_versions": [],
+      "safeForTemplatesCalls": 0,
+      "inPlaceCalls": 0
+    }
+  },
+  "source": "official npm tarball; no package code executed"
+}

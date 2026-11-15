@@ -1,0 +1,15 @@
+
+> stark-web-factory-starter@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully
+app/(frontend)/content/[collection]/[slug]/page.tsx(16,15): error TS2322: Type '{ [k: string]: unknown; root: { type: string; children: { [k: string]: unknown; type: any; version: number; }[]; direction: "ltr" | "rtl" | null; format: "" | "left" | "start" | "center" | "right" | "end" | "justify"; indent: number; version: number; }; } | { ...; } | null | undefined' is not assignable to type 'SerializedEditorState<SerializedLexicalNode>'.
+  Type 'undefined' is not assignable to type 'SerializedEditorState<SerializedLexicalNode>'.
+cms/website-fields.ts(22,9): error TS2322: Type '{ validate?: ((value: unknown) => true | "Use a relative path, anchor, HTTPS, mailto or tel link.") | undefined; name: string; label: string; type: "textarea" | "text"; admin: { condition: (_: unknown, sibling: Record<string, unknown>) => boolean; }; }' is not assignable to type 'Field'.
+  Type '{ validate?: ((value: unknown) => true | "Use a relative path, anchor, HTTPS, mailto or tel link.") | undefined; name: string; label: string; type: "textarea" | "text"; admin: { condition: (_: unknown, sibling: Record<string, unknown>) => boolean; }; }' is not assignable to type 'TextareaField | ({ admin?: ({ autoComplete?: string | undefined; components?: ({ afterInput?: CustomComponent[] | undefined; beforeInput?: CustomComponent[] | undefined; Error?: CustomComponent<...> | undefined; Label?: CustomComponent<...> | undefined; } & { ...; }) | undefined; placeholder?: string | ... 1 more .....'.
+    Type '{ validate?: ((value: unknown) => true | "Use a relative path, anchor, HTTPS, mailto or tel link.") | undefined; name: string; label: string; type: "textarea" | "text"; admin: { condition: (_: unknown, sibling: Record<string, unknown>) => boolean; }; }' is not assignable to type '{ admin?: ({ autoComplete?: string | undefined; components?: ({ afterInput?: CustomComponent[] | undefined; beforeInput?: CustomComponent[] | undefined; Error?: CustomComponent<...> | undefined; Label?: CustomComponent<...> | undefined; } & { ...; }) | undefined; placeholder?: string | ... 1 more ... | undefined; rt...'.
+      Type '{ validate?: ((value: unknown) => true | "Use a relative path, anchor, HTTPS, mailto or tel link.") | undefined; name: string; label: string; type: "textarea" | "text"; admin: { condition: (_: unknown, sibling: Record<string, unknown>) => boolean; }; }' is not assignable to type '{ admin?: ({ autoComplete?: string | undefined; components?: ({ afterInput?: CustomComponent[] | undefined; beforeInput?: CustomComponent[] | undefined; Error?: CustomComponent<...> | undefined; Label?: CustomComponent<...> | undefined; } & { ...; }) | undefined; placeholder?: string | ... 1 more ... | undefined; rt...'.
+        Types of property 'type' are incompatible.
+          Type '"textarea" | "text"' is not assignable to type '"text"'.
+            Type '"textarea"' is not assignable to type '"text"'.

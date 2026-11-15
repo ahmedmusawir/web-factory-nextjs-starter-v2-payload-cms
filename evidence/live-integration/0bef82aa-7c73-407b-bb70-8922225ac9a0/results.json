@@ -1,0 +1,37 @@
+{
+  "runID": "0bef82aa-7c73-407b-bb70-8922225ac9a0",
+  "started": "2026-11-14T06:51:24.189Z",
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "credentialsArchived": false,
+  "integration": "FAIL",
+  "failedStage": "secure CLI bootstrap",
+  "errorType": "TypeError",
+  "errorSummary": "fetch failed",
+  "cleanup": "PASS after explicit operator cleanup of the single verified run-owned administrator",
+  "finalCounts": {
+    "users": 1,
+    "users_sessions": 1,
+    "pages": 0,
+    "_pages_v": 0,
+    "posts": 0,
+    "_posts_v": 0,
+    "media": 0,
+    "site_settings": 0,
+    "payload_migrations": 1
+  },
+  "ownedFixtureIDs": [],
+  "finished": "2026-11-14T06:51:41.699Z",
+  "stages": [
+    "approved targets and empty POC content verified",
+    "public first-register denied on empty remote database",
+    "owned content, images, R2 objects and temporary administrator removed; settings restored"
+  ],
+  "originalCleanupReported": "PASS (incorrect: admin ID lookup failed before cleanup)",
+  "cleanupCorrection": {
+    "timestamp": "2026-11-14T06:52:21.808Z",
+    "deletedOwnedAdminID": 1,
+    "remainingUsers": 0,
+    "method": "Payload Local API, exact run email and creation-window checks; no database reset"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "normalWorkflowExternalRequests": [
+    "https://www.gravatar.com/avatar/f05fa73481f968a02909f3dd4ff7467c",
+    "https://www.gravatar.com/avatar/f05fa73481f968a02909f3dd4ff7467c",
+    "https://www.gravatar.com/avatar/f05fa73481f968a02909f3dd4ff7467c",
+    "https://www.gravatar.com/avatar/f05fa73481f968a02909f3dd4ff7467c"
+  ],
+  "hiddenPreferencesExternalRequestsBlocked": [
+    "https://www.gravatar.com/avatar/f05fa73481f968a02909f3dd4ff7467c"
+  ],
+  "externalNetworkAllowed": false,
+  "hiddenRoute": {
+    "url": "http://127.0.0.1:3001/admin/collections/payload-preferences/create",
+    "editorElements": 0,
+    "headings": [
+      "404",
+      "This page could not be found."
+    ]
+  },
+  "monacoLoadAttempted": false,
+  "finding": "Authenticated hidden preferences route observed; any external requests intercepted. This is reachability evidence, not an exploit test."
+}

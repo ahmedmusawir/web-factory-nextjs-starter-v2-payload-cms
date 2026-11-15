@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('h1')\nExpected substring: \"Private draft 4f09545b-7280-4180-859b-8bf555532b3a\"\nError: strict mode violation: locator('h1') resolved to 2 elements:\n    1) <h1>Private draft 4f09545b-7280-4180-859b-8bf555532b3a</h1> aka getByRole('heading', { name: 'Private draft 4f09545b-7280-' })\n    2) <h1>Content Scaling: Strategies for Growing Your Audi…</h1> aka getByRole('heading', { name: 'Content Scaling: Strategies' })\n\nCall log:\n  - Expect",
+  "originalUsersPreserved": true,
+  "stages": [
+    "Chromium editor login; Tony administrator untouched",
+    "seven original pages, blog listing and article return full-route cache HIT"
+  ]
+}

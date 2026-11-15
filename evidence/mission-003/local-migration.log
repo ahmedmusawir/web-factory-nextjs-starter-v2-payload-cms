@@ -1,0 +1,16 @@
+
+> stark-web-factory-starter@0.1.0 db:migrate
+> npm run payload -- migrate
+
+
+> stark-web-factory-starter@0.1.0 payload
+> node --import tsx scripts/payload-cli.ts migrate
+
+[12:52:42] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[12:52:42] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[12:52:42] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (392ms)[39m
+[12:52:42] [32mINFO[39m: [36mMigrating: 20261114_072417_website[39m
+[12:52:42] [32mINFO[39m: [36mMigrated:  20261114_072417_website (148ms)[39m
+[12:52:42] [32mINFO[39m: [36mMigrating: 20261115_065237_wordpress_blog[39m
+[12:52:43] [32mINFO[39m: [36mMigrated:  20261115_065237_wordpress_blog (107ms)[39m
+[12:52:43] [32mINFO[39m: [36mDone.[39m

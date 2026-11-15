@@ -1,0 +1,9 @@
+
+> stark-web-factory-starter@0.1.0 check:generated
+> node --import tsx scripts/check-generated.ts
+
+[11:21:30] [32mINFO[39m: [36mCompiling TS types for Collections and Globals...[39m
+payload-types.ts: consistent (dd4a5a50d1dcd5f3a882d38f1379dc610be515d6d4e1ba9dc240cc61a70677ee)
+Generating import map
+No new imports found, skipping writing import map
+app/(payload)/admin/importMap.js: consistent (667691ea43221ca240d16843229eafabff12329ed0871c89d06f102da7c6165f)

@@ -1,0 +1,21 @@
+{
+  "branch": "feat/p1-payload-turso-gcs-poc",
+  "head": "7715f6de3850e210b5b52a5049a6f1144a50c04c",
+  "protectedBaselineFilesChecked": 149,
+  "protectedBaselineFilesChanged": [],
+  "ignoredPathsChecked": [
+    ".env",
+    ".data/local/payload.db",
+    ".data/test/probe.db",
+    "local.sqlite",
+    "local.sqlite-wal",
+    "local.sqlite-shm",
+    "credentials-r2.json"
+  ],
+  "envExampleVisibleToGit": true,
+  "knownLocalSecretScan": "PASS: no configured local secret values found in Git-visible files",
+  "diffWhitespaceCheck": "PASS",
+  "limitations": "Known-value scan is not an exhaustive generic secret audit. Environment files and disposable data were not included in inventory.",
+  "localPort3001AfterTests": "No listener in /proc/net/tcp or tcp6",
+  "portInspectionNote": "ss could not open a netlink socket in the sandbox; read-only /proc inspection used instead."
+}

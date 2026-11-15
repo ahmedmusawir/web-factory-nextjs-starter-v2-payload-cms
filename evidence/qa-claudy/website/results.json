@@ -1,0 +1,776 @@
+{
+  "results": [
+    {
+      "device": "desktop",
+      "route": "/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4536,
+        4536
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [],
+      "refIssues": [],
+      "pixelDiffPct": 0.417
+    },
+    {
+      "device": "desktop",
+      "route": "/seo-services/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4472,
+        4472
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=F9AxDgn7r0a6VKuU net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=RPssTm4FQpp4FJi0 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.273
+    },
+    {
+      "device": "desktop",
+      "route": "/ppc/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        6031,
+        6031
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=l1d74GTveRW8oY5P net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=CLJBTzc3mBazGDT9 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.215
+    },
+    {
+      "device": "desktop",
+      "route": "/website-design/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        3839,
+        3839
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=Lf9pOac-thNV4Lmm net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=cw58YZrzAKOEpjFj net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.592
+    },
+    {
+      "device": "desktop",
+      "route": "/web-development/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4347,
+        4347
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=yyWdkExaKIObjBNT net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=maGsBE8ZEfevRyaX net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.198
+    },
+    {
+      "device": "desktop",
+      "route": "/website-support/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        3516,
+        3516
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=eYi7S-n3T8k4U31y net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=oG8ev0q_NuLw5Rn4 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.29
+    },
+    {
+      "device": "desktop",
+      "route": "/contact/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        2300,
+        2300
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=h2vb-LAkAGynSY5z net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=mTa8tpfUvA8h8GpF net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.183
+    },
+    {
+      "interaction": {
+        "device": "desktop",
+        "toggleVisible": false,
+        "servicesExpanded": "true",
+        "dropdownLinks": [
+          "/",
+          "/",
+          "/seo-services/",
+          "/ppc/",
+          "/website-design/",
+          "/web-development/",
+          "/website-support/",
+          "/contact/",
+          "/contact/"
+        ],
+        "afterEscape": "false",
+        "focusReturned": true,
+        "faqCount": 5,
+        "faqOpens": true,
+        "navToContact": "http://127.0.0.1:3001/contact",
+        "skipLink": "#main",
+        "mainId": 1,
+        "notFound": 404,
+        "notFoundText": "Skip to content\nHome\nServices\n⌄\nContact\nLet's talk\n↗\nPage not found\n\nThe page you requested could not be found.\n\nHome\nContact\n\nYOUR NEXT CHAPTER\n\nGood things start\nwith a conversation.\n↗\n\nDesign. Supp"
+      }
+    },
+    {
+      "device": "mobile",
+      "route": "/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4853,
+        4853
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [],
+      "refIssues": [],
+      "pixelDiffPct": 0.827
+    },
+    {
+      "device": "mobile",
+      "route": "/seo-services/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4590,
+        4590
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=RPssTm4FQpp4FJi0 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.501
+    },
+    {
+      "device": "mobile",
+      "route": "/ppc/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        7676,
+        7676
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=CLJBTzc3mBazGDT9 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.201
+    },
+    {
+      "device": "mobile",
+      "route": "/website-design/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4534,
+        4534
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=Lf9pOac-thNV4Lmm net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=cw58YZrzAKOEpjFj net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 1.424
+    },
+    {
+      "device": "mobile",
+      "route": "/web-development/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4696,
+        4696
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=yyWdkExaKIObjBNT net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=maGsBE8ZEfevRyaX net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.453
+    },
+    {
+      "device": "mobile",
+      "route": "/website-support/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        3918,
+        3918
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=eYi7S-n3T8k4U31y net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=oG8ev0q_NuLw5Rn4 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.629
+    },
+    {
+      "device": "mobile",
+      "route": "/contact/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        2853,
+        2853
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=mTa8tpfUvA8h8GpF net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.175
+    },
+    {
+      "interaction": {
+        "device": "mobile",
+        "toggleVisible": true,
+        "servicesExpanded": "true",
+        "dropdownLinks": [
+          "/",
+          "/",
+          "/seo-services/",
+          "/ppc/",
+          "/website-design/",
+          "/web-development/",
+          "/website-support/",
+          "/contact/"
+        ],
+        "afterEscape": "false",
+        "focusReturned": true,
+        "faqCount": 5,
+        "faqOpens": true,
+        "navToContact": "http://127.0.0.1:3001/contact",
+        "skipLink": "#main",
+        "mainId": 1,
+        "notFound": 404,
+        "notFoundText": "Skip to content\nMenu\n+\nPage not found\n\nThe page you requested could not be found.\n\nHome\nContact\n\nYOUR NEXT CHAPTER\n\nGood things start\nwith a conversation.\n↗\n\nDesign. Support. Traffic.\nDigital marketin"
+      }
+    },
+    {
+      "device": "tablet",
+      "route": "/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4154,
+        4154
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [],
+      "refIssues": [],
+      "pixelDiffPct": 0.758
+    },
+    {
+      "device": "tablet",
+      "route": "/seo-services/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4055,
+        4055
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=RPssTm4FQpp4FJi0 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.533
+    },
+    {
+      "device": "tablet",
+      "route": "/ppc/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        5542,
+        5542
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=l1d74GTveRW8oY5P net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=CLJBTzc3mBazGDT9 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.216
+    },
+    {
+      "device": "tablet",
+      "route": "/website-design/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        3827,
+        3827
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        4,
+        4
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=Lf9pOac-thNV4Lmm net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=cw58YZrzAKOEpjFj net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.717
+    },
+    {
+      "device": "tablet",
+      "route": "/web-development/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        4187,
+        4187
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=yyWdkExaKIObjBNT net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=maGsBE8ZEfevRyaX net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.624
+    },
+    {
+      "device": "tablet",
+      "route": "/website-support/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        3516,
+        3516
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=oG8ev0q_NuLw5Rn4 net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.68
+    },
+    {
+      "device": "tablet",
+      "route": "/contact/",
+      "status": 200,
+      "h1": 1,
+      "textMatch": true,
+      "titleMatch": true,
+      "descMatch": true,
+      "headingsMatch": true,
+      "sectionsMatch": true,
+      "docH": [
+        2188,
+        2188
+      ],
+      "overflow": false,
+      "overflowers": [],
+      "imgCount": [
+        3,
+        3
+      ],
+      "brokenImgs": [],
+      "imgBoxesMatch": true,
+      "imgOrigins": [
+        "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev"
+      ],
+      "linksMatch": true,
+      "issues": [
+        "requestfailed: http://127.0.0.1:3001/?_rsc=h2vb-LAkAGynSY5z net::ERR_ABORTED",
+        "requestfailed: http://127.0.0.1:3001/?_rsc=mTa8tpfUvA8h8GpF net::ERR_ABORTED"
+      ],
+      "refIssues": [],
+      "pixelDiffPct": 0.365
+    },
+    {
+      "interaction": {
+        "device": "tablet",
+        "toggleVisible": true,
+        "servicesExpanded": "true",
+        "dropdownLinks": [
+          "/",
+          "/",
+          "/seo-services/",
+          "/ppc/",
+          "/website-design/",
+          "/web-development/",
+          "/website-support/",
+          "/contact/"
+        ],
+        "afterEscape": "false",
+        "focusReturned": true,
+        "faqCount": 5,
+        "faqOpens": true,
+        "navToContact": "http://127.0.0.1:3001/contact",
+        "skipLink": "#main",
+        "mainId": 1,
+        "notFound": 404,
+        "notFoundText": "Skip to content\nMenu\n+\nPage not found\n\nThe page you requested could not be found.\n\nHome\nContact\n\nYOUR NEXT CHAPTER\n\nGood things start\nwith a conversation.\n↗\n\nDesign. Support. Traffic.\nDigital marketin"
+      }
+    }
+  ],
+  "links": {
+    "#main": "non-http",
+    "#planning": "non-http",
+    "#process": "non-http",
+    "#top": "non-http",
+    "/": "200",
+    "/contact/": "308 -> /contact",
+    "/ppc/": "308 -> /ppc",
+    "/seo-services/": "308 -> /seo-services",
+    "/web-development/": "308 -> /web-development",
+    "/website-design/": "308 -> /website-design",
+    "/website-support/": "308 -> /website-support",
+    "tel:+18009830668": "non-http"
+  }
+}

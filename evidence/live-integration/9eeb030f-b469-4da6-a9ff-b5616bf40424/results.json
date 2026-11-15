@@ -1,0 +1,43 @@
+{
+  "runID": "9eeb030f-b469-4da6-a9ff-b5616bf40424",
+  "started": "2026-11-14T06:53:04.410Z",
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "credentialsArchived": false,
+  "readOnlyRetries": 1,
+  "integration": "FAIL",
+  "failedStage": "Chromium public R2 upload",
+  "errorType": "NoSuchKey",
+  "errorSummary": "The specified key does not exist.",
+  "cleanup": "PASS",
+  "finalCounts": {
+    "users": 0,
+    "users_sessions": 0,
+    "pages": 0,
+    "_pages_v": 0,
+    "posts": 0,
+    "_posts_v": 0,
+    "media": 0,
+    "site_settings": 0,
+    "payload_migrations": 1
+  },
+  "ownedFixtureIDs": [
+    {
+      "collection": "pages",
+      "id": 1
+    },
+    {
+      "collection": "media",
+      "id": 1
+    }
+  ],
+  "finished": "2026-11-14T06:53:33.126Z",
+  "stages": [
+    "approved targets and empty POC content verified",
+    "public first-register denied on empty remote database",
+    "CLI admin bootstrap with memory-only random credentials",
+    "Chromium page creation and publication; authenticated update",
+    "private upload rejected before any R2 object or media record",
+    "owned content, images, R2 objects and temporary administrator removed; settings restored"
+  ]
+}

@@ -1,0 +1,18 @@
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+- Environments: .env
+✓ Ready in 679ms
+✓ Running next.config.mjs took 55ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+✓ Generated AGENTS.md for AI agents. Set `agentRules: false` in next.config to disable.
+○ Compiling / ...
+ GET / 200 in 483ms (next.js: 237ms, application-code: 246ms)
+○ Compiling /admin/[[...segments]] ...
+ GET /admin 200 in 10.3s (next.js: 5.6s, application-code: 4.7s)
+○ Compiling /api/[...slug] ...
+ GET /api/pages 200 in 4.0s (next.js: 3.8s, application-code: 216ms)
+ GET /content 200 in 140ms (next.js: 60ms, application-code: 80ms)
+[?25h

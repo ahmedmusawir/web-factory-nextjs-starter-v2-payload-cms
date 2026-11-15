@@ -1,0 +1,106 @@
+
+> stark-web-factory-starter@0.1.0 start
+> next start --hostname 127.0.0.1 -p 3001
+
+▲ Next.js 16.4.3
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+✓ Ready in 200ms
+✓ Running next.config.mjs took 28ms
+[15:58:14] [31mERROR[39m: [36mUser creation requires an administrator. Use the operator CLI for initial setup.[39m
+    err: {
+      "type": "",
+      "message": "User creation requires an administrator. Use the operator CLI for initial setup.",
+      "stack":
+          APIError: User creation requires an administrator. Use the operator CLI for initial setup.
+              at d.s.hooks.beforeChange (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:1:4032)
+              at T (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:55463)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async aD (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:142795)
+              at async aE (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:143469)
+              at async includes.d.handler (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:131983)
+              at async v (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:25826)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:44607
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+              at async r0.executeRequest (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:17556)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 403,
+      "name": "APIError"
+    }
+[15:58:14] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:00:11] [32mINFO[39m: [36mNot Found[39m
+[16:00:11] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:00:11] [31mERROR[39m: [36mYou are not allowed to perform this action.[39m
+    err: {
+      "type": "GraphQLError",
+      "message": "You are not allowed to perform this action.",
+      "stack":
+          Forbidden: You are not allowed to perform this action.
+              at d (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:147:214272)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async aI (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:147:174934)
+              at async resolve (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:51244)
+              at async Promise.all (index 1)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:64320
+              at async s.context.headers (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:64557)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:61915
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+              at async r0.executeRequest (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:17556)
+      "path": [
+        "versionsPages"
+      ],
+      "locations": [
+        {
+          "line": 1,
+          "column": 85
+        }
+      ],
+      "extensions": {}
+    }
+[16:00:25] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:00:25] [31mERROR[39m: [36mThis R2 bucket is public. Explicitly choose public visibility; private uploads and making published objects private are not supported.[39m
+    err: {
+      "type": "",
+      "message": "This R2 bucket is public. Explicitly choose public visibility; private uploads and making published objects private are not supported.",
+      "stack":
+          APIError: This R2 bucket is public. Explicitly choose public visibility; private uploads and making published objects private are not supported.
+              at /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:1:8759
+              at hooks.beforeChange (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:1:5109)
+              at T (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:55463)
+              at async bJ (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:157994)
+              at async includes.d.handler (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:131983)
+              at async v (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:25826)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:44607
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+              at async r0.executeRequest (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:17556)
+              at async Z (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/_0ks3o5n_dq46w._.js:1:3737)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 400,
+      "name": "APIError"
+    }
+[16:00:33] [31mERROR[39m: [36mThis R2 bucket is public. Explicitly choose public visibility; private uploads and making published objects private are not supported.[39m
+    err: {
+      "type": "",
+      "message": "This R2 bucket is public. Explicitly choose public visibility; private uploads and making published objects private are not supported.",
+      "stack":
+          APIError: This R2 bucket is public. Explicitly choose public visibility; private uploads and making published objects private are not supported.
+              at /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:1:8759
+              at hooks.beforeChange (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:1:5109)
+              at a2 (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:97458)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async a4 (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:107930)
+              at async handler (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:163573)
+              at async includes.d.handler (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:131983)
+              at async v (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:25826)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:44607
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 400,
+      "name": "APIError"
+    }

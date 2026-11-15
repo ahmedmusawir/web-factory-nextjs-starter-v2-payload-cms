@@ -1,0 +1,7 @@
+{
+  "status": "INTERRUPTED",
+  "processExit": 143,
+  "lastStage": "approved target and imported page count verification",
+  "browserWorkflow": "NOT RUN",
+  "note": "Harness terminated before returning results; its two known task-owned loopback servers were stopped. No temporary admin or editorial edits had begun."
+}

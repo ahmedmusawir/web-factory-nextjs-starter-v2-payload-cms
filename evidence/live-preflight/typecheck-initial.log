@@ -1,0 +1,10 @@
+
+> stark-web-factory-starter@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully
+tests/unit/load-env.test.ts(20,74): error TS2769: No overload matches this call.
+  Overload 3 of 8, '(command: string, args?: readonly string[] | undefined, options?: SpawnSyncOptions | undefined): SpawnSyncReturns<string | NonSharedBuffer>', gave the following error.
+    Type 'string | null' is not assignable to type '"development" | "production" | "test"'.
+      Type 'null' is not assignable to type '"development" | "production" | "test"'.

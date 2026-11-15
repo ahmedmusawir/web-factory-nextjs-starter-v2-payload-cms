@@ -1,0 +1,283 @@
+[
+  {
+    "name": "anonymous /admin redirects to login",
+    "status": "PASS",
+    "detail": "/admin/login"
+  },
+  {
+    "name": "admin login in Chromium",
+    "status": "PASS"
+  },
+  {
+    "name": "admin view: users",
+    "status": "PASS",
+    "detail": {
+      "status": 200,
+      "heading": "Users",
+      "rows": 1
+    }
+  },
+  {
+    "name": "admin view: pages",
+    "status": "PASS",
+    "detail": {
+      "status": 200,
+      "heading": "Pages",
+      "rows": 7
+    }
+  },
+  {
+    "name": "admin view: posts",
+    "status": "PASS",
+    "detail": {
+      "status": 200,
+      "heading": "Posts",
+      "rows": 0
+    }
+  },
+  {
+    "name": "admin view: media",
+    "status": "PASS",
+    "detail": {
+      "status": 200,
+      "heading": "Media",
+      "rows": 10
+    }
+  },
+  {
+    "name": "admin view: site-settings",
+    "status": "PASS",
+    "detail": {
+      "status": 200,
+      "heading": "Site Settings",
+      "rows": 0
+    }
+  },
+  {
+    "name": "site settings shows stored name",
+    "status": "PASS",
+    "detail": "Cyberize Group"
+  },
+  {
+    "name": "existing page opens with stored heading",
+    "status": "PASS",
+    "detail": "Digital marketing."
+  },
+  {
+    "name": "Save Draft",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "public page unchanged while draft exists",
+    "status": "PASS",
+    "detail": "Digital marketing. / All connected."
+  },
+  {
+    "name": "anonymous REST published doc unchanged",
+    "status": "PASS"
+  },
+  {
+    "name": "anonymous cannot read draft via /api/pages/2?draft=true",
+    "status": "PASS",
+    "detail": 404
+  },
+  {
+    "name": "anonymous cannot read draft via /api/pages?draft=true&where[slug][equals]=home",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "anonymous cannot read draft via /api/pages/versions?limit=5",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "anonymous cannot read draft via /api/pages/2/versions",
+    "status": "PASS",
+    "detail": 404
+  },
+  {
+    "name": "anonymous GraphQL does not expose draft",
+    "status": "PASS",
+    "detail": "200 {\"errors\":[{\"extensions\":{\"name\":\"Forbidden\",\"statusCode\":403},\"locations\":[{\"line\":1,\"column\":85}],\"message\":\"You are not allowed to perform this action.\",\"pat"
+  },
+  {
+    "name": "anonymous /preview/home denied",
+    "status": "PASS",
+    "detail": 404
+  },
+  {
+    "name": "admin Preview control present",
+    "status": "PASS",
+    "detail": "A /preview/home"
+  },
+  {
+    "name": "authorized preview shows draft heading",
+    "status": "PASS",
+    "detail": "QA Claudy heading mwg8ig48 / All connected."
+  },
+  {
+    "name": "Turso: published row keeps original, latest version row holds draft",
+    "status": "PASS",
+    "detail": {
+      "published": "Digital marketing.",
+      "latestVersion": {
+        "id": 14,
+        "st": "draft",
+        "hero_heading": "QA Claudy heading mwg8ig48"
+      }
+    }
+  },
+  {
+    "name": "Publish changes",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "public page shows published heading without rebuild",
+    "status": "PASS",
+    "detail": "QA Claudy heading mwg8ig48 / All connected."
+  },
+  {
+    "name": "Turso: published row now holds new heading",
+    "status": "PASS"
+  },
+  {
+    "name": "R2 objects before upload",
+    "status": "PASS",
+    "detail": 24
+  },
+  {
+    "name": "anonymous upload denied",
+    "status": "PASS",
+    "detail": 403
+  },
+  {
+    "name": "private upload to public bucket rejected",
+    "status": "PASS",
+    "detail": 400
+  },
+  {
+    "name": "denied/rejected uploads created no R2 objects or rows",
+    "status": "PASS",
+    "detail": 24
+  },
+  {
+    "name": "upload disposable image through Payload admin UI",
+    "status": "PASS",
+    "detail": {
+      "status": 201,
+      "id": 13,
+      "objectKey": "stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60.png"
+    }
+  },
+  {
+    "name": "R2 object exists: stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60.png",
+    "status": "PASS",
+    "detail": {
+      "exists": true,
+      "size": 8593,
+      "type": "image/png"
+    }
+  },
+  {
+    "name": "R2 object exists: stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60-400x300.png",
+    "status": "PASS",
+    "detail": {
+      "exists": true,
+      "size": 2476,
+      "type": "image/png"
+    }
+  },
+  {
+    "name": "Turso media metadata row",
+    "status": "PASS",
+    "detail": {
+      "id": 13,
+      "alt": "QA Claudy disposable mwg8j08s",
+      "visibility": "public",
+      "prefix": "stark-poc",
+      "object_key": "stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60.png",
+      "filename": "7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60.png",
+      "mime_type": "image/png",
+      "width": 800,
+      "height": 600,
+      "filesize": 8593,
+      "url": "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev/stark-poc/7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60.png",
+      "sizes_thumbnail_filename": "7361f49c-1ca7-4f9c-8f4e-7ff5b6d36b60-400x300.png"
+    }
+  },
+  {
+    "name": "public r2.dev delivery returns identical bytes",
+    "status": "PASS",
+    "detail": {
+      "status": 200,
+      "type": "image/png"
+    }
+  },
+  {
+    "name": "public thumbnail delivery",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "new bytes not written to local media dirs",
+    "status": "PASS"
+  },
+  {
+    "name": "public→private change rejected",
+    "status": "PASS",
+    "detail": 400
+  },
+  {
+    "name": "client cannot rewrite objectKey/prefix",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "create published disposable post with image relationship",
+    "status": "PASS",
+    "detail": 201
+  },
+  {
+    "name": "Turso: post→media relationship stored",
+    "status": "PASS",
+    "detail": {
+      "featured_image_id": 13,
+      "_status": "published"
+    }
+  },
+  {
+    "name": "anonymous read resolves post→media relationship",
+    "status": "PASS"
+  },
+  {
+    "name": "public post detail route",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "/content lists published post",
+    "status": "PASS",
+    "detail": 200
+  },
+  {
+    "name": "admin browser console/network issues",
+    "status": "INFO",
+    "detail": [
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: www.gravatar.com",
+      "external request: ",
+      "external request: www.gravatar.com"
+    ]
+  }
+]

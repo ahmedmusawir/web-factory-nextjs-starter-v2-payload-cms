@@ -1,0 +1,22 @@
+{
+  "scope": "This live resume only. Prior foundation/R2/preflight changes were already uncommitted.",
+  "modified": [
+    "README.md",
+    "cms/collections.ts",
+    "payload-types.ts",
+    "scripts/check-storage-schema.ts",
+    "scripts/verify-local.ts",
+    "tests/home.spec.ts",
+    "tests/monaco.spec.ts",
+    "docs/CLOUD-SETUP.md",
+    "docs/MISSION-001-HANDOFF.md",
+    "docs/DEPENDENCY-SECURITY.md"
+  ],
+  "added": [
+    "scripts/verify-remote.ts",
+    "docs/archive/MISSION-001-before-live.md",
+    "evidence/live-integration/"
+  ],
+  "migrationChanges": false,
+  "environmentFileEdited": false
+}

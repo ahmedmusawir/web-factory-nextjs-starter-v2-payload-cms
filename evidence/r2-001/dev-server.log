@@ -1,0 +1,15 @@
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+- Environments: .env
+✓ Ready in 677ms
+✓ Running next.config.mjs took 41ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+ GET / 200 in 529ms (next.js: 271ms, application-code: 258ms)
+○ Compiling /admin/[[...segments]] ...
+ GET /admin 200 in 8.5s (next.js: 4.0s, application-code: 4.5s)
+ GET /api/pages 200 in 4.4s (next.js: 4.2s, application-code: 194ms)
+ GET /content 200 in 121ms (next.js: 48ms, application-code: 73ms)
+[?25h

@@ -1,0 +1,10 @@
+
+> stark-web-factory-starter@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully
+cms/collections.ts(10,5): error TS2322: Type 'Access' is not assignable to type '({ req }: { req: PayloadRequest; }) => boolean | Promise<boolean>'.
+  Type 'AccessResult | Promise<AccessResult>' is not assignable to type 'boolean | Promise<boolean>'.
+    Type 'Where' is not assignable to type 'boolean | Promise<boolean>'.
+      Type 'Where' is missing the following properties from type 'Promise<boolean>': then, catch, finally, [Symbol.toStringTag]

@@ -1,0 +1,107 @@
+
+> stark-web-factory-starter@0.1.0 start
+> next start --hostname 127.0.0.1 -p 3001
+
+▲ Next.js 16.4.3
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+✓ Ready in 179ms
+✓ Running next.config.mjs took 30ms
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mNot Found[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:04] [31mERROR[39m: [36mYou are not allowed to perform this action.[39m
+    err: {
+      "type": "GraphQLError",
+      "message": "You are not allowed to perform this action.",
+      "stack":
+          Forbidden: You are not allowed to perform this action.
+              at d (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:147:214272)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async aE (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:147:166275)
+              at async resolve (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:46263)
+              at async Promise.all (index 0)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:64320
+              at async s.context.headers (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:64557)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:61915
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+              at async r0.executeRequest (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:17556)
+      "path": [
+        "Users"
+      ],
+      "locations": [
+        {
+          "line": 1,
+          "column": 3
+        }
+      ],
+      "extensions": {}
+    }
+[16:02:04] [31mERROR[39m: [36mYou are not allowed to perform this action.[39m
+    err: {
+      "type": "GraphQLError",
+      "message": "You are not allowed to perform this action.",
+      "stack":
+          Forbidden: You are not allowed to perform this action.
+              at d (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:147:214272)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async aH (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:147:199859)
+              at async resolve (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:48256)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:64320
+              at async s.context.headers (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:64557)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:61915
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+              at async r0.executeRequest (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:17556)
+              at async X (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__17tb-tf00we48._.js:1:68599)
+      "path": [
+        "updatePost"
+      ],
+      "locations": [
+        {
+          "line": 1,
+          "column": 12
+        }
+      ],
+      "extensions": {}
+    }
+[16:02:05] [31mERROR[39m: [36mThe email or password provided is incorrect.[39m
+    err: {
+      "type": "w",
+      "message": "The email or password provided is incorrect.",
+      "stack":
+          AuthenticationError: The email or password provided is incorrect.
+              at aW (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:27171)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async ac (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:135551)
+              at async includes.d.handler (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/ssr/_1k4saxz2q-9sd._.js:145:131983)
+              at async v (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:25826)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/[root-of-the-server]__0l4t5e_fsamcz._.js:116:44607
+              at async r0.renderToResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:14399)
+              at async r0.executeRequest (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:5:17556)
+              at async Z (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next/server/chunks/_0ks3o5n_dq46w._.js:1:3737)
+              at async r0.handleResponse (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.prod.js:1:134324)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "AuthenticationError"
+    }
+[16:02:06] [32mINFO[39m: [36mNot Found[39m
+[16:02:07] [32mINFO[39m: [36mNot Found[39m
+[16:02:11] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:11] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:11] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[16:02:12] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m

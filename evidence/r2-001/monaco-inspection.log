@@ -1,0 +1,12 @@
+{
+  "installedMonaco": "0.57.0",
+  "bundledVersion": "3.4.15",
+  "scannedJSFiles": 69,
+  "markerCounts": {
+    "DOMPurify": 0,
+    "SAFE_FOR_TEMPLATES": 0,
+    "3.4.15": 0,
+    "cdn.jsdelivr.net/npm/monaco-editor@0.55.1": 1
+  },
+  "traceMatches": 0
+}

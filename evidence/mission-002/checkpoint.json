@@ -1,0 +1,11 @@
+{
+  "branch": "feat/p1-payload-turso-gcs-poc",
+  "head": "7715f6de3850e210b5b52a5049a6f1144a50c04c",
+  "gitVisibleFiles": 271,
+  "sourceFilesArchived": 59,
+  "archive": ".data/checkpoints/mission-001/source.tar.gz",
+  "archiveSHA256": "20703f02967859354b101ad921f82b5f90fa2e0bdedc7eebe8b18c537d4096e7",
+  "secretsAndDatabasesExcluded": true,
+  "evidencePreservation": "Original evidence stays in place; SHA-256 inventory recorded",
+  "priorChanges": "Existing uncommitted Mission 001 foundation, not discarded or committed"
+}

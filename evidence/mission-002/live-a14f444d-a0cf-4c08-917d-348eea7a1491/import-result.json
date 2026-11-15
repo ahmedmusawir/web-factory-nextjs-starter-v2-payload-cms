@@ -1,0 +1,88 @@
+{
+  "created": [],
+  "skipped": [
+    "web-factory-poc-site-1:media:conversation.svg",
+    "web-factory-poc-site-1:media:logo.png",
+    "web-factory-poc-site-1:media:agency-connected.svg",
+    "web-factory-poc-site-1:media:search-field.svg",
+    "web-factory-poc-site-1:media:click-path.svg",
+    "web-factory-poc-site-1:media:campaign-plan.svg",
+    "web-factory-poc-site-1:media:seo-routes.svg",
+    "web-factory-poc-site-1:media:content-constellation.svg",
+    "web-factory-poc-site-1:media:connected-web.svg",
+    "web-factory-poc-site-1:media:design-lab.svg",
+    "web-factory-poc-site-1:media:development-bridge.svg",
+    "web-factory-poc-site-1:media:care-detail.svg",
+    "web-factory-poc-site-1:page:contact",
+    "web-factory-poc-site-1:page:home",
+    "web-factory-poc-site-1:page:ppc",
+    "web-factory-poc-site-1:page:seo-services",
+    "web-factory-poc-site-1:page:web-development",
+    "web-factory-poc-site-1:page:website-design",
+    "web-factory-poc-site-1:page:website-support",
+    "web-factory-poc-site-1:settings"
+  ],
+  "conflicts": [],
+  "media": [
+    {
+      "source": "conversation.svg",
+      "id": 1,
+      "key": "stark-poc/web-factory-poc-site-1/0d356135-b986-41f2-991c-18eab5e17940.png"
+    },
+    {
+      "source": "logo.png",
+      "id": 2,
+      "key": "stark-poc/web-factory-poc-site-1/4df321b0-32a5-41dd-9e38-54b6e6977467.png"
+    },
+    {
+      "source": "agency-connected.svg",
+      "id": 3,
+      "key": "stark-poc/web-factory-poc-site-1/617c7456-b5b7-4b58-81c6-e0795ed055a3.png"
+    },
+    {
+      "source": "search-field.svg",
+      "id": 4,
+      "key": "stark-poc/web-factory-poc-site-1/3206f9f8-7d6a-440d-9220-c4a927fb9895.png"
+    },
+    {
+      "source": "click-path.svg",
+      "id": 5,
+      "key": "stark-poc/web-factory-poc-site-1/65070a41-5b20-415b-911e-e15caa4be163.png"
+    },
+    {
+      "source": "campaign-plan.svg",
+      "id": 6,
+      "key": "stark-poc/web-factory-poc-site-1/9714713f-09ea-41c0-8c8e-20f675d402ba.png"
+    },
+    {
+      "source": "seo-routes.svg",
+      "id": 7,
+      "key": "stark-poc/web-factory-poc-site-1/20f3ee5d-d06c-4112-b77a-12aac737484a.png"
+    },
+    {
+      "source": "content-constellation.svg",
+      "id": 8,
+      "key": "stark-poc/web-factory-poc-site-1/11412938-ca41-4196-a5df-784e194cddfc.png"
+    },
+    {
+      "source": "connected-web.svg",
+      "id": 9,
+      "key": "stark-poc/web-factory-poc-site-1/773627f5-bbed-4e1f-9d61-45efb228099c.png"
+    },
+    {
+      "source": "design-lab.svg",
+      "id": 10,
+      "key": "stark-poc/web-factory-poc-site-1/b63ba912-e954-460a-b0a5-e779bf277f71.png"
+    },
+    {
+      "source": "development-bridge.svg",
+      "id": 11,
+      "key": "stark-poc/web-factory-poc-site-1/b1495123-ec8f-4a07-9f64-bf8ea448e7b5.png"
+    },
+    {
+      "source": "care-detail.svg",
+      "id": 12,
+      "key": "stark-poc/web-factory-poc-site-1/e682c9f7-4e29-4bb9-b21c-b1ece4a6d027.png"
+    }
+  ]
+}

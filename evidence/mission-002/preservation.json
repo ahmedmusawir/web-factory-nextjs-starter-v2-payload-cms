@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "priorEvidenceAndFoundationFilesVerified": 218,
+  "referenceFilesVerified": 34,
+  "referenceGitStatusUnchanged": true,
+  "gitVisibleFilesScanned": 476,
+  "configuredSecretsFound": 0,
+  "gitVisibleEnvironmentOrDatabaseFiles": 0,
+  "environmentIgnored": true,
+  "environmentMode": "600"
+}

@@ -1,0 +1,31 @@
+
+> stark-web-factory-starter@0.1.0 check:generated
+> node --import tsx scripts/check-generated.ts
+
+[11:14:26] [32mINFO[39m: [36mCompiling TS types for Collections and Globals...[39m
+payload-types.ts: consistent (dd4a5a50d1dcd5f3a882d38f1379dc610be515d6d4e1ba9dc240cc61a70677ee)
+Generating import map
+Writing import map to /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/app/(payload)/admin/importMap.js
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: app/(payload)/admin/importMap.js was stale; generated output has been refreshed
++ actual - expected
+
++ '2abd2188b1ca36932e4baee75be0530e46b70f6251eb4b0b9169648fe882ae97'
+- '3fe1f0b552f2670822189957199811ae2e77e392a0a044accbeaf3c2c0b8ef71'
+
+    at <anonymous> (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/scripts/check-generated.ts:11:10)
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: '2abd2188b1ca36932e4baee75be0530e46b70f6251eb4b0b9169648fe882ae97',
+  expected: '3fe1f0b552f2670822189957199811ae2e77e392a0a044accbeaf3c2c0b8ef71',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.23.5

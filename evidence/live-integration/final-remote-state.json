@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-11-14T06:55:47.360Z",
+  "verification": "PASS",
+  "readOnly": true,
+  "database": "web-factory-v2-poc-db",
+  "bucket": "stark-web-factory-poc-media",
+  "counts": {
+    "_pages_v": 0,
+    "_posts_v": 0,
+    "media": 0,
+    "pages": 0,
+    "payload_kv": 0,
+    "payload_locked_documents": 0,
+    "payload_locked_documents_rels": 0,
+    "payload_migrations": 1,
+    "payload_preferences": 0,
+    "payload_preferences_rels": 0,
+    "posts": 0,
+    "site_settings": 1,
+    "users": 0,
+    "users_sessions": 0
+  },
+  "bucketEmpty": true,
+  "settingsRestored": [
+    {
+      "website_name": "Stark Web Factory",
+      "website_description": null,
+      "logo_id": null
+    }
+  ],
+  "migrations": [
+    {
+      "name": "20261114_040213_foundation",
+      "batch": 1
+    }
+  ]
+}

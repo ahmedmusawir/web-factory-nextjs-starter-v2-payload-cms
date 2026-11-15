@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "cache": "HIT"
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "cache": "HIT"
+    },
+    {
+      "path": "/seo-services",
+      "status": 200,
+      "cache": "HIT"
+    },
+    {
+      "path": "/admin/login",
+      "status": 200,
+      "cache": null
+    },
+    {
+      "path": "/api/posts?limit=1",
+      "status": 200,
+      "cache": null
+    }
+  ]
+}

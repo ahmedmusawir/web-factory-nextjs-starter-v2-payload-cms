@@ -1,0 +1,11 @@
+import { db, q } from './lib.mjs'
+const c = db()
+const tables = (await q(c, "select name from sqlite_master where type='table' and name not like 'sqlite_%' order by name")).map(r => r.name)
+for (const t of tables) console.log(t, (await q(c, `select count(*) n from "${t}"`))[0].n)
+console.log('migrations', JSON.stringify(await q(c, 'select name,batch,created_at from payload_migrations')))
+console.log('pages', JSON.stringify(await q(c, 'select id,slug,title,template,_status,updated_at from pages order by id')))
+console.log('media cols', (await q(c, 'pragma table_info(media)')).map(r => r.name).join(','))
+console.log('media', JSON.stringify(await q(c, 'select id,filename,mime_type,width,height,filesize,visibility,prefix,object_key,sizes_thumbnail_filename,updated_at from media order by id')))
+console.log('settings', JSON.stringify(await q(c, 'select * from site_settings')))
+console.log('users', JSON.stringify(await q(c, 'select id,email,role,created_at from users')))
+console.log('pages_sections cols', (await q(c, 'pragma table_info(pages_sections)')).map(r => r.name).join(','))

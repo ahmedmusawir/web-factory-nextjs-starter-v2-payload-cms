@@ -1,0 +1,6 @@
+PASS: Chromium temporary administrator login; Tony administrator untouched
+PASS: seven original pages, blog listing and article return full-route cache HIT
+PASS: page/article cache hits, 30-second regeneration, draft isolation, preview and publish invalidation
+PASS: 12 full articles and inline/featured images render in desktop/mobile Chromium
+PASS: published articles survive fresh-server restart
+Evidence: evidence/mission-003/live-0de8404b-7d79-487c-88bc-91bf7014c808

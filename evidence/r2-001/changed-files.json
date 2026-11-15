@@ -1,0 +1,31 @@
+{
+  "basis": "Compared with files present at the start of R2-001, not just Git HEAD. Prior P1 implementation was already uncommitted.",
+  "modified": [
+    ".env.example",
+    "README.md",
+    "app/(payload)/admin/importMap.js",
+    "cms/collections.ts",
+    "cms/environment.ts",
+    "docs/CLOUD-SETUP.md",
+    "docs/DEPENDENCY-SECURITY.md",
+    "docs/MISSION-001-HANDOFF.md",
+    "package-lock.json",
+    "package.json",
+    "payload.config.ts",
+    "playwright.config.ts",
+    "scripts/check-storage-schema.ts",
+    "scripts/smoke-dev.ts",
+    "scripts/verify-local.ts",
+    "tests/home.spec.ts",
+    "tests/unit/environment.test.ts"
+  ],
+  "added": [
+    "cms/r2.ts",
+    "docs/archive/DEPENDENCY-SECURITY-before-r2.md",
+    "scripts/inspect-monaco.mjs",
+    "tests/monaco.spec.ts",
+    "tests/unit/r2.test.ts"
+  ],
+  "removed": [],
+  "newEvidenceDirectory": "evidence/r2-001/"
+}

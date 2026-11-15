@@ -1,0 +1,80 @@
+
+> stark-web-factory-starter@0.1.0 test:unit
+> node --import tsx --test tests/unit/*.test.ts
+
+TAP version 13
+# Subtest: local SQLite/media needs no R2 credentials; test data remains isolated
+ok 1 - local SQLite/media needs no R2 credentials; test data remains isolated
+  ---
+  duration_ms: 1.29036
+  type: 'test'
+  ...
+# Subtest: rejects environment mismatch, traversal, missing secret and deployed local files
+ok 2 - rejects environment mismatch, traversal, missing secret and deployed local files
+  ---
+  duration_ms: 0.434579
+  type: 'test'
+  ...
+# Subtest: remote mode requires complete, identified Turso and R2 settings without fallback
+ok 3 - remote mode requires complete, identified Turso and R2 settings without fallback
+  ---
+  duration_ms: 1.400408
+  type: 'test'
+  ...
+# Subtest: CLI uses Next environment precedence, interpolation, shell isolation and test-mode rules
+ok 4 - CLI uses Next environment precedence, interpolation, shell isolation and test-mode rules
+  ---
+  duration_ms: 748.054592
+  type: 'test'
+  ...
+# Subtest: R2 URLs use delivery origin and stored prefix for originals/variants, with safe encoding
+ok 5 - R2 URLs use delivery origin and stored prefix for originals/variants, with safe encoding
+  ---
+  duration_ms: 1.102003
+  type: 'test'
+  ...
+# Subtest: actual collection hook rejects private R2 create/update before storage, preserves local privacy and keys
+ok 6 - actual collection hook rejects private R2 create/update before storage, preserves local privacy and keys
+  ---
+  duration_ms: 5.657626
+  type: 'test'
+  ...
+# Subtest: Lexical DOM helper remains compatible with the scoped Happy DOM security update
+ok 7 - Lexical DOM helper remains compatible with the scoped Happy DOM security update
+  ---
+  duration_ms: 19.860931
+  type: 'test'
+  ...
+# Subtest: reference mapping uses stored content/media and never a hardcoded editorial fallback
+ok 8 - reference mapping uses stored content/media and never a hardcoded editorial fallback
+  ---
+  duration_ms: 1.977742
+  type: 'test'
+  ...
+# Subtest: editorial link values reject script schemes and protocol-relative destinations
+ok 9 - editorial link values reject script schemes and protocol-relative destinations
+  ---
+  duration_ms: 0.449556
+  type: 'test'
+  ...
+# Subtest: WordPress sanitizer removes executable markup and URLs while retaining article structure
+ok 10 - WordPress sanitizer removes executable markup and URLs while retaining article structure
+  ---
+  duration_ms: 8.222185
+  type: 'test'
+  ...
+# Subtest: legacy WordPress image URLs become HTTPS without enabling protocol-relative links
+ok 11 - legacy WordPress image URLs become HTTPS without enabling protocol-relative links
+  ---
+  duration_ms: 1.344258
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1977.740255

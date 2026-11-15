@@ -1,0 +1,34 @@
+## feat/p1-payload-turso-gcs-poc
+ M .gitignore
+ M README.md
+ D app/globals.css
+ D app/layout.tsx
+ D app/page.tsx
+ M eslint.config.mjs
+ M next-env.d.ts
+ M package-lock.json
+ M package.json
+ M playwright.config.ts
+ M tests/home.spec.ts
+ M tsconfig.json
+?? .env.example
+?? .nvmrc
+?? AGENTS.md
+?? app/(frontend)/
+?? app/(payload)/
+?? cms/
+?? components/cyberize/
+?? content/poc-structure.json
+?? content/website.ts
+?? docs/
+?? evidence/
+?? migrations/
+?? next.config.mjs
+?? payload-types.ts
+?? payload.config.ts
+?? public/cyberize/
+?? scripts/
+?? tests/bootstrap.spec.ts
+?? tests/cms.spec.ts
+?? tests/monaco.spec.ts
+?? tests/unit/

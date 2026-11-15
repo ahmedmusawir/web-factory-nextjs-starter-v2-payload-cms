@@ -1,0 +1,280 @@
+{
+  "status": "PASS",
+  "counts": {
+    "users": 1,
+    "pages": 7,
+    "posts": 12,
+    "media": 56
+  },
+  "articles": [
+    {
+      "id": 4,
+      "wordpressID": 9628,
+      "slug": "the-ultimate-guide-to-acquiring-more-pizza-shop-customers",
+      "title": "The Ultimate Guide to Acquiring More Pizza Shop Customers",
+      "sourceURL": "https://cyberizegroup.com/the-ultimate-guide-to-acquiring-more-pizza-shop-customers/",
+      "publishedAt": "2024-10-14T10:44:15.000Z",
+      "featuredImage": 26,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 17775,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 55,
+        "paragraph": 46,
+        "list": 1,
+        "listitem": 1
+      }
+    },
+    {
+      "id": 3,
+      "wordpressID": 9645,
+      "slug": "how-to-rank-high-on-google-a-step-by-step-guide",
+      "title": "How to Rank High on Google: A Step-by-Step Guide",
+      "sourceURL": "https://cyberizegroup.com/how-to-rank-high-on-google-a-step-by-step-guide/",
+      "publishedAt": "2024-10-14T11:04:04.000Z",
+      "featuredImage": 21,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 23088,
+      "nodes": {
+        "root": 1,
+        "heading": 12,
+        "text": 160,
+        "paragraph": 151,
+        "upload": 4,
+        "list": 2,
+        "listitem": 4
+      }
+    },
+    {
+      "id": 12,
+      "wordpressID": 9653,
+      "slug": "content-scaling-strategies-for-growing-your-audience-and-reach",
+      "title": "Content Scaling: Strategies for Growing Your Audience and Reach",
+      "sourceURL": "https://cyberizegroup.com/content-scaling-strategies-for-growing-your-audience-and-reach/",
+      "publishedAt": "2024-09-26T06:40:35.000Z",
+      "featuredImage": 53,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 19698,
+      "nodes": {
+        "root": 1,
+        "heading": 9,
+        "text": 126,
+        "paragraph": 118,
+        "upload": 4,
+        "list": 2,
+        "listitem": 4
+      }
+    },
+    {
+      "id": 9,
+      "wordpressID": 9656,
+      "slug": "the-ultimate-seo-content-template-how-to-create-seo-friendly-content-in-minutes",
+      "title": "The Ultimate SEO Content Template: How to Create SEO-Friendly Content in Minutes",
+      "sourceURL": "https://cyberizegroup.com/the-ultimate-seo-content-template-how-to-create-seo-friendly-content-in-minutes/",
+      "publishedAt": "2024-10-03T08:18:53.000Z",
+      "featuredImage": 40,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 18208,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 135,
+        "paragraph": 129,
+        "upload": 4,
+        "list": 2,
+        "listitem": 4
+      }
+    },
+    {
+      "id": 6,
+      "wordpressID": 9657,
+      "slug": "what-is-a-sitemap-and-how-to-create-one-for-your-website",
+      "title": "What is a Sitemap and How to Create One for Your Website",
+      "sourceURL": "https://cyberizegroup.com/what-is-a-sitemap-and-how-to-create-one-for-your-website/",
+      "publishedAt": "2024-10-10T10:41:26.000Z",
+      "featuredImage": 28,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 15195,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 110,
+        "paragraph": 111,
+        "upload": 5,
+        "list": 2,
+        "listitem": 4
+      }
+    },
+    {
+      "id": 5,
+      "wordpressID": 9663,
+      "slug": "unlocking-the-power-of-seo-copywriting-what-you-need-to-know",
+      "title": "Unlocking the Power of SEO Copywriting: What You Need to Know",
+      "sourceURL": "https://cyberizegroup.com/unlocking-the-power-of-seo-copywriting-what-you-need-to-know/",
+      "publishedAt": "2024-10-14T10:19:50.000Z",
+      "featuredImage": 27,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 18212,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 67,
+        "paragraph": 55,
+        "list": 2,
+        "listitem": 4
+      }
+    },
+    {
+      "id": 7,
+      "wordpressID": 9664,
+      "slug": "how-to-write-seo-friendly-content-a-step-by-step-guide",
+      "title": "How to Write SEO-Friendly Content: A Step-by-Step Guide",
+      "sourceURL": "https://cyberizegroup.com/how-to-write-seo-friendly-content-a-step-by-step-guide/",
+      "publishedAt": "2024-10-10T10:02:11.000Z",
+      "featuredImage": 33,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 17467,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 125,
+        "paragraph": 128,
+        "upload": 4,
+        "list": 2,
+        "listitem": 4
+      }
+    },
+    {
+      "id": 10,
+      "wordpressID": 9666,
+      "slug": "10-proven-strategies-to-optimize-your-content-for-search-engines",
+      "title": "10 Proven Strategies to Optimize Your Content for Search Engines",
+      "sourceURL": "https://cyberizegroup.com/10-proven-strategies-to-optimize-your-content-for-search-engines/",
+      "publishedAt": "2024-10-02T09:40:05.000Z",
+      "featuredImage": 44,
+      "categories": [
+        "Online Marketing"
+      ],
+      "characters": 15778,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 112,
+        "paragraph": 109,
+        "upload": 4,
+        "list": 1,
+        "listitem": 1
+      }
+    },
+    {
+      "id": 2,
+      "wordpressID": 9673,
+      "slug": "boost-your-dental-practice-with-a-professional-seo-company",
+      "title": "Boost Your Dental Practice with a Professional SEO Company",
+      "sourceURL": "https://cyberizegroup.com/boost-your-dental-practice-with-a-professional-seo-company/",
+      "publishedAt": "2024-10-21T11:11:23.000Z",
+      "featuredImage": 16,
+      "categories": [
+        "Agency Services"
+      ],
+      "characters": 24970,
+      "nodes": {
+        "root": 1,
+        "heading": 10,
+        "text": 187,
+        "paragraph": 160,
+        "upload": 4,
+        "list": 3,
+        "listitem": 8
+      }
+    },
+    {
+      "id": 8,
+      "wordpressID": 9675,
+      "slug": "the-essential-guide-to-developing-a-winning-digital-marketing-strategy",
+      "title": "The Essential Guide to Developing a Winning Digital Marketing Strategy",
+      "sourceURL": "https://cyberizegroup.com/the-essential-guide-to-developing-a-winning-digital-marketing-strategy/",
+      "publishedAt": "2024-10-03T08:38:37.000Z",
+      "featuredImage": 37,
+      "categories": [
+        "Agency Services"
+      ],
+      "characters": 24810,
+      "nodes": {
+        "root": 1,
+        "heading": 10,
+        "text": 197,
+        "paragraph": 163,
+        "upload": 3,
+        "list": 3,
+        "listitem": 9,
+        "table": 1,
+        "tablerow": 8,
+        "tablecell": 8
+      }
+    },
+    {
+      "id": 11,
+      "wordpressID": 9686,
+      "slug": "maximize-your-elearning-roi-with-a-ppc-agency",
+      "title": "Maximize Your eLearning ROI with a PPC Agency",
+      "sourceURL": "https://cyberizegroup.com/maximize-your-elearning-roi-with-a-ppc-agency/",
+      "publishedAt": "2024-10-01T11:12:14.000Z",
+      "featuredImage": 48,
+      "categories": [
+        "Agency Services"
+      ],
+      "characters": 19514,
+      "nodes": {
+        "root": 1,
+        "heading": 8,
+        "text": 137,
+        "paragraph": 97,
+        "upload": 4,
+        "table": 1,
+        "tablerow": 8,
+        "tablecell": 8,
+        "list": 6,
+        "listitem": 17,
+        "quote": 4
+      }
+    },
+    {
+      "id": 1,
+      "wordpressID": 9687,
+      "slug": "garage-door-repair-ppc-agency-get-more-leads-sales-now",
+      "title": "Garage Door Repair PPC Agency – Get More Leads & Sales Now!",
+      "sourceURL": "https://cyberizegroup.com/garage-door-repair-ppc-agency-get-more-leads-sales-now/",
+      "publishedAt": "2024-10-22T11:00:30.000Z",
+      "featuredImage": 13,
+      "categories": [
+        "Agency Services"
+      ],
+      "characters": 13431,
+      "nodes": {
+        "root": 1,
+        "heading": 7,
+        "text": 85,
+        "paragraph": 81,
+        "upload": 3,
+        "list": 1,
+        "listitem": 1
+      }
+    }
+  ]
+}

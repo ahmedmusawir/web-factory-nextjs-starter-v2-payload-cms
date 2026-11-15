@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "priorEvidenceVerified": 465,
+  "referenceFilesVerified": 34,
+  "gitVisibleFilesScanned": 648,
+  "browserAssetsScanned": 76,
+  "configuredSecretsFound": 0,
+  "environmentIgnored": true
+}

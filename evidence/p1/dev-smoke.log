@@ -1,0 +1,8 @@
+[10:40:02] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[10:40:02] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[10:40:03] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (240ms)[39m
+[10:40:03] [32mINFO[39m: [36mDone.[39m
+PASS development HTTP /admin: 200
+PASS development HTTP /api/pages: 200
+PASS development HTTP /content: 200
+Development smoke passed; only the task-owned process group was stopped.

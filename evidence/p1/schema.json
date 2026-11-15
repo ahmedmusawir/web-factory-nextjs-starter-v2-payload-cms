@@ -1,0 +1,538 @@
+{
+  "_pages_v": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "parent_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "version_title",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_slug",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_content",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_seo_title",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_seo_description",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "version__status",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "latest",
+      "type": "INTEGER"
+    }
+  ],
+  "_posts_v": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "parent_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "version_title",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_slug",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_excerpt",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_content",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_featured_image_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "version_published_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_seo_title",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_seo_description",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "version_created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "version__status",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "latest",
+      "type": "INTEGER"
+    }
+  ],
+  "media": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "alt",
+      "type": "TEXT"
+    },
+    {
+      "column": "caption",
+      "type": "TEXT"
+    },
+    {
+      "column": "visibility",
+      "type": "TEXT"
+    },
+    {
+      "column": "prefix",
+      "type": "TEXT"
+    },
+    {
+      "column": "_objectkey",
+      "type": "TEXT"
+    },
+    {
+      "column": "object_key",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "url",
+      "type": "TEXT"
+    },
+    {
+      "column": "thumbnail_u_r_l",
+      "type": "TEXT"
+    },
+    {
+      "column": "filename",
+      "type": "TEXT"
+    },
+    {
+      "column": "mime_type",
+      "type": "TEXT"
+    },
+    {
+      "column": "filesize",
+      "type": "numeric"
+    },
+    {
+      "column": "width",
+      "type": "numeric"
+    },
+    {
+      "column": "height",
+      "type": "numeric"
+    },
+    {
+      "column": "focal_x",
+      "type": "numeric"
+    },
+    {
+      "column": "focal_y",
+      "type": "numeric"
+    },
+    {
+      "column": "sizes_thumbnail_url",
+      "type": "TEXT"
+    },
+    {
+      "column": "sizes_thumbnail_width",
+      "type": "numeric"
+    },
+    {
+      "column": "sizes_thumbnail_height",
+      "type": "numeric"
+    },
+    {
+      "column": "sizes_thumbnail_mime_type",
+      "type": "TEXT"
+    },
+    {
+      "column": "sizes_thumbnail_filesize",
+      "type": "numeric"
+    },
+    {
+      "column": "sizes_thumbnail_filename",
+      "type": "TEXT"
+    }
+  ],
+  "pages": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "title",
+      "type": "TEXT"
+    },
+    {
+      "column": "slug",
+      "type": "TEXT"
+    },
+    {
+      "column": "content",
+      "type": "TEXT"
+    },
+    {
+      "column": "seo_title",
+      "type": "TEXT"
+    },
+    {
+      "column": "seo_description",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "_status",
+      "type": "TEXT"
+    }
+  ],
+  "payload_kv": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "key",
+      "type": "TEXT"
+    },
+    {
+      "column": "data",
+      "type": "TEXT"
+    }
+  ],
+  "payload_locked_documents": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "global_slug",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    }
+  ],
+  "payload_locked_documents_rels": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "order",
+      "type": "INTEGER"
+    },
+    {
+      "column": "parent_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "path",
+      "type": "TEXT"
+    },
+    {
+      "column": "users_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "pages_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "posts_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "media_id",
+      "type": "INTEGER"
+    }
+  ],
+  "payload_migrations": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "name",
+      "type": "TEXT"
+    },
+    {
+      "column": "batch",
+      "type": "numeric"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    }
+  ],
+  "payload_preferences": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "key",
+      "type": "TEXT"
+    },
+    {
+      "column": "value",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    }
+  ],
+  "payload_preferences_rels": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "order",
+      "type": "INTEGER"
+    },
+    {
+      "column": "parent_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "path",
+      "type": "TEXT"
+    },
+    {
+      "column": "users_id",
+      "type": "INTEGER"
+    }
+  ],
+  "posts": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "title",
+      "type": "TEXT"
+    },
+    {
+      "column": "slug",
+      "type": "TEXT"
+    },
+    {
+      "column": "excerpt",
+      "type": "TEXT"
+    },
+    {
+      "column": "content",
+      "type": "TEXT"
+    },
+    {
+      "column": "featured_image_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "published_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "seo_title",
+      "type": "TEXT"
+    },
+    {
+      "column": "seo_description",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "_status",
+      "type": "TEXT"
+    }
+  ],
+  "site_settings": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "website_name",
+      "type": "TEXT"
+    },
+    {
+      "column": "website_description",
+      "type": "TEXT"
+    },
+    {
+      "column": "logo_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    }
+  ],
+  "users": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "role",
+      "type": "TEXT"
+    },
+    {
+      "column": "updated_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "email",
+      "type": "TEXT"
+    },
+    {
+      "column": "reset_password_token",
+      "type": "TEXT"
+    },
+    {
+      "column": "reset_password_expiration",
+      "type": "TEXT"
+    },
+    {
+      "column": "salt",
+      "type": "TEXT"
+    },
+    {
+      "column": "hash",
+      "type": "TEXT"
+    },
+    {
+      "column": "reset_password_requested_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "login_attempts",
+      "type": "numeric"
+    },
+    {
+      "column": "lock_until",
+      "type": "TEXT"
+    }
+  ],
+  "users_sessions": [
+    {
+      "column": "_order",
+      "type": "INTEGER"
+    },
+    {
+      "column": "_parent_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "id",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "TEXT"
+    },
+    {
+      "column": "expires_at",
+      "type": "TEXT"
+    }
+  ]
+}

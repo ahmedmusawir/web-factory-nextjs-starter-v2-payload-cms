@@ -1,0 +1,102 @@
+
+> stark-web-factory-starter@0.1.0 verify:local
+> node --import tsx scripts/verify-local.ts
+
+[11:15:55] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[11:15:55] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[11:15:55] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (227ms)[39m
+[11:15:55] [32mINFO[39m: [36mDone.[39m
+[2m[WebServer] [22m(node:521120) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:521139) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:521139) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register (2.1s)
+
+  1 passed (4.7s)
+Initial administrator created. Log in at /admin. Credentials were not logged.
+[2m[WebServer] [22m(node:521376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 2 workers
+
+(node:521395) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:521396) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:521395) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:521396) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+Browser admin login passed
+Page create form opened
+  ✘  3 [desktop] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts (14.5s)
+(node:521702) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:521702) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [desktop] › tests/home.spec.ts:3:1 › homepage, accessible navigation and responsive layout (1.0s)
+(node:521790) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:521790) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  5 [mobile] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+  -  6 [mobile] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence
+  -  7 [mobile] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts
+(node:521883) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (18.3s)
+(node:521883) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  8 [mobile] › tests/home.spec.ts:3:1 › homepage, accessible navigation and responsive layout (1.3s)
+
+
+  1) [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence ─
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('#field-title')[22m
+
+
+      40 |   await page.goto('/admin/collections/pages/create')
+      41 |   console.log('Page create form opened')
+    > 42 |   await page.locator('#field-title').fill('Mission pages')
+         |                                      ^
+      43 |   await page.locator('#field-slug').fill('mission-pages')
+      44 |   await page.locator('[contenteditable="true"]').first().fill('Persisted mission content.')
+      45 |   console.log('Page fields filled')
+        at /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/tests/cms.spec.ts:42:38
+
+    Error Context: test-results/cms-CMS-editing-authorization-media-and-restart-persistence-desktop/error-context.md
+
+  2) [desktop] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      24 |   // Hidden is a navigation setting, not proof that a collection's admin route is inaccessible.
+      25 |   await page.goto('/admin/collections/payload-preferences/create')
+    > 26 |   await expect.poll(() => blocked.some(url => /monaco/.test(url)), { timeout: 10000 }).toBe(true)
+         |   ^
+      27 |   writeFileSync('evidence/r2-001/monaco-browser.json', JSON.stringify({ normalWorkflowExternalRequests: normal, hiddenPreferencesExternalRequestsBlocked: blocked.slice(normal.length), externalNetworkAllowed: false, finding: 'Monaco loader reachable through authenticated hidden preferences JSON form; script download intercepted, exploit not tested.' }, null, 2) + '\n')
+      28 | })
+      29 |
+        at /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/tests/monaco.spec.ts:26:3
+
+    Error Context: test-results/monaco-characterize-Monaco-61b7e-t-contacting-external-hosts-desktop/error-context.md
+
+  2 failed
+    [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence ──
+    [desktop] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts 
+  4 skipped
+  2 passed (22.8s)

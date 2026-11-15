@@ -1,0 +1,33 @@
+{
+  "isr": [
+    {
+      "collection": "pages",
+      "firstCache": "MISS",
+      "repeatCache": "HIT",
+      "cmsReadsDuringHit": 0,
+      "timedRegeneration": true,
+      "draftPrivate": true,
+      "previewAuthenticated": true,
+      "publishInvalidated": true
+    },
+    {
+      "collection": "posts",
+      "firstCache": "MISS",
+      "repeatCache": "HIT",
+      "cmsReadsDuringHit": 0,
+      "timedRegeneration": true,
+      "draftPrivate": true,
+      "previewAuthenticated": true,
+      "publishInvalidated": true
+    }
+  ],
+  "status": "PASS",
+  "originalUsersPreserved": true,
+  "stages": [
+    "Chromium temporary administrator login; Tony administrator untouched",
+    "seven original pages, blog listing and article return full-route cache HIT",
+    "page/article cache hits, 30-second regeneration, draft isolation, preview and publish invalidation",
+    "12 full articles and inline/featured images render in desktop/mobile Chromium",
+    "published articles survive fresh-server restart"
+  ]
+}

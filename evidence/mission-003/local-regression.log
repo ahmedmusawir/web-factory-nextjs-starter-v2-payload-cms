@@ -1,0 +1,154 @@
+
+> stark-web-factory-starter@0.1.0 verify:local
+> node --import tsx scripts/verify-local.ts
+
+[13:01:34] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[13:01:34] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[13:01:34] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (356ms)[39m
+[13:01:34] [32mINFO[39m: [36mMigrating: 20261114_072417_website[39m
+[13:01:34] [32mINFO[39m: [36mMigrated:  20261114_072417_website (143ms)[39m
+[13:01:34] [32mINFO[39m: [36mMigrating: 20261115_065237_wordpress_blog[39m
+[13:01:34] [32mINFO[39m: [36mMigrated:  20261115_065237_wordpress_blog (53ms)[39m
+[13:01:34] [32mINFO[39m: [36mDone.[39m
+Website import: 20 created, 0 existing records preserved, 0 conflicts.
+▲ Next.js 16.4.3 (Turbopack)
+- Environments: .env.local
+✓ Running next.config.mjs took 40ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 42s
+  Running TypeScript ...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next-local-verification/types/**/*.ts'
+  	- include was updated to add '.next-local-verification/dev/types/**/*.ts'
+
+  Finished TypeScript in 15.0s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/6) ...
+  Generating static pages using 3 workers (1/6) 
+  Generating static pages using 3 workers (2/6) 
+  Generating static pages using 3 workers (4/6) 
+✓ Generating static pages using 3 workers (6/6) in 1173ms
+  Finalizing page optimization ...
+
+Route (app)                       Revalidate  Expire
+┌ ○ /                                    30s      1y
+├ ○ /_not-found
+├ ● /[slug]
+├ ƒ /admin/[[...segments]]
+├ ƒ /api/[...slug]
+├ ƒ /api/graphql
+├ ○ /blog                                30s      1y
+├ ● /blog/[slug]
+├ ○ /content                             30s      1y
+├ ● /content/[collection]/[slug]
+├ ƒ /health/ready
+├ ƒ /preview/[slug]
+└ ƒ /preview/posts/[slug]
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+[2m[WebServer] [22m(node:1251719) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+
+Running 1 test using 1 worker
+
+(node:1251738) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1251738) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register (3.3s)
+
+  1 passed (6.0s)
+Initial administrator created. Log in at /admin. Credentials were not logged.
+[2m[WebServer] [22m(node:1251990) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+
+Running 24 tests using 1 worker
+
+(node:1252011) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1252011) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -   1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+Browser admin login passed
+Page create form opened
+Page fields filled
+Page published through the browser and readable anonymously
+Image upload, variant metadata, private/public delivery and key protection passed
+Content, GraphQL, draft isolation, denied writes, upload limits and settings checks passed
+Editor can create content and cannot promote itself or create users
+  ✓   2 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (8.2s)
+  ✓   3 [desktop] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts (5.2s)
+(node:1252242) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1252242) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › tests/home.spec.ts:5:2 › home: route, content, navigation and canonical capture (1.6s)
+  ✓   5 [desktop] › tests/home.spec.ts:5:2 › seo: route, content, navigation and canonical capture (1.3s)
+  ✓   6 [desktop] › tests/home.spec.ts:5:2 › ppc: route, content, navigation and canonical capture (1.4s)
+  ✓   7 [desktop] › tests/home.spec.ts:5:2 › web-design: route, content, navigation and canonical capture (1.2s)
+  ✓   8 [desktop] › tests/home.spec.ts:5:2 › web-development: route, content, navigation and canonical capture (1.2s)
+  ✓   9 [desktop] › tests/home.spec.ts:5:2 › website-support: route, content, navigation and canonical capture (1.1s)
+  ✓  10 [desktop] › tests/home.spec.ts:5:2 › contact: route, content, navigation and canonical capture (1.1s)
+  ✓  11 [desktop] › tests/home.spec.ts:18:1 › 404, menu keyboard and FAQ (1.4s)
+  ✓  12 [desktop] › tests/home.spec.ts:30:1 › image fallback retains accessible label and dimensions (612ms)
+(node:1252492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1252492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  13 [mobile] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+  -  14 [mobile] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence
+  -  15 [mobile] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts
+(node:1252594) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1252594) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [mobile] › tests/home.spec.ts:5:2 › home: route, content, navigation and canonical capture (1.2s)
+  ✓  17 [mobile] › tests/home.spec.ts:5:2 › seo: route, content, navigation and canonical capture (845ms)
+  ✓  18 [mobile] › tests/home.spec.ts:5:2 › ppc: route, content, navigation and canonical capture (1.1s)
+  ✓  19 [mobile] › tests/home.spec.ts:5:2 › web-design: route, content, navigation and canonical capture (842ms)
+  ✓  20 [mobile] › tests/home.spec.ts:5:2 › web-development: route, content, navigation and canonical capture (828ms)
+  ✓  21 [mobile] › tests/home.spec.ts:5:2 › website-support: route, content, navigation and canonical capture (822ms)
+  ✓  22 [mobile] › tests/home.spec.ts:5:2 › contact: route, content, navigation and canonical capture (706ms)
+  ✓  23 [mobile] › tests/home.spec.ts:18:1 › 404, menu keyboard and FAQ (1.3s)
+  ✓  24 [mobile] › tests/home.spec.ts:30:1 › image fallback retains accessible label and dimensions (553ms)
+
+  4 skipped
+  20 passed (39.5s)
+[2m[WebServer] [22m(node:1252846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+
+Running 1 test using 1 worker
+
+(node:1252872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1252872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Browser admin login passed
+  ✓  1 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (3.1s)
+
+  1 passed (5.8s)
+[13:03:54] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[13:03:55] [32mINFO[39m: [36mDone.[39m
+[13:04:00] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+┌────────────────────────────────┬───────┬─────┐
+│[37m [0m[01m                          Name[0m │[37m [0m[01mBatch[0m │[37m [0m[01mRan[0m │
+├────────────────────────────────┼───────┼─────┤
+│[37m [0m[32m    20261114_040213_foundation[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+│[37m [0m[32m       20261114_072417_website[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+│[37m [0m[32m20261115_065237_wordpress_blog[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+└────────────────────────────────┴───────┴─────┘
+[13:04:00] [32mINFO[39m: [36mDone.[39m
+LOCAL PASS: browser workflow, access controls, fresh-server persistence, and repeat migration.

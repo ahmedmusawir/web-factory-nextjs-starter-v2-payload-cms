@@ -1,0 +1,4 @@
+PASS: approved targets and empty POC content verified
+PASS: public first-register denied on empty remote database
+FAIL: secure CLI bootstrap; details limited to error type TypeError
+PASS: owned content, images, R2 objects and temporary administrator removed; settings restored

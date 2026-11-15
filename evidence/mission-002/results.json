@@ -1,0 +1,144 @@
+{
+  "status": "MISSION 002 ENGINEERING VERIFIED",
+  "branch": "feat/p1-payload-turso-gcs-poc",
+  "head": "7715f6de3850e210b5b52a5049a6f1144a50c04c",
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "build": "PASS",
+  "generatedConsistency": "PASS",
+  "unitTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "localBrowserTests": {
+    "mainPassed": 20,
+    "deliberatelySkipped": 4,
+    "bootstrapPassed": 1,
+    "restartPassed": 1
+  },
+  "turso": "PASS",
+  "r2": "PASS",
+  "browserEditorialWorkflow": "PASS",
+  "restartPersistence": "PASS",
+  "visualComparisons": [
+    {
+      "device": "desktop",
+      "route": "/contact/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 2300,
+      "changedPixelPercentOver20": 0.125
+    },
+    {
+      "device": "desktop",
+      "route": "/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 4536,
+      "changedPixelPercentOver20": 0.278
+    },
+    {
+      "device": "desktop",
+      "route": "/ppc/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 6031,
+      "changedPixelPercentOver20": 0.117
+    },
+    {
+      "device": "desktop",
+      "route": "/seo-services/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 4472,
+      "changedPixelPercentOver20": 0.202
+    },
+    {
+      "device": "desktop",
+      "route": "/web-development/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 4347,
+      "changedPixelPercentOver20": 0.124
+    },
+    {
+      "device": "desktop",
+      "route": "/website-design/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 3839,
+      "changedPixelPercentOver20": 0.297
+    },
+    {
+      "device": "desktop",
+      "route": "/website-support/",
+      "exactTextAndSectionGeometry": true,
+      "width": 1440,
+      "height": 3516,
+      "changedPixelPercentOver20": 0.126
+    },
+    {
+      "device": "mobile",
+      "route": "/contact/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 2853,
+      "changedPixelPercentOver20": 0.175
+    },
+    {
+      "device": "mobile",
+      "route": "/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 4853,
+      "changedPixelPercentOver20": 0.298
+    },
+    {
+      "device": "mobile",
+      "route": "/ppc/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 7676,
+      "changedPixelPercentOver20": 0.154
+    },
+    {
+      "device": "mobile",
+      "route": "/seo-services/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 4590,
+      "changedPixelPercentOver20": 0.243
+    },
+    {
+      "device": "mobile",
+      "route": "/web-development/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 4696,
+      "changedPixelPercentOver20": 0.141
+    },
+    {
+      "device": "mobile",
+      "route": "/website-design/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 4534,
+      "changedPixelPercentOver20": 0.446
+    },
+    {
+      "device": "mobile",
+      "route": "/website-support/",
+      "exactTextAndSectionGeometry": true,
+      "width": 375,
+      "height": 3918,
+      "changedPixelPercentOver20": 0.197
+    }
+  ],
+  "liveEvidence": "live-11b62bb2-5a24-4757-bca3-3642549c0033/results.json",
+  "siteRetained": true,
+  "testUsersRemoved": true,
+  "taskServersStopped": true,
+  "productionRelease": "BLOCKED: unresolved Monaco/DOMPurify critical finding",
+  "independentQACertification": false,
+  "commitPushDeploy": false
+}

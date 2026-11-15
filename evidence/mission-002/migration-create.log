@@ -1,0 +1,9 @@
+
+> stark-web-factory-starter@0.1.0 payload
+> node --import tsx scripts/payload-cli.ts migrate:create website
+
+[13:24:17] [32mINFO[39m: [36mStarting migration: generating UP statements...[39m
+[13:24:17] [32mINFO[39m: [36mMigration UP complete. Generating DOWN statements...[39m
+[13:24:17] [32mINFO[39m: [36mMigration DOWN statements generation complete.[39m
+[13:24:17] [32mINFO[39m: [36mMigration created at /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations/20261114_072417_website.ts[39m
+[13:24:17] [32mINFO[39m: [36mDone.[39m
