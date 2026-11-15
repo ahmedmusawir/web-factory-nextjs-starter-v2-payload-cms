@@ -1,0 +1,36 @@
+version: 1
+mode: secret-free
+source:
+  repo: ""
+  branch: ""
+  candidate_sha: ""
+  qa_record: ""
+  gate_d_plan: ""
+gcp:
+  expected_account: ""
+  project_id: ""
+  region: ""
+  artifact_repository: ""
+  service_name: ""
+  runtime_service_account: ""
+access:
+  invoker: "" # public or private, explicit decision
+runtime:
+  node_image: "" # Verify package engines and Next support; same image all stages
+  memory: "512Mi"
+  min_instances: 0
+  max_instances: 1
+urls:
+  custom_domain: "" # Informational only, DNS outside this skill
+# No app secret values or mandatory NEXT_PUBLIC_APP_URL.
+# All empty execution-required values block cloud mutations.
+
+acceptance:
+  kind: "" # qa-certified or explicit-director-poc-exception
+  record: ""
+packaging:
+  standalone_change_authorization: ""
+  overlay_manifest: "" # only if explicitly accepted instead of committed config
+release:
+  authorization_record: "" # actual Director decision, never auto-filled approval
+  build_service_account: "" # observed identity, not guessed

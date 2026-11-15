@@ -1,0 +1,113 @@
+{
+ "run": "qa-claudy-m003-sa-791f85cb",
+ "routes": {
+  "/health/ready": {
+   "status": 200,
+   "cache": [
+    null,
+    null
+   ]
+  },
+  "/": {
+   "status": 200,
+   "cache": [
+    "HIT",
+    "HIT"
+   ]
+  },
+  "/seo-services": {
+   "status": 200,
+   "cache": [
+    "MISS",
+    "HIT"
+   ]
+  },
+  "/blog": {
+   "status": 200,
+   "cache": [
+    "STALE",
+    "STALE"
+   ]
+  },
+  "/blog/garage-door-repair-ppc-agency-get-more-leads-sales-now": {
+   "status": 200,
+   "cache": [
+    "MISS",
+    "HIT"
+   ]
+  },
+  "/admin/login": {
+   "status": 200,
+   "cache": [
+    null,
+    null
+   ]
+  },
+  "/api/posts?limit=1&depth=0": {
+   "status": 200,
+   "cache": [
+    null,
+    null
+   ]
+  },
+  "/api/graphql": {
+   "status": 405,
+   "cache": [
+    null,
+    null
+   ]
+  },
+  "/cyberize/assets/Manrope.ttf": {
+   "status": 200,
+   "cache": [
+    null,
+    null
+   ]
+  },
+  "/qa-missing": {
+   "status": 404,
+   "cache": [
+    "MISS",
+    "HIT"
+   ]
+  },
+  "/preview/home": {
+   "status": 404,
+   "cache": [
+    null,
+    null
+   ]
+  }
+ },
+ "staticAssets": {
+  "count": 9,
+  "non200": []
+ },
+ "login": {
+  "status": 200,
+  "cookieFlags": [
+   "Expires",
+   "Path",
+   "HttpOnly",
+   "SameSite"
+  ]
+ },
+ "upload": {
+  "status": 201,
+  "thumbnail": "400x300",
+  "originalInR2": true,
+  "thumbnailInR2": true,
+  "publicStatus": 200
+ },
+ "adminAuthenticated": {
+  "status": 200,
+  "bytes": 1064981
+ },
+ "cleanupMedia": {
+  "status": 200,
+  "objectsRemoved": true
+ },
+ "status": "COMPLETED",
+ "usersUnchanged": true,
+ "mediaCount": 56
+}

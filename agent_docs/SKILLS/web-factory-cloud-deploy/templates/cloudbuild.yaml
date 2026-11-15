@@ -1,0 +1,10 @@
+# Starting point: agent resolves substitutions before submission. Build/push only.
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '--build-arg', 'NODE_IMAGE=${_NODE_IMAGE}', '-t', '${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID', '.']
+images: ['${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID']
+substitutions:
+  _NODE_IMAGE: ''
+  _IMAGE: ''
+  _PRODUCT_SHA: ''
+# Supply verified build identity/logging configuration as required by the target.

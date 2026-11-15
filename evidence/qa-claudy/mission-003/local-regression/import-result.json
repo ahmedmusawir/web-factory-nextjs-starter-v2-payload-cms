@@ -1,0 +1,88 @@
+{
+  "created": [
+    "web-factory-poc-site-1:media:conversation.svg",
+    "web-factory-poc-site-1:media:logo.png",
+    "web-factory-poc-site-1:media:agency-connected.svg",
+    "web-factory-poc-site-1:media:search-field.svg",
+    "web-factory-poc-site-1:media:click-path.svg",
+    "web-factory-poc-site-1:media:campaign-plan.svg",
+    "web-factory-poc-site-1:media:seo-routes.svg",
+    "web-factory-poc-site-1:media:content-constellation.svg",
+    "web-factory-poc-site-1:media:connected-web.svg",
+    "web-factory-poc-site-1:media:design-lab.svg",
+    "web-factory-poc-site-1:media:development-bridge.svg",
+    "web-factory-poc-site-1:media:care-detail.svg",
+    "web-factory-poc-site-1:page:contact",
+    "web-factory-poc-site-1:page:home",
+    "web-factory-poc-site-1:page:ppc",
+    "web-factory-poc-site-1:page:seo-services",
+    "web-factory-poc-site-1:page:web-development",
+    "web-factory-poc-site-1:page:website-design",
+    "web-factory-poc-site-1:page:website-support",
+    "web-factory-poc-site-1:settings"
+  ],
+  "skipped": [],
+  "conflicts": [],
+  "media": [
+    {
+      "source": "conversation.svg",
+      "id": 1,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/ac286903-f714-4475-ab26-b23408557240.png"
+    },
+    {
+      "source": "logo.png",
+      "id": 2,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/47700144-0a06-4d8f-88db-0977937ec446.png"
+    },
+    {
+      "source": "agency-connected.svg",
+      "id": 3,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/33855024-2d97-4545-a156-322d24c2ad44.png"
+    },
+    {
+      "source": "search-field.svg",
+      "id": 4,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/e27a9f97-d2e6-444f-9d58-2b545006463a.png"
+    },
+    {
+      "source": "click-path.svg",
+      "id": 5,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/40e2b598-9e4f-4e11-84de-bd29a0d0f277.png"
+    },
+    {
+      "source": "campaign-plan.svg",
+      "id": 6,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/cae4f746-4663-469c-bda0-c1b788543a56.png"
+    },
+    {
+      "source": "seo-routes.svg",
+      "id": 7,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/66935bd5-314e-4fcf-8925-12d817585e1b.png"
+    },
+    {
+      "source": "content-constellation.svg",
+      "id": 8,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/fa326e55-1a33-4b32-937a-83ad9df92a71.png"
+    },
+    {
+      "source": "connected-web.svg",
+      "id": 9,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/edec276f-d7a1-4567-92ce-6fb37107d163.png"
+    },
+    {
+      "source": "design-lab.svg",
+      "id": 10,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/2cb92889-5d7a-4f52-9fed-41b9bffcb16f.png"
+    },
+    {
+      "source": "development-bridge.svg",
+      "id": 11,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/a9825b2b-0e43-4e0c-a90c-719007dfd5b2.png"
+    },
+    {
+      "source": "care-detail.svg",
+      "id": 12,
+      "key": "test/a9a6a5e8-e0ac-49e7-b905-ebab41a6a674/web-factory-poc-site-1/b61e5a02-de4e-4579-87b5-9326e5b1a402.png"
+    }
+  ]
+}

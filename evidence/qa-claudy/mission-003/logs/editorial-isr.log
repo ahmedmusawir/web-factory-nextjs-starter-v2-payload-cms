@@ -1,0 +1,62 @@
+PASS: A unknown article slug → 404, and the 404 is itself cached — {"first":"MISS","second":"HIT"}
+FAIL: B anonymous /admin redirects to login — {"url":"/admin","status":200}
+PASS: B /admin/create-first-user is closed (redirects to login) — "/admin/login"
+PASS: B temporary QA admin logs in through the admin UI (Chromium)
+PASS: B admin opens Pages — {"status":200,"title":"Pages - Payload"}
+FAIL: B admin opens Posts — {"status":200,"title":"Posts - Payload"}
+PASS: B admin opens Media — {"status":200,"title":"Media - Payload"}
+PASS: B admin opens Site Settings — {"status":200,"title":"Editing - Site Settings - Payload"}
+PASS: B admin Posts list shows the 12 imported articles — {"rows":12}
+PASS: C admin creates + publishes disposable article via REST — {"status":201,"id":13}
+PASS: C publish invalidates the cached 404: article is public on the very next request — {"status":200,"cache":"MISS","ms":1369}
+PASS: C publish invalidates /blog: listing shows the new article on the next request — {"cache":"MISS","listingWasCachedBefore":"STALE"}
+PASS: D 40 repeated requests (article + listing) inside the interval are all HIT with zero CMS reads — {"hits":["HIT"],"cmsReads":0}
+INFO: E timeline after an un-invalidated published change — {"cacheStateBeforeWrite":"HIT","timeline":[{"sec":1.9,"cache":"HIT","content":"old","cmsReadsSoFar":0},{"sec":6.9,"cache":"HIT","content":"old","cmsReadsSoFar":0},{"sec":11.9,"cache":"HIT","content":"old","cmsReadsSoFar":0},{"sec":17,"cache":"HIT","content":"old","cmsReadsSoFar":0},{"sec":22,"cache":"HIT","content":"old","cmsReadsSoFar":0},{"sec":27,"cache":"STALE","content":"old","cmsReadsSoFar":2},{"sec":28,"cache":"HIT","content":"new","cmsReadsSoFar":2}]}
+PASS: E within the interval the old page is served from cache (HIT) with zero CMS reads — {"hitSamples":5,"lastHitSec":22}
+PASS: E after ~30 s a request gets STALE and triggers regeneration; new content follows — {"staleSeen":true,"newContentAtSec":28}
+PASS: E /blog listing also picks up the change by timed revalidation — {"ms":809}
+FAIL: F admin edit screen opens the article with Lexical editor + table — {"title":"QA timed regeneration qa-claudy-m003-10d23866"}
+PASS: F admin edit screen offers a Preview link to /preview/posts/<slug> — "/preview/posts/qa-claudy-m003-10d23866"
+PASS: F Save Draft in the admin UI succeeds — {"status":200,"draftParam":"true"}
+PASS: F public article unchanged immediately after draft save — {"cache":"HIT"}
+PASS: F anonymous REST (plain, ?draft=true, list), GraphQL(draft:true), versions and /preview never expose the draft — {"api":200,"apiDraft":404,"list":200,"graphql":200,"versions":403,"previewAnon":404,"previewCacheControl":"private, no-cache, no-store, max-age=0, must-revalidate","leak":[false,false,false,false,false,false]}
+PASS: F timed regeneration while a draft exists still renders the published version (no draft leak) — {"first":"STALE","afterRegen":"HIT"}
+PASS: G authenticated preview shows the draft and is not cached — {"h1":"QA PRIVATE DRAFT qa-claudy-m003-10d23866","cacheControl":"private, no-cache, no-store, max-age=0, must-revalidate","xNextjsCache":null}
+PASS: G a logged-in editor requesting the PUBLIC url still gets the published version — {"cache":"HIT"}
+PASS: H admin edit screen reloads with the saved draft
+PASS: H Publish in the admin UI succeeds — {"status":200}
+PASS: H published change is public on the next request (on-demand invalidation, no 30 s wait, no rebuild) — {"articleCache":"MISS","listingCache":"MISS","msAfterPublishResponse":1045}
+PASS: H regenerated page is cached again (HIT) — {"cache":"HIT"}
+PASS: H original content restored through the admin UI and public again — {"cache":"MISS"}
+PASS: H table + content survive the UI round-trip — {"len":[65426,65426]}
+PASS: I slug change: old URL 404, new URL 200, listing links to new URL — all on next request — {"old":404,"renamed":200}
+PASS: J unpublish: article 404 publicly, removed from listing and anonymous API on next request — {"article":404,"api":404}
+PASS: J republish restores the article — {"status":200}
+PASS: K page fixture: MISS then HIT, zero CMS reads on HIT — {"first":"MISS","then":"HIT","cmsReads":0}
+PASS: K page draft: public unchanged, anonymous preview 404, authenticated preview shows draft uncached — {"public":"HIT","previewAnon":404,"previewAuthCC":"private, no-cache, no-store, max-age=0, must-revalidate"}
+PASS: K page publish: public page updated on next request — {"cache":"MISS"}
+PASS: L private upload to the public R2 bucket is rejected — {"status":400}
+PASS: L SVG upload is rejected — {"status":400}
+PASS: L public upload stored in approved bucket under the base prefix, original + thumbnail, public bytes identical — {"status":201,"prefix":"stark-poc","filenameRandomised":true,"publicStatus":200}
+PASS: L media change invalidates the site layout cache (cached page regenerates on next request) — {"before":"HIT","afterUpload":"MISS"}
+PASS: L anonymous media delete denied; public→private change rejected — {"anonDelete":403,"toPrivate":400}
+INFO: M anonymous status codes — {"anon POST /api/posts":403,"anon PATCH QA post":403,"anon DELETE QA post":403,"anon POST /api/pages":403,"anon PATCH QA page":403,"anon DELETE QA page":403,"anon POST /api/media":403,"anon POST site-settings (same name)":403,"anon POST /api/users":403,"anon POST /api/users/first-register":403,"anon GET /api/users":403,"anon GET /api/payload-preferences":403,"anon GET /api/posts/versions":403,"anon GET /api/pages/versions":403,"anon login wrong password (QA account)":401}
+PASS: M all anonymous writes and private reads are denied (401/403) — {"anon POST /api/posts":403,"anon PATCH QA post":403,"anon DELETE QA post":403,"anon POST /api/pages":403,"anon PATCH QA page":403,"anon DELETE QA page":403,"anon POST /api/media":403,"anon POST site-settings (same name)":403,"anon POST /api/users":403,"anon POST /api/users/first-register":403,"anon GET /api/users":403,"anon GET /api/payload-preferences":403,"anon GET /api/posts/versions":403,"anon GET /api/pages/versions":403,"anon login wrong password (QA account)":401}
+PASS: M anonymous /api/users/me returns no user; GraphQL users query + post mutation denied — {"me":null,"gqlUsers":"{\"errors\":[{\"extensions\":{\"name\":\"Forbidden\",\"statusCode\":403},\"locations\":[{\"line\":1,\"column\":3}],\"message\":\"You are no","gqlMut":"{\"errors\":[{\"extensions\":{\"name\":\"Forbidden\",\"statusCode\":403},\"locations\":[{\"line\":1,\"column\":12}],\"message\":\"You are n"}
+PASS: M denied writes changed nothing
+PASS: M editor REST login works; response has no hash/salt — {"status":200}
+PASS: M editor cannot create users, delete content, edit other users or escalate own role — {"editor POST /api/users":403,"editor DELETE QA post":403,"editor DELETE QA media":403,"editor PATCH other user":403,"editor PATCH own role→admin":403}
+PASS: M editor sees only own user record; can save a draft and use preview — {"visibleUsers":1,"draft":200,"preview":200}
+PASS: M editor draft not public
+PASS: M no credentials, DB host, R2 API endpoint or password fields in public pages / anonymous API responses — {"scanned":11,"hits":[]}
+PASS: N imported article used as content source is byte-identical after QA
+PASS: N Home page is byte-identical after QA
+PASS: N admin delete through the app: fixtures gone publicly on the next request (delete invalidation) — {"article":404,"page":404,"listingCards":12}
+PASS: N disposable media deleted through the app: R2 original + thumbnail removed — {"status":200}
+INFO: admin UI console/network issues — []
+INFO: external hosts requested by admin UI — ["www.gravatar.com"]
+PASS: B/H admin UI produced no console errors or failed requests — []
+FAIL: admin UI made no third-party requests (e.g. Monaco CDN) — ["www.gravatar.com"]
+PASS: CLEANUP pre-existing users identical (id, email, role, updatedAt); no QA users remain — {"users":1}
+PASS: CLEANUP post/page/media counts back to baseline — {"countsBefore":{"posts":12,"pages":7,"media":56},"countsAfter":{"posts":12,"pages":7,"media":56}}
+SUMMARY {"pass":53,"fail":4}

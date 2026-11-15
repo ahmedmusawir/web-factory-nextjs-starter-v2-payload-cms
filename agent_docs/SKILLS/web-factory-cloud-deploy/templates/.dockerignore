@@ -1,0 +1,25 @@
+# Agent reviews additional repo-specific exclusions and verifies effective upload.
+.git
+node_modules
+.next
+.env*
+**/.env*
+*.pem
+**/*.pem
+*.key
+**/*.key
+*.p12
+**/*.p12
+*credentials*.json
+**/*credentials*.json
+*service*account*.json
+**/*service*account*.json
+agent_docs
+**/agent_docs
+*.zip
+**/*.zip
+QAM
+_design
+outputs
+playwright-report
+test-results

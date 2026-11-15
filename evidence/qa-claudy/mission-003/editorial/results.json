@@ -1,0 +1,556 @@
+{
+ "run": "qa-claudy-m003-10d23866",
+ "fixtures": {
+  "articleSlug": "qa-claudy-m003-10d23866",
+  "pageSlug": "qa-claudy-m003-10d23866-page",
+  "users": "two temporary @example.test accounts, deleted"
+ },
+ "summary": {
+  "pass": 53,
+  "fail": 4
+ },
+ "results": [
+  {
+   "name": "A unknown article slug → 404, and the 404 is itself cached",
+   "status": "PASS",
+   "detail": {
+    "first": "MISS",
+    "second": "HIT"
+   }
+  },
+  {
+   "name": "B anonymous /admin redirects to login",
+   "status": "FAIL",
+   "detail": {
+    "url": "/admin",
+    "status": 200
+   }
+  },
+  {
+   "name": "B /admin/create-first-user is closed (redirects to login)",
+   "status": "PASS",
+   "detail": "/admin/login"
+  },
+  {
+   "name": "B temporary QA admin logs in through the admin UI (Chromium)",
+   "status": "PASS"
+  },
+  {
+   "name": "B admin opens Pages",
+   "status": "PASS",
+   "detail": {
+    "status": 200,
+    "title": "Pages - Payload"
+   }
+  },
+  {
+   "name": "B admin opens Posts",
+   "status": "FAIL",
+   "detail": {
+    "status": 200,
+    "title": "Posts - Payload"
+   }
+  },
+  {
+   "name": "B admin opens Media",
+   "status": "PASS",
+   "detail": {
+    "status": 200,
+    "title": "Media - Payload"
+   }
+  },
+  {
+   "name": "B admin opens Site Settings",
+   "status": "PASS",
+   "detail": {
+    "status": 200,
+    "title": "Editing - Site Settings - Payload"
+   }
+  },
+  {
+   "name": "B admin Posts list shows the 12 imported articles",
+   "status": "PASS",
+   "detail": {
+    "rows": 12
+   }
+  },
+  {
+   "name": "C admin creates + publishes disposable article via REST",
+   "status": "PASS",
+   "detail": {
+    "status": 201,
+    "id": 13
+   }
+  },
+  {
+   "name": "C publish invalidates the cached 404: article is public on the very next request",
+   "status": "PASS",
+   "detail": {
+    "status": 200,
+    "cache": "MISS",
+    "ms": 1369
+   }
+  },
+  {
+   "name": "C publish invalidates /blog: listing shows the new article on the next request",
+   "status": "PASS",
+   "detail": {
+    "cache": "MISS",
+    "listingWasCachedBefore": "STALE"
+   }
+  },
+  {
+   "name": "D 40 repeated requests (article + listing) inside the interval are all HIT with zero CMS reads",
+   "status": "PASS",
+   "detail": {
+    "hits": [
+     "HIT"
+    ],
+    "cmsReads": 0
+   }
+  },
+  {
+   "name": "E timeline after an un-invalidated published change",
+   "status": "INFO",
+   "detail": {
+    "cacheStateBeforeWrite": "HIT",
+    "timeline": [
+     {
+      "sec": 1.9,
+      "cache": "HIT",
+      "content": "old",
+      "cmsReadsSoFar": 0
+     },
+     {
+      "sec": 6.9,
+      "cache": "HIT",
+      "content": "old",
+      "cmsReadsSoFar": 0
+     },
+     {
+      "sec": 11.9,
+      "cache": "HIT",
+      "content": "old",
+      "cmsReadsSoFar": 0
+     },
+     {
+      "sec": 17,
+      "cache": "HIT",
+      "content": "old",
+      "cmsReadsSoFar": 0
+     },
+     {
+      "sec": 22,
+      "cache": "HIT",
+      "content": "old",
+      "cmsReadsSoFar": 0
+     },
+     {
+      "sec": 27,
+      "cache": "STALE",
+      "content": "old",
+      "cmsReadsSoFar": 2
+     },
+     {
+      "sec": 28,
+      "cache": "HIT",
+      "content": "new",
+      "cmsReadsSoFar": 2
+     }
+    ]
+   }
+  },
+  {
+   "name": "E within the interval the old page is served from cache (HIT) with zero CMS reads",
+   "status": "PASS",
+   "detail": {
+    "hitSamples": 5,
+    "lastHitSec": 22
+   }
+  },
+  {
+   "name": "E after ~30 s a request gets STALE and triggers regeneration; new content follows",
+   "status": "PASS",
+   "detail": {
+    "staleSeen": true,
+    "newContentAtSec": 28
+   }
+  },
+  {
+   "name": "E /blog listing also picks up the change by timed revalidation",
+   "status": "PASS",
+   "detail": {
+    "ms": 809
+   }
+  },
+  {
+   "name": "F admin edit screen opens the article with Lexical editor + table",
+   "status": "FAIL",
+   "detail": {
+    "title": "QA timed regeneration qa-claudy-m003-10d23866"
+   }
+  },
+  {
+   "name": "F admin edit screen offers a Preview link to /preview/posts/<slug>",
+   "status": "PASS",
+   "detail": "/preview/posts/qa-claudy-m003-10d23866"
+  },
+  {
+   "name": "F Save Draft in the admin UI succeeds",
+   "status": "PASS",
+   "detail": {
+    "status": 200,
+    "draftParam": "true"
+   }
+  },
+  {
+   "name": "F public article unchanged immediately after draft save",
+   "status": "PASS",
+   "detail": {
+    "cache": "HIT"
+   }
+  },
+  {
+   "name": "F anonymous REST (plain, ?draft=true, list), GraphQL(draft:true), versions and /preview never expose the draft",
+   "status": "PASS",
+   "detail": {
+    "api": 200,
+    "apiDraft": 404,
+    "list": 200,
+    "graphql": 200,
+    "versions": 403,
+    "previewAnon": 404,
+    "previewCacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "leak": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "name": "F timed regeneration while a draft exists still renders the published version (no draft leak)",
+   "status": "PASS",
+   "detail": {
+    "first": "STALE",
+    "afterRegen": "HIT"
+   }
+  },
+  {
+   "name": "G authenticated preview shows the draft and is not cached",
+   "status": "PASS",
+   "detail": {
+    "h1": "QA PRIVATE DRAFT qa-claudy-m003-10d23866",
+    "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "xNextjsCache": null
+   }
+  },
+  {
+   "name": "G a logged-in editor requesting the PUBLIC url still gets the published version",
+   "status": "PASS",
+   "detail": {
+    "cache": "HIT"
+   }
+  },
+  {
+   "name": "H admin edit screen reloads with the saved draft",
+   "status": "PASS"
+  },
+  {
+   "name": "H Publish in the admin UI succeeds",
+   "status": "PASS",
+   "detail": {
+    "status": 200
+   }
+  },
+  {
+   "name": "H published change is public on the next request (on-demand invalidation, no 30 s wait, no rebuild)",
+   "status": "PASS",
+   "detail": {
+    "articleCache": "MISS",
+    "listingCache": "MISS",
+    "msAfterPublishResponse": 1045
+   }
+  },
+  {
+   "name": "H regenerated page is cached again (HIT)",
+   "status": "PASS",
+   "detail": {
+    "cache": "HIT"
+   }
+  },
+  {
+   "name": "H original content restored through the admin UI and public again",
+   "status": "PASS",
+   "detail": {
+    "cache": "MISS"
+   }
+  },
+  {
+   "name": "H table + content survive the UI round-trip",
+   "status": "PASS",
+   "detail": {
+    "len": [
+     65426,
+     65426
+    ]
+   }
+  },
+  {
+   "name": "I slug change: old URL 404, new URL 200, listing links to new URL — all on next request",
+   "status": "PASS",
+   "detail": {
+    "old": 404,
+    "renamed": 200
+   }
+  },
+  {
+   "name": "J unpublish: article 404 publicly, removed from listing and anonymous API on next request",
+   "status": "PASS",
+   "detail": {
+    "article": 404,
+    "api": 404
+   }
+  },
+  {
+   "name": "J republish restores the article",
+   "status": "PASS",
+   "detail": {
+    "status": 200
+   }
+  },
+  {
+   "name": "K page fixture: MISS then HIT, zero CMS reads on HIT",
+   "status": "PASS",
+   "detail": {
+    "first": "MISS",
+    "then": "HIT",
+    "cmsReads": 0
+   }
+  },
+  {
+   "name": "K page draft: public unchanged, anonymous preview 404, authenticated preview shows draft uncached",
+   "status": "PASS",
+   "detail": {
+    "public": "HIT",
+    "previewAnon": 404,
+    "previewAuthCC": "private, no-cache, no-store, max-age=0, must-revalidate"
+   }
+  },
+  {
+   "name": "K page publish: public page updated on next request",
+   "status": "PASS",
+   "detail": {
+    "cache": "MISS"
+   }
+  },
+  {
+   "name": "L private upload to the public R2 bucket is rejected",
+   "status": "PASS",
+   "detail": {
+    "status": 400
+   }
+  },
+  {
+   "name": "L SVG upload is rejected",
+   "status": "PASS",
+   "detail": {
+    "status": 400
+   }
+  },
+  {
+   "name": "L public upload stored in approved bucket under the base prefix, original + thumbnail, public bytes identical",
+   "status": "PASS",
+   "detail": {
+    "status": 201,
+    "prefix": "stark-poc",
+    "filenameRandomised": true,
+    "publicStatus": 200
+   }
+  },
+  {
+   "name": "L media change invalidates the site layout cache (cached page regenerates on next request)",
+   "status": "PASS",
+   "detail": {
+    "before": "HIT",
+    "afterUpload": "MISS"
+   }
+  },
+  {
+   "name": "L anonymous media delete denied; public→private change rejected",
+   "status": "PASS",
+   "detail": {
+    "anonDelete": 403,
+    "toPrivate": 400
+   }
+  },
+  {
+   "name": "M anonymous status codes",
+   "status": "INFO",
+   "detail": {
+    "anon POST /api/posts": 403,
+    "anon PATCH QA post": 403,
+    "anon DELETE QA post": 403,
+    "anon POST /api/pages": 403,
+    "anon PATCH QA page": 403,
+    "anon DELETE QA page": 403,
+    "anon POST /api/media": 403,
+    "anon POST site-settings (same name)": 403,
+    "anon POST /api/users": 403,
+    "anon POST /api/users/first-register": 403,
+    "anon GET /api/users": 403,
+    "anon GET /api/payload-preferences": 403,
+    "anon GET /api/posts/versions": 403,
+    "anon GET /api/pages/versions": 403,
+    "anon login wrong password (QA account)": 401
+   }
+  },
+  {
+   "name": "M all anonymous writes and private reads are denied (401/403)",
+   "status": "PASS",
+   "detail": {
+    "anon POST /api/posts": 403,
+    "anon PATCH QA post": 403,
+    "anon DELETE QA post": 403,
+    "anon POST /api/pages": 403,
+    "anon PATCH QA page": 403,
+    "anon DELETE QA page": 403,
+    "anon POST /api/media": 403,
+    "anon POST site-settings (same name)": 403,
+    "anon POST /api/users": 403,
+    "anon POST /api/users/first-register": 403,
+    "anon GET /api/users": 403,
+    "anon GET /api/payload-preferences": 403,
+    "anon GET /api/posts/versions": 403,
+    "anon GET /api/pages/versions": 403,
+    "anon login wrong password (QA account)": 401
+   }
+  },
+  {
+   "name": "M anonymous /api/users/me returns no user; GraphQL users query + post mutation denied",
+   "status": "PASS",
+   "detail": {
+    "me": null,
+    "gqlUsers": "{\"errors\":[{\"extensions\":{\"name\":\"Forbidden\",\"statusCode\":403},\"locations\":[{\"line\":1,\"column\":3}],\"message\":\"You are no",
+    "gqlMut": "{\"errors\":[{\"extensions\":{\"name\":\"Forbidden\",\"statusCode\":403},\"locations\":[{\"line\":1,\"column\":12}],\"message\":\"You are n"
+   }
+  },
+  {
+   "name": "M denied writes changed nothing",
+   "status": "PASS"
+  },
+  {
+   "name": "M editor REST login works; response has no hash/salt",
+   "status": "PASS",
+   "detail": {
+    "status": 200
+   }
+  },
+  {
+   "name": "M editor cannot create users, delete content, edit other users or escalate own role",
+   "status": "PASS",
+   "detail": {
+    "editor POST /api/users": 403,
+    "editor DELETE QA post": 403,
+    "editor DELETE QA media": 403,
+    "editor PATCH other user": 403,
+    "editor PATCH own role→admin": 403
+   }
+  },
+  {
+   "name": "M editor sees only own user record; can save a draft and use preview",
+   "status": "PASS",
+   "detail": {
+    "visibleUsers": 1,
+    "draft": 200,
+    "preview": 200
+   }
+  },
+  {
+   "name": "M editor draft not public",
+   "status": "PASS"
+  },
+  {
+   "name": "M no credentials, DB host, R2 API endpoint or password fields in public pages / anonymous API responses",
+   "status": "PASS",
+   "detail": {
+    "scanned": 11,
+    "hits": []
+   }
+  },
+  {
+   "name": "N imported article used as content source is byte-identical after QA",
+   "status": "PASS"
+  },
+  {
+   "name": "N Home page is byte-identical after QA",
+   "status": "PASS"
+  },
+  {
+   "name": "N admin delete through the app: fixtures gone publicly on the next request (delete invalidation)",
+   "status": "PASS",
+   "detail": {
+    "article": 404,
+    "page": 404,
+    "listingCards": 12
+   }
+  },
+  {
+   "name": "N disposable media deleted through the app: R2 original + thumbnail removed",
+   "status": "PASS",
+   "detail": {
+    "status": 200
+   }
+  },
+  {
+   "name": "admin UI console/network issues",
+   "status": "INFO",
+   "detail": []
+  },
+  {
+   "name": "external hosts requested by admin UI",
+   "status": "INFO",
+   "detail": [
+    "www.gravatar.com"
+   ]
+  },
+  {
+   "name": "B/H admin UI produced no console errors or failed requests",
+   "status": "PASS",
+   "detail": []
+  },
+  {
+   "name": "admin UI made no third-party requests (e.g. Monaco CDN)",
+   "status": "FAIL",
+   "detail": [
+    "www.gravatar.com"
+   ]
+  },
+  {
+   "name": "CLEANUP pre-existing users identical (id, email, role, updatedAt); no QA users remain",
+   "status": "PASS",
+   "detail": {
+    "users": 1
+   }
+  },
+  {
+   "name": "CLEANUP post/page/media counts back to baseline",
+   "status": "PASS",
+   "detail": {
+    "countsBefore": {
+     "posts": 12,
+     "pages": 7,
+     "media": 56
+    },
+    "countsAfter": {
+     "posts": 12,
+     "pages": 7,
+     "media": 56
+    }
+   }
+  }
+ ]
+}

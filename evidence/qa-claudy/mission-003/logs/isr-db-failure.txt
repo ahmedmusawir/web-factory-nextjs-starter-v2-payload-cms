@@ -1,0 +1,34 @@
+== health
+{"status":"unavailable"} [503]
+== wait 33s so cached entries are stale
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   round1 / bytes=5132 h1=<h1>Digital marketing.
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   round1 /blog bytes=12127 h1=<h1>Our blog.
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   round1 /blog/the-essential-guide-to-developing-a-winning-digital-marketing-strategy bytes=642 h1=<h1>The Essential Guide to Developing a Winning Digital Marketing Stra
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   round1 /seo-services bytes=815 h1=<h1>Every search
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round2 / bytes=5132 h1=<h1>Digital marketing.
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round2 /blog bytes=12127 h1=<h1>Our blog.
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round2 /blog/the-essential-guide-to-developing-a-winning-digital-marketing-strategy bytes=642 h1=<h1>The Essential Guide to Developing a Winning Digital Marketing Stra
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round2 /seo-services bytes=815 h1=<h1>Every search
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round3 / bytes=5132 h1=<h1>Digital marketing.
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round3 /blog bytes=12127 h1=<h1>Our blog.
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round3 /blog/the-essential-guide-to-developing-a-winning-digital-marketing-strategy bytes=642 h1=<h1>The Essential Guide to Developing a Winning Digital Marketing Stra
+HTTP/1.1 200 OK  x-nextjs-cache: HIT   round3 /seo-services bytes=815 h1=<h1>Every search
+== uncached routes during outage
+/blog/garage-door-repair-ppc-agency-get-more-leads-sales-now-x 500
+0
+/qa-never-cached 500
+0
+/api/posts?limit=1 500
+0
+/admin/login 200
+0
+/preview/home 500
+0
+{"errors":[{"message":"Something went wrong."}]} [500]
+== recovery after restart with valid config
+{"status":"ready"} [200]
+HTTP/1.1 404 Not Found  x-nextjs-cache: MISS   /qa-never-cached
+HTTP/1.1 404 Not Found  x-nextjs-cache: MISS   /blog/garage-door-repair-ppc-agency-get-more-leads-sales-now-x
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   /
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   /blog
+HTTP/1.1 200 OK  x-nextjs-cache: STALE   /blog/garage-door-repair-ppc-agency-get-more-leads-sales-now

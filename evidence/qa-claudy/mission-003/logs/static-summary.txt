@@ -1,0 +1,9 @@
+typecheck exit=0
+lint exit=0
+unit exit=0
+check:generated exit=0
+audit exit=1
+build exit=0
+verify:local exit=1
+verify:local (with temporary reference symlink) exit=0
+standalone build exit=0

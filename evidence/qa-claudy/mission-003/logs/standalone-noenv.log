@@ -1,0 +1,49 @@
+▲ Next.js 16.4.3
+- Local:         http://127.0.0.1:8080
+- Network:       http://127.0.0.1:8080
+✓ Ready in 0ms
+✓ Running next.config took 2ms
+⨯ Error: Missing required environment variable: APP_ENV
+    at h (.next-qa-standalone/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:1:7088)
+    at <unknown> (.next-qa-standalone/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:1:7153)
+    at <unknown> (.next-qa-standalone/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:407:35117)
+⨯ Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+⨯ Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+⨯ Error: Missing required environment variable: APP_ENV
+    at h (.next-qa-standalone/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:1:7088)
+    at <unknown> (.next-qa-standalone/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:1:7153)
+    at <unknown> (.next-qa-standalone/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:407:35117)
+⨯ Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+⨯ Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+⨯ Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)
+⨯ Error: Missing required environment variable: APP_ENV
+    at g (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6905)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:1:6970)
+    at <unknown> (.next-qa-standalone/server/chunks/ssr/_1yk86lj6us14r._.js:405:35076)

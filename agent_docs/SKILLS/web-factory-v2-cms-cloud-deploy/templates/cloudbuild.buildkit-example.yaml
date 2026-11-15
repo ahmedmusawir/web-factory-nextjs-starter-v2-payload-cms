@@ -1,0 +1,38 @@
+# PROTECTED BUILD EXAMPLE — REQUIRES CUSTOMIZATION AND APPROVAL.
+# Generated target MUST replace secret names/versions, verify Actor B IAM,
+# build-time app env, Cloud Build logs, Docker/BuildKit support and all paths.
+# Only build/push, no deployment by Actor B. No plaintext secret substitutions.
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'protected-build'
+    entrypoint: 'bash'
+    secretEnv: ['BUILD_DATABASE_URL', 'BUILD_DATABASE_AUTH_TOKEN', 'BUILD_PAYLOAD_SECRET']
+    args:
+      - '-euo'
+      - 'pipefail'
+      - '-c'
+      - |
+          export DOCKER_BUILDKIT=1
+          docker build --pull \
+            --secret id=DATABASE_URL,env=BUILD_DATABASE_URL \
+            --secret id=DATABASE_AUTH_TOKEN,env=BUILD_DATABASE_AUTH_TOKEN \
+            --secret id=PAYLOAD_SECRET,env=BUILD_PAYLOAD_SECRET \
+            -f Dockerfile -t "${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID" .
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'push'
+    args: ['push', '${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID']
+images: ['${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID']
+substitutions:
+  _IMAGE: 'INVALID-IMAGE-OVERRIDE-REQUIRED'
+  _PRODUCT_SHA: 'INVALID-SHA-OVERRIDE-REQUIRED'
+availableSecrets:
+  secretManager:
+    - versionName: 'projects/$PROJECT_ID/secrets/REPLACE_DATABASE_URL_SECRET_NAME/versions/REPLACE_NUMERIC_VERSION'
+      env: 'BUILD_DATABASE_URL'
+    - versionName: 'projects/$PROJECT_ID/secrets/REPLACE_DATABASE_AUTH_TOKEN_SECRET_NAME/versions/REPLACE_NUMERIC_VERSION'
+      env: 'BUILD_DATABASE_AUTH_TOKEN'
+    - versionName: 'projects/$PROJECT_ID/secrets/REPLACE_PAYLOAD_SECRET_NAME/versions/REPLACE_NUMERIC_VERSION'
+      env: 'BUILD_PAYLOAD_SECRET'
+# Builds run as a dedicated build service account (--service-account), which requires an explicit logging mode.
+options:
+  logging: CLOUD_LOGGING_ONLY

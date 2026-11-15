@@ -1,0 +1,254 @@
+{
+ "routes": [
+  {
+   "route": "/",
+   "status": 200,
+   "first": "STALE",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 24751,
+   "readsOnFirst": 3,
+   "next5": "STALE,STALE,STALE,STALE,STALE",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/seo-services",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 22492,
+   "readsOnFirst": 3,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/ppc",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 32740,
+   "readsOnFirst": 3,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/website-design",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 24313,
+   "readsOnFirst": 3,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/web-development",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 23214,
+   "readsOnFirst": 3,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/website-support",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 22107,
+   "readsOnFirst": 3,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/contact",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 18240,
+   "readsOnFirst": 3,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog",
+   "status": 200,
+   "first": "STALE",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 36976,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/the-ultimate-guide-to-acquiring-more-pizza-shop-customers",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 54710,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/how-to-rank-high-on-google-a-step-by-step-guide",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 76388,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/content-scaling-strategies-for-growing-your-audience-and-reach",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 67612,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/the-ultimate-seo-content-template-how-to-create-seo-friendly-content-in-minutes",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 65514,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/what-is-a-sitemap-and-how-to-create-one-for-your-website",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 58984,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/unlocking-the-power-of-seo-copywriting-what-you-need-to-know",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 56641,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/how-to-write-seo-friendly-content-a-step-by-step-guide",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 63720,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/10-proven-strategies-to-optimize-your-content-for-search-engines",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 58698,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/boost-your-dental-practice-with-a-professional-seo-company",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 82480,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/the-essential-guide-to-developing-a-winning-digital-marketing-strategy",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 85626,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/maximize-your-elearning-roi-with-a-ppc-agency",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 72955,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  },
+  {
+   "route": "/blog/garage-door-repair-ppc-agency-get-more-leads-sales-now",
+   "status": 200,
+   "first": "MISS",
+   "cacheControl": "s-maxage=30, stale-while-revalidate=31535970",
+   "bytes": 51209,
+   "readsOnFirst": 2,
+   "next5": "HIT,HIT,HIT,HIT,HIT",
+   "readsDuring5Repeats": 0
+  }
+ ],
+ "notFound": [
+  {
+   "path": "/qa-unknown-page-zz",
+   "status": 404,
+   "cache": "MISS",
+   "cc": "s-maxage=30, stale-while-revalidate=31535970",
+   "second": 404,
+   "secondCache": "HIT"
+  },
+  {
+   "path": "/blog/qa-unknown-article-zz",
+   "status": 404,
+   "cache": "MISS",
+   "cc": "s-maxage=30, stale-while-revalidate=31535970",
+   "second": 404,
+   "secondCache": "HIT"
+  },
+  {
+   "path": "/blog/",
+   "status": 308,
+   "cache": null,
+   "cc": null,
+   "second": 308,
+   "secondCache": null
+  },
+  {
+   "path": "/preview/home",
+   "status": 404,
+   "cache": null,
+   "cc": "private, no-cache, no-store, max-age=0, must-revalidate",
+   "second": 404,
+   "secondCache": null
+  },
+  {
+   "path": "/preview/posts/the-ultimate-guide-to-acquiring-more-pizza-shop-customers",
+   "status": 404,
+   "cache": null,
+   "cc": "private, no-cache, no-store, max-age=0, must-revalidate",
+   "second": 404,
+   "secondCache": null
+  },
+  {
+   "path": "/content/posts/qa-unknown-zz",
+   "status": 404,
+   "cache": "MISS",
+   "cc": "s-maxage=30, stale-while-revalidate=31535970",
+   "second": 404,
+   "secondCache": "HIT"
+  }
+ ]
+}

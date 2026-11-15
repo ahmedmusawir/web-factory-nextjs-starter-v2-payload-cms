@@ -1,0 +1,18 @@
+# TEMPLATE: build+push only, does NOT deploy Cloud Run automatically.
+# Agent/operator supplies verified --substitutions _IMAGE and _PRODUCT_SHA.
+# Default runtime-only: NO build-time DB/R2/Payload secrets. If prerender needs
+# DB credentials, use decision-trees/build-time-database.md; do NOT use ARG secrets.
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'build'
+    args: ['build', '--pull', '-t', '${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'push'
+    args: ['push', '${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID']
+images: ['${_IMAGE}:${_PRODUCT_SHA}-$BUILD_ID']
+substitutions:
+  _IMAGE: 'INVALID-IMAGE-OVERRIDE-REQUIRED'
+  _PRODUCT_SHA: 'INVALID-SHA-OVERRIDE-REQUIRED'
+# Builds run as a dedicated build service account (--service-account), which requires an explicit logging mode.
+options:
+  logging: CLOUD_LOGGING_ONLY

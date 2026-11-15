@@ -1,0 +1,28 @@
+
+> stark-web-factory-starter@0.1.0 verify:local
+> node --import tsx scripts/verify-local.ts
+
+[14:23:17] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[14:23:18] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[14:23:18] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (287ms)[39m
+[14:23:18] [32mINFO[39m: [36mMigrating: 20261114_072417_website[39m
+[14:23:18] [32mINFO[39m: [36mMigrated:  20261114_072417_website (133ms)[39m
+[14:23:18] [32mINFO[39m: [36mMigrating: 20261115_065237_wordpress_blog[39m
+[14:23:18] [32mINFO[39m: [36mMigrated:  20261115_065237_wordpress_blog (53ms)[39m
+[14:23:18] [32mINFO[39m: [36mDone.[39m
+node:fs:560
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open '/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-poc-site-1/public/cyberize/assets/conversation.svg'
+    at Object.openSync (node:fs:560:18)
+    at readFileSync (node:fs:444:35)
+    at importWebsite (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/scripts/import-website.ts:46:24)
+    at async <anonymous> (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/scripts/import-website.ts:79:18) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-poc-site-1/public/cyberize/assets/conversation.svg'
+}
+
+Node.js v22.23.5

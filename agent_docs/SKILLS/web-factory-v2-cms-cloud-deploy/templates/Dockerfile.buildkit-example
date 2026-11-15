@@ -1,0 +1,35 @@
+# syntax=docker/dockerfile:1.10
+# PROTECTED BUILD EXAMPLE — NOT UNIVERSAL / NOT PRETESTED ON TARGET.
+# Agent adapts *actual* Next distDir, Node/package manager and app-level public
+# config. Requires approved BuildKit secrets and verified Cloud Build SA IAM.
+# Runtime secret values are NOT stored as image ARG/ENV or copied source.
+ARG NODE_IMAGE=node:22-bookworm-slim
+FROM ${NODE_IMAGE} AS deps
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci --include=dev
+
+FROM ${NODE_IMAGE} AS builder
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+# Mount secret env only during this RUN; not ENV, ARG, COPY, echo or shell tracing.
+# Check the app's own build scripts for accidental secret logging, migrations,
+# seeds, writes, telemetry and embedded public bundle data before use.
+RUN --mount=type=secret,id=DATABASE_URL,env=DATABASE_URL,required=true \
+    --mount=type=secret,id=DATABASE_AUTH_TOKEN,env=DATABASE_AUTH_TOKEN,required=true \
+    --mount=type=secret,id=PAYLOAD_SECRET,env=PAYLOAD_SECRET,required=true \
+    DATABASE_KIND=turso MEDIA_STORAGE=r2 APP_ENV=staging npm run build
+RUN test -f .next/standalone/server.js
+
+FROM ${NODE_IMAGE} AS runner
+WORKDIR /app
+ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 HOSTNAME=0.0.0.0 PORT=8080
+COPY --from=builder --chown=node:node /app/.next/standalone ./
+COPY --from=builder --chown=node:node /app/.next/static ./.next/static
+COPY --from=builder --chown=node:node /app/public ./public
+RUN mkdir -p .next/cache && chown -R node:node .next
+USER node
+EXPOSE 8080
+CMD ["node", "server.js"]

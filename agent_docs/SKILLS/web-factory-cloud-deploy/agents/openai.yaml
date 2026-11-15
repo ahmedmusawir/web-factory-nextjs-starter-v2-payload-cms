@@ -1,0 +1,13 @@
+interface:
+  display_name: Web Factory Cloud Deploy
+  short_description: Prepare and deploy secret-free Next.js sites to Cloud Run
+  default_prompt: Read the agent entry, perform short intake, then prepare and deploy only the approved release.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

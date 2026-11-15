@@ -1,0 +1,21 @@
+HTTP/2 200 
+server: nginx
+date: Sun, 15 Nov 2026 08:08:50 GMT
+content-type: application/json; charset=UTF-8
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+host-header: wpcloud
+vary: accept, content-type, cookie
+x-robots-tag: noindex
+link: <https://cyberizegroup.com/wp-json/>; rel="https://api.w.org/"
+x-content-type-options: nosniff
+access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link
+access-control-allow-headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+x-wp-total: 12
+x-wp-totalpages: 1
+allow: GET
+vary: Origin
+x-ac: 18.sin _atomic_bur MISS
+alt-svc: clear
+server-timing: a8c-cdn, dc;desc=sin, cache;desc=MISS;dur=1816.0
+

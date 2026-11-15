@@ -1,0 +1,41 @@
+== docker hub tag
+200
+== response headers /
+HTTP/1.1 200 OK
+Accept-CH: Sec-CH-Prefers-Color-Scheme
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+Critical-CH: Sec-CH-Prefers-Color-Scheme
+X-Powered-By: Next.js, Payload
+x-nextjs-cache: STALE
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+Cache-Control: s-maxage=30, stale-while-revalidate=31535970
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+== headers /admin/login
+X-Powered-By: Next.js, Payload
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+== graphql introspection anon
+{"errors":[{"message":"GraphQL introspection is not allowed, but the query contained __schema or __type","locations":[{"line":1,"column":3}]}]}
+
+== graphql playground
+404
+== legacy content routes
+/content 200 0
+/content/posts/garage-door-repair-ppc-agency-get-more-leads-sales-now 200 0
+/content/pages/home 200 0
+== 404 cache files
+blog/qa-unknown-article-zz.html
+blog/qa-unknown-article-zz.meta
+blog/qa-unknown-article-zz.rsc
+blog/qa-unknown-article-zz.segments
+content/posts/qa-unknown-zz.html
+content/posts/qa-unknown-zz.meta
+content/posts/qa-unknown-zz.rsc
+content/posts/qa-unknown-zz.segments
+qa-never-cached.html
+qa-never-cached.meta
+== env keys persisted in .env.local that docs say are operator-terminal-only
+2

@@ -1,0 +1,136 @@
+{
+ "counts": {
+  "_pages_v": 16,
+  "_pages_v_version_sections": 68,
+  "_posts_v": 12,
+  "_posts_v_texts": 12,
+  "media": 56,
+  "pages": 7,
+  "pages_sections": 32,
+  "payload_kv": 0,
+  "payload_locked_documents": 1,
+  "payload_locked_documents_rels": 1,
+  "payload_migrations": 3,
+  "payload_preferences": 14,
+  "payload_preferences_rels": 4,
+  "posts": 12,
+  "posts_texts": 12,
+  "site_settings": 1,
+  "site_settings_sections": 2,
+  "users": 1,
+  "users_sessions": 1
+ },
+ "migrations": [
+  {
+   "name": "20261114_040213_foundation",
+   "batch": 1
+  },
+  {
+   "name": "20261114_072417_website",
+   "batch": 2
+  },
+  {
+   "name": "20261115_065237_wordpress_blog",
+   "batch": 3
+  }
+ ],
+ "users": [
+  {
+   "id": 1,
+   "role": "admin",
+   "created_at": "2026-11-15T05:46:24.897Z",
+   "updated_at": "2026-11-15T05:49:11.494Z",
+   "emailDomainTest": false,
+   "fingerprint": "610cb84fb814dbf50fdaad658497b7f2607776b63603e1458a6e28d6f6de4443"
+  }
+ ],
+ "mediaByPrefix": [
+  {
+   "prefix": "stark-poc/web-factory-poc-site-1",
+   "n": 12,
+   "bytes": 1228471,
+   "thumbs": 12,
+   "pub": 12
+  },
+  {
+   "prefix": "stark-poc/wordpress-blog",
+   "n": 44,
+   "bytes": 5419716,
+   "thumbs": 44,
+   "pub": 44
+  }
+ ],
+ "pages": [
+  {
+   "id": 1,
+   "slug": "contact",
+   "title": "Contact",
+   "template": "contact",
+   "_status": "published",
+   "updated_at": "2026-11-14T07:34:05.321Z"
+  },
+  {
+   "id": 2,
+   "slug": "home",
+   "title": "Home",
+   "template": "home",
+   "_status": "published",
+   "updated_at": "2026-11-14T10:02:25.613Z"
+  },
+  {
+   "id": 3,
+   "slug": "ppc",
+   "title": "PPC",
+   "template": "ppc",
+   "_status": "published",
+   "updated_at": "2026-11-14T07:34:07.791Z"
+  },
+  {
+   "id": 4,
+   "slug": "seo-services",
+   "title": "SEO",
+   "template": "seo-services",
+   "_status": "published",
+   "updated_at": "2026-11-14T07:34:08.952Z"
+  },
+  {
+   "id": 5,
+   "slug": "web-development",
+   "title": "Web Development",
+   "template": "web-development",
+   "_status": "published",
+   "updated_at": "2026-11-14T07:34:10.082Z"
+  },
+  {
+   "id": 6,
+   "slug": "website-design",
+   "title": "Web Design",
+   "template": "website-design",
+   "_status": "published",
+   "updated_at": "2026-11-14T07:34:11.190Z"
+  },
+  {
+   "id": 7,
+   "slug": "website-support",
+   "title": "Website Support",
+   "template": "website-support",
+   "_status": "published",
+   "updated_at": "2026-11-14T07:34:12.292Z"
+  }
+ ]
+}
+id,title,slug,excerpt,content,featured_image_id,published_at,seo_title,seo_description,updated_at,created_at,_status,source_i_d,source_digest,original_u_r_l,wordpress_i_d
+{"id":4,"title":"The Ultimate Guide to Acquiring More Pizza Shop Customers","slug":"the-ultimate-guide-to-acquiring-more-pizza-shop-customers","_status":"published","published_at":"2024-10-14T10:44:15Z","wordpress_i_d":9628,"source_i_d":"wordpress:post:9628","original_u_r_l":"https://cyberizegroup.com/the-ultimate-guide-to-acquiring-more-pizza-shop-customers/","featured_image_id":26,"seo_title":"The Ultimate Guide to Acquiring More Pizza Shop Customers","seo_description":"Discover the best strategies for acquiring more pizza shop customers. Our ultimate guide offers actionable tips to grow your customer base quickly.","content_len":28962,"excerpt_len":332,"updated_at":"2026-11-15T06:58:01.095Z","created_at":"2026-11-15T06:58:01.095Z"}
+{"id":3,"title":"How to Rank High on Google: A Step-by-Step Guide","slug":"how-to-rank-high-on-google-a-step-by-step-guide","_status":"published","published_at":"2024-10-14T11:04:04Z","wordpress_i_d":9645,"source_i_d":"wordpress:post:9645","original_u_r_l":"https://cyberizegroup.com/how-to-rank-high-on-google-a-step-by-step-guide/","featured_image_id":21,"seo_title":"How to Rank High on Google: A Step-by-Step Guide","seo_description":"Want to rank higher on Google? Our step-by-step guide shows you the essential SEO strategies to boost your website’s visibility and search rankings.","content_len":56852,"excerpt_len":326,"updated_at":"2026-11-15T06:57:58.431Z","created_at":"2026-11-15T06:57:58.430Z"}
+{"id":12,"title":"Content Scaling: Strategies for Growing Your Audience and Reach","slug":"content-scaling-strategies-for-growing-your-audience-and-reach","_status":"published","published_at":"2024-09-26T06:40:35Z","wordpress_i_d":9653,"source_i_d":"wordpress:post:9653","original_u_r_l":"https://cyberizegroup.com/content-scaling-strategies-for-growing-your-audience-and-reach/","featured_image_id":53,"seo_title":"Content Scaling: Strategies for Growing Your Audience and Reach","seo_description":"Content Scaling: Strategies for Growing Your Audience and Reach Imagine having the keys to a private jet. You could go anywhere, do anything, meet anyone. But what if you","content_len":46389,"excerpt_len":325,"updated_at":"2026-11-15T06:59:23.041Z","created_at":"2026-11-15T06:59:23.041Z"}
+{"id":9,"title":"The Ultimate SEO Content Template: How to Create SEO-Friendly Content in Minutes","slug":"the-ultimate-seo-content-template-how-to-create-seo-friendly-content-in-minutes","_status":"published","published_at":"2024-10-03T08:18:53Z","wordpress_i_d":9656,"source_i_d":"wordpress:post:9656","original_u_r_l":"https://cyberizegroup.com/the-ultimate-seo-content-template-how-to-create-seo-friendly-content-in-minutes/","featured_image_id":40,"seo_title":"The Ultimate SEO Content Template: How to Create SEO-Friendly Content ","seo_description":"Create SEO-optimized content quickly with our ultimate content template. Follow simple steps to boost your site’s rankings and improve visibility.","content_len":46864,"excerpt_len":360,"updated_at":"2026-11-15T06:58:58.194Z","created_at":"2026-11-15T06:58:58.194Z"}
+{"id":6,"title":"What is a Sitemap and How to Create One for Your Website","slug":"what-is-a-sitemap-and-how-to-create-one-for-your-website","_status":"published","published_at":"2024-10-10T10:41:26Z","wordpress_i_d":9657,"source_i_d":"wordpress:post:9657","original_u_r_l":"https://cyberizegroup.com/what-is-a-sitemap-and-how-to-create-one-for-your-website/","featured_image_id":28,"seo_title":"What is a Sitemap and How to Create One for Your Website","seo_description":"Unlock the power of sitemaps! Learn how to create one for your website to enhance search engine indexing and improve SEO performance.","content_len":39712,"excerpt_len":307,"updated_at":"2026-11-15T06:58:11.791Z","created_at":"2026-11-15T06:58:11.791Z"}
+{"id":5,"title":"Unlocking the Power of SEO Copywriting: What You Need to Know","slug":"unlocking-the-power-of-seo-copywriting-what-you-need-to-know","_status":"published","published_at":"2024-10-14T10:19:50Z","wordpress_i_d":9663,"source_i_d":"wordpress:post:9663","original_u_r_l":"https://cyberizegroup.com/unlocking-the-power-of-seo-copywriting-what-you-need-to-know/","featured_image_id":27,"seo_title":"Unlocking the Power of SEO Copywriting: What You Need to Know","seo_description":"Discover the power of SEO copywriting. Learn how to craft content that ranks well and engages readers with proven copywriting techniques.","content_len":31894,"excerpt_len":345,"updated_at":"2026-11-15T06:58:03.334Z","created_at":"2026-11-15T06:58:03.334Z"}
+{"id":7,"title":"How to Write SEO-Friendly Content: A Step-by-Step Guide","slug":"how-to-write-seo-friendly-content-a-step-by-step-guide","_status":"published","published_at":"2024-10-10T10:02:11Z","wordpress_i_d":9664,"source_i_d":"wordpress:post:9664","original_u_r_l":"https://cyberizegroup.com/how-to-write-seo-friendly-content-a-step-by-step-guide/","featured_image_id":33,"seo_title":"How to Write SEO-Friendly Content: A Step-by-Step Guide","seo_description":"Learn how to write SEO-friendly content with our step-by-step guide. Boost your rankings and attract more traffic with easy-to-follow SEO tips.","content_len":45146,"excerpt_len":355,"updated_at":"2026-11-15T06:58:18.619Z","created_at":"2026-11-15T06:58:18.619Z"}
+{"id":10,"title":"10 Proven Strategies to Optimize Your Content for Search Engines","slug":"10-proven-strategies-to-optimize-your-content-for-search-engines","_status":"published","published_at":"2024-10-02T09:40:05Z","wordpress_i_d":9666,"source_i_d":"wordpress:post:9666","original_u_r_l":"https://cyberizegroup.com/10-proven-strategies-to-optimize-your-content-for-search-engines/","featured_image_id":44,"seo_title":"10 Proven Strategies to Optimize Your Content for Search Engines","seo_description":"10 Proven Strategies to Optimize Your Content for Search Engines Are you continuously hustling to rank high on Google with your quality content but still not getting the ","content_len":39706,"excerpt_len":338,"updated_at":"2026-11-15T06:59:05.205Z","created_at":"2026-11-15T06:59:05.205Z"}
+{"id":2,"title":"Boost Your Dental Practice with a Professional SEO Company","slug":"boost-your-dental-practice-with-a-professional-seo-company","_status":"published","published_at":"2024-10-21T11:11:23Z","wordpress_i_d":9673,"source_i_d":"wordpress:post:9673","original_u_r_l":"https://cyberizegroup.com/boost-your-dental-practice-with-a-professional-seo-company/","featured_image_id":16,"seo_title":"Boost Your Dental Practice with a Professional SEO Company","seo_description":"Increase your dental practice’s visibility and patient base with a professional SEO company. Get expert SEO services that generate more appointments.","content_len":62446,"excerpt_len":347,"updated_at":"2026-11-15T06:57:50.158Z","created_at":"2026-11-15T06:57:50.157Z"}
+{"id":8,"title":"The Essential Guide to Developing a Winning Digital Marketing Strategy","slug":"the-essential-guide-to-developing-a-winning-digital-marketing-strategy","_status":"published","published_at":"2024-10-03T08:38:37Z","wordpress_i_d":9675,"source_i_d":"wordpress:post:9675","original_u_r_l":"https://cyberizegroup.com/the-essential-guide-to-developing-a-winning-digital-marketing-strategy/","featured_image_id":37,"seo_title":"The Essential Guide to Developing a Winning Digital Marketing Strategy","seo_description":"Looking to develop a successful digital marketing strategy? Our essential guide shows you how to plan, execute, and optimize for maximum success.","content_len":65426,"excerpt_len":376,"updated_at":"2026-11-15T06:58:51.189Z","created_at":"2026-11-15T06:58:51.189Z"}
+{"id":11,"title":"Maximize Your eLearning ROI with a PPC Agency","slug":"maximize-your-elearning-roi-with-a-ppc-agency","_status":"published","published_at":"2024-10-01T11:12:14Z","wordpress_i_d":9686,"source_i_d":"wordpress:post:9686","original_u_r_l":"https://cyberizegroup.com/maximize-your-elearning-roi-with-a-ppc-agency/","featured_image_id":48,"seo_title":"Maximize Your eLearning ROI with a PPC Agency","seo_description":"Increase your eLearning ROI with targeted PPC campaigns. Partner with a top PPC agency to drive more enrollments, traffic, and revenue.","content_len":48637,"excerpt_len":350,"updated_at":"2026-11-15T06:59:15.729Z","created_at":"2026-11-15T06:59:15.729Z"}
+{"id":1,"title":"Garage Door Repair PPC Agency – Get More Leads & Sales Now!","slug":"garage-door-repair-ppc-agency-get-more-leads-sales-now","_status":"published","published_at":"2024-10-22T11:00:30Z","wordpress_i_d":9687,"source_i_d":"wordpress:post:9687","original_u_r_l":"https://cyberizegroup.com/garage-door-repair-ppc-agency-get-more-leads-sales-now/","featured_image_id":13,"seo_title":"Garage Door Repair PPC Agency - Get More Leads & Sales Now!","seo_description":"Maximize leads and sales for your garage door repair business with expert PPC strategies. Get more customers today with our targeted advertising solutions.","content_len":31550,"excerpt_len":356,"updated_at":"2026-11-15T06:57:41.294Z","created_at":"2026-11-15T06:57:41.293Z"}
+versions [{"parent_id":1,"n":1,"drafts":0},{"parent_id":2,"n":1,"drafts":0},{"parent_id":3,"n":1,"drafts":0},{"parent_id":4,"n":1,"drafts":0},{"parent_id":5,"n":1,"drafts":0},{"parent_id":6,"n":1,"drafts":0},{"parent_id":7,"n":1,"drafts":0},{"parent_id":8,"n":1,"drafts":0},{"parent_id":9,"n":1,"drafts":0},{"parent_id":10,"n":1,"drafts":0},{"parent_id":11,"n":1,"drafts":0},{"parent_id":12,"n":1,"drafts":0}]
+latest [{"id":1,"parent_id":1,"version_title":"Garage Door Repair PPC Agency – Get More Leads & Sales Now!","version__status":"published","latest":1,"updated_at":"2026-11-15T06:57:41.728Z"},{"id":2,"parent_id":2,"version_title":"Boost Your Dental Practice with a Professional SEO Company","version__status":"published","latest":1,"updated_at":"2026-11-15T06:57:50.513Z"},{"id":3,"parent_id":3,"version_title":"How to Rank High on Google: A Step-by-Step Guide","version__status":"published","latest":1,"updated_at":"2026-11-15T06:57:58.790Z"},{"id":4,"parent_id":4,"version_title":"The Ultimate Guide to Acquiring More Pizza Shop Customers","version__status":"published","latest":1,"updated_at":"2026-11-15T06:58:01.344Z"},{"id":5,"parent_id":5,"version_title":"Unlocking the Power of SEO Copywriting: What You Need to Know","version__status":"published","latest":1,"updated_at":"2026-11-15T06:58:03.581Z"},{"id":6,"parent_id":6,"version_title":"What is a Sitemap and How to Create One for Your Website","version__status":"published","latest":1,"updated_at":"2026-11-15T06:58:12.047Z"},{"id":7,"parent_id":7,"version_title":"How to Write SEO-Friendly Content: A Step-by-Step Guide","version__status":"published","latest":1,"updated_at":"2026-11-15T06:58:18.887Z"},{"id":8,"parent_id":8,"version_title":"The Essential Guide to Developing a Winning Digital Marketing Strategy","version__status":"published","latest":1,"updated_at":"2026-11-15T06:58:51.552Z"},{"id":9,"parent_id":9,"version_title":"The Ultimate SEO Content Template: How to Create SEO-Friendly Content in Minutes","version__status":"published","latest":1,"updated_at":"2026-11-15T06:58:58.453Z"},{"id":10,"parent_id":10,"version_title":"10 Proven Strategies to Optimize Your Content for Search Engines","version__status":"published","latest":1,"updated_at":"2026-11-15T06:59:05.459Z"},{"id":11,"parent_id":11,"version_title":"Maximize Your eLearning ROI with a PPC Agency","version__status":"published","latest":1,"updated_at":"2026-11-15T06:59:16.048Z"},{"id":12,"parent_id":12,"version_title":"Content Scaling: Strategies for Growing Your Audience and Reach","version__status":"published","latest":1,"updated_at":"2026-11-15T06:59:23.360Z"}]

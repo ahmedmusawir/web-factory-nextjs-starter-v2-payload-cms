@@ -1,0 +1,786 @@
+▲ Next.js 16.4.3
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+✓ Ready in 272ms
+✓ Running next.config.mjs took 57ms
+CMS_READ settings
+CMS_READ page home public
+CMS_READ page home public
+CMS_READ settings
+CMS_READ blog
+CMS_READ settings
+CMS_READ article the-essential-guide-to-developing-a-winning-digital-marketing-strategy
+CMS_READ settings
+CMS_READ page seo-services public
+CMS_READ page seo-services public
+⨯ Error: Failed query: select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)
+params: home,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603)
+    at async q (.next-qa-claudy/server/chunks/ssr/components_cyberize_0fetucq6820gy._.js:1:40576) {
+  query: 'select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)',
+  params: [ 'home', 'published' ],
+  digest: '4114149141',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select count(*) from "posts" where ("posts"."_status" = ? and "posts"."_status" = ?)
+params: published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async i (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1a2b5t9vjfihh._.js:1:142) {
+  query: 'select count(*) from "posts" where ("posts"."_status" = ? and "posts"."_status" = ?)',
+  params: [ 'published', 'published' ],
+  digest: '3009035846',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async i (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1a2b5t9vjfihh._.js:1:142) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)
+params: the-essential-guide-to-developing-a-winning-digital-marketing-strategy,published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+  query: 'select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)',
+  params: [
+    'the-essential-guide-to-developing-a-winning-digital-marketing-strategy',
+    'published',
+    'published'
+  ],
+  digest: '2317375168',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ page home public
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)
+params: seo-services,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603)
+    at async q (.next-qa-claudy/server/chunks/ssr/components_cyberize_0fetucq6820gy._.js:1:40576) {
+  query: 'select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)',
+  params: [ 'seo-services', 'published' ],
+  digest: '3871059093',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ page seo-services public
+CMS_READ settings
+CMS_READ article the-essential-guide-to-developing-a-winning-digital-marketing-strategy
+CMS_READ settings
+⨯ Error: Failed query: select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)
+params: home,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603)
+    at async q (.next-qa-claudy/server/chunks/ssr/components_cyberize_0fetucq6820gy._.js:1:40576) {
+  query: 'select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)',
+  params: [ 'home', 'published' ],
+  digest: '4114149141',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+Error: Failed query: select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)
+params: home,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603)
+    at async q (.next-qa-claudy/server/chunks/ssr/components_cyberize_0fetucq6820gy._.js:1:40576) {
+  query: 'select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)',
+  params: [ 'home', 'published' ],
+  digest: '4114149141',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)
+params: the-essential-guide-to-developing-a-winning-digital-marketing-strategy,published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+  query: 'select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)',
+  params: [
+    'the-essential-guide-to-developing-a-winning-digital-marketing-strategy',
+    'published',
+    'published'
+  ],
+  digest: '2317375168',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+Error: Failed query: select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)
+params: the-essential-guide-to-developing-a-winning-digital-marketing-strategy,published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+  query: 'select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)',
+  params: [
+    'the-essential-guide-to-developing-a-winning-digital-marketing-strategy',
+    'published',
+    'published'
+  ],
+  digest: '2317375168',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select count(*) from "posts" where ("posts"."_status" = ? and "posts"."_status" = ?)
+params: published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async i (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1a2b5t9vjfihh._.js:1:142) {
+  query: 'select count(*) from "posts" where ("posts"."_status" = ? and "posts"."_status" = ?)',
+  params: [ 'published', 'published' ],
+  digest: '3009035846',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async i (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1a2b5t9vjfihh._.js:1:142) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+Error: Failed query: select count(*) from "posts" where ("posts"."_status" = ? and "posts"."_status" = ?)
+params: published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async i (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1a2b5t9vjfihh._.js:1:142) {
+  query: 'select count(*) from "posts" where ("posts"."_status" = ? and "posts"."_status" = ?)',
+  params: [ 'published', 'published' ],
+  digest: '3009035846',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async i (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1a2b5t9vjfihh._.js:1:142) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ article garage-door-repair-ppc-agency-get-more-leads-sales-now-x
+⨯ Error: Failed query: select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)
+params: garage-door-repair-ppc-agency-get-more-leads-sales-now-x,published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+  query: 'select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)',
+  params: [
+    'garage-door-repair-ppc-agency-get-more-leads-sales-now-x',
+    'published',
+    'published'
+  ],
+  digest: '4294096512',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ article garage-door-repair-ppc-agency-get-more-leads-sales-now-x
+⨯ Error: Failed query: select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)
+params: garage-door-repair-ppc-agency-get-more-leads-sales-now-x,published,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+  query: 'select count(*) from "posts" where (("posts"."slug" = ? and "posts"."_status" = ?) and "posts"."_status" = ?)',
+  params: [
+    'garage-door-repair-ppc-agency-get-more-leads-sales-now-x',
+    'published',
+    'published'
+  ],
+  digest: '4294096512',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/_043pkjtq9tux5._.js:1:1075) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ page qa-never-cached public
+CMS_READ page qa-never-cached public
+⨯ Error: Failed query: select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)
+params: qa-never-cached,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603)
+    at async q (.next-qa-claudy/server/chunks/ssr/components_cyberize_0fetucq6820gy._.js:1:40576) {
+  query: 'select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)',
+  params: [ 'qa-never-cached', 'published' ],
+  digest: '426283157',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ page qa-never-cached public
+⨯ Error: Failed query: select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)
+params: qa-never-cached,published
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+    at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+    at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603)
+    at async q (.next-qa-claudy/server/chunks/ssr/components_cyberize_0fetucq6820gy._.js:1:40576) {
+  query: 'select count(*) from "pages" where (("pages"."slug" = ? and "pages"."template" is not null) and "pages"."_status" = ?)',
+  params: [ 'qa-never-cached', 'published' ],
+  digest: '426283157',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async Object.h [as countDistinct] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+      at async eb (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+      at async (.next-qa-claudy/server/chunks/ssr/[root-of-the-server]__1i9cw44sv3y9w._.js:1:603) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+[14:24:15] [31mERROR[39m: [36mFailed query: select count(*) from "posts" where "posts"."_status" = ?
+params: published[39m
+    err: {
+      "type": "rp",
+      "message": "Failed query: select count(*) from \"posts\" where \"posts\".\"_status\" = ?\nparams: published: SERVER_ERROR: Server returned HTTP status 400: Server returned HTTP status 400",
+      "stack":
+          Error: Failed query: select count(*) from "posts" where "posts"."_status" = ?
+          params: published
+              at iG.queryWithCache (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async iG.values (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+              at async iG.all (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+              at async Object.h [as countDistinct] (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+              at async b (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+              at async eb (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+              at async tA (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:144652)
+              at async m (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/node_modules_1y9s7-zsuj53o._.js:1:8358)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/node_modules_1y9s7-zsuj53o._.js:1:16633
+          caused by: LibsqlError: SERVER_ERROR: Server returned HTTP status 400
+              at mapHranaError (file:///home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/@libsql/client/lib-esm/hrana.js:268:16)
+              at file:///home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/@libsql/client/lib-esm/http.js:76:23
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async iG.queryWithCache (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+              at async iG.values (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+              at async iG.all (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+              at async Object.h [as countDistinct] (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+              at async b (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+              at async eb (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+              at async tA (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:144652)
+          caused by: HttpServerError: Server returned HTTP status 400
+              at errorFromResponse (file:///home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/@libsql/hrana-client/lib-esm/http/stream.js:352:16)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      "query": "select count(*) from \"posts\" where \"posts\".\"_status\" = ?",
+      "params": [
+        "published"
+      ]
+    }
+⨯ Error: Failed query: select "id", "role", "updated_at", "created_at", "email", "reset_password_token", "reset_password_expiration", "salt", "hash", "reset_password_requested_at", "login_attempts", "lock_until", (select coalesce(json_group_array(json_array("_order", "id", "created_at", "expires_at")), json_array()) as "data" from (select * from "users_sessions" "users_sessions" where "users_sessions"."_parent_id" = "users"."id" order by "users_sessions"."_order" asc) "users_sessions") as "sessions" from "users" "users" order by "users"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findOne] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:18642)
+    at async aw (.next-qa-claudy/server/chunks/ssr/_1e4sz44t7mrjh._.js:1:29388) {
+  query: 'select "id", "role", "updated_at", "created_at", "email", "reset_password_token", "reset_password_expiration", "salt", "hash", "reset_password_requested_at", "login_attempts", "lock_until", (select coalesce(json_group_array(json_array("_order", "id", "created_at", "expires_at")), json_array()) as "data" from (select * from "users_sessions" "users_sessions" where "users_sessions"."_parent_id" = "users"."id" order by "users_sessions"."_order" asc) "users_sessions") as "sessions" from "users" "users" order by "users"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '1102565750',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findOne] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:18642)
+      at async aw (.next-qa-claudy/server/chunks/ssr/_1e4sz44t7mrjh._.js:1:29388) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+CMS_READ page home preview
+⨯ Error: Failed query: select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?
+params: 1
+    at iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+    at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+    at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+    at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+    at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+    at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+  query: 'select "id", "website_name", "website_description", "logo_id", "source_i_d", "contact_provisional", "contact_phone_href", "contact_phone_display", "contact_address_line1", "contact_address_city", "updated_at", "created_at", (select coalesce(json_group_array(json_array("_order", "id", "key", "a_href1", "img_alt1", "img_src1_id", "button_text1", "span_text1", "a_href2", "a_text1", "button_text2", "span_text2", "a_href3", "a_text2", "a_href4", "a_text3", "a_href5", "a_text4", "a_href6", "a_text5", "a_href7", "a_text6", "a_href8", "a_text7", "a_href9", "a_text8", "span_text3", "p_text1", "h2_text1", "br_text1", "p_text2", "br_text2", "h3_text1", "strong_text1", "br_text3", "p_text3", "a_text9")), json_array()) as "data" from (select * from "site_settings_sections" "site_settings_sections" where "site_settings_sections"."_parent_id" = "site_settings"."id" order by "site_settings_sections"."_order" asc) "site_settings_sections") as "sections" from "site_settings" "site_settings" order by "site_settings"."created_at" desc limit ?',
+  params: [ 1 ],
+  digest: '282815897',
+  [cause]: Error [LibsqlError]: SERVER_ERROR: Server returned HTTP status 400
+      at async iG.queryWithCache (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+      at async iG.values (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+      at async iG.all (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+      at async b (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15447)
+      at async Object.h [as findGlobal] (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:17762)
+      at async tt (.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:109325) {
+    code: 'SERVER_ERROR',
+    rawCode: undefined,
+    [cause]: Error [HttpServerError]: Server returned HTTP status 400
+        at <unknown> (HttpServerError: Server returned HTTP status 400) {
+      status: 400
+    }
+  }
+}
+CMS_READ settings
+[14:24:16] [31mERROR[39m: [36mFailed query: select count(*) from "posts" where "posts"."_status" = ?
+params: published[39m
+    err: {
+      "type": "rp",
+      "message": "Failed query: select count(*) from \"posts\" where \"posts\".\"_status\" = ?\nparams: published: SERVER_ERROR: Server returned HTTP status 400: Server returned HTTP status 400",
+      "stack":
+          Error: Failed query: select count(*) from "posts" where "posts"."_status" = ?
+          params: published
+              at iG.queryWithCache (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21694)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async iG.values (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+              at async iG.all (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+              at async Object.h [as countDistinct] (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+              at async b (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+              at async eb (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+              at async tA (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:144652)
+              at async m (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/node_modules_1y9s7-zsuj53o._.js:1:8358)
+              at async /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/node_modules_1y9s7-zsuj53o._.js:1:16633
+          caused by: LibsqlError: SERVER_ERROR: Server returned HTTP status 400
+              at mapHranaError (file:///home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/@libsql/client/lib-esm/hrana.js:268:16)
+              at file:///home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/@libsql/client/lib-esm/http.js:76:23
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+              at async iG.queryWithCache (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:21669)
+              at async iG.values (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:27337)
+              at async iG.all (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:14:26341)
+              at async Object.h [as countDistinct] (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:35:152)
+              at async b (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:30:15313)
+              at async eb (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:73497)
+              at async tA (/home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/.next-qa-claudy/server/chunks/[root-of-the-server]__1_akb401k3i45._.js:212:144652)
+          caused by: HttpServerError: Server returned HTTP status 400
+              at errorFromResponse (file:///home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/node_modules/@libsql/hrana-client/lib-esm/http/stream.js:352:16)
+              at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      "query": "select count(*) from \"posts\" where \"posts\".\"_status\" = ?",
+      "params": [
+        "published"
+      ]
+    }

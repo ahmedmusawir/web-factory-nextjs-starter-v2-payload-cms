@@ -1,0 +1,77 @@
+{
+  "_notice": "Non-secret deployment settings for ./deploy.sh and ./init-app.sh. Secret VALUES live only in Google Secret Manager; this file holds resource names and pinned versions.",
+  "app": {
+    "name": "cyber-cms-poc-1",
+    "repository": ".",
+    "next_dist_dir": ".next"
+  },
+  "gcp": {
+    "project_id": "cyberize-nextjs-staging",
+    "region": "us-east1",
+    "service": "cyber-cms-poc-1",
+    "artifact_repository": "web-factory",
+    "expected_operator": "moose@cyberizegroup.com",
+    "runtime_service_account": "sa-cyber-cms-poc-1-runtime@cyberize-nextjs-staging.iam.gserviceaccount.com",
+    "build_service_account": "sa-cyber-cms-poc-1-build@cyberize-nextjs-staging.iam.gserviceaccount.com",
+    "public_access": "allusers-invoker",
+    "custom_domain": "cyberize-cms.cyberizedev.com",
+    "startup_probe_path": "/health/ready",
+    "cpu_always_allocated": true,
+    "min_instances": 0,
+    "max_instances": 1,
+    "memory": "1Gi"
+  },
+  "runtime_env": {
+    "APP_ENV": "preview",
+    "DATABASE_KIND": "turso",
+    "MEDIA_STORAGE": "r2",
+    "DATABASE_TARGET_HOST": "web-factory-v2-poc-db-tonystark.aws-ap-southeast-1.turso.io",
+    "R2_BUCKET": "stark-web-factory-poc-media",
+    "R2_TARGET_BUCKET": "stark-web-factory-poc-media",
+    "R2_ENDPOINT": "https://8c89b00536833536339bc5053558573e.r2.cloudflarestorage.com",
+    "R2_PUBLIC_URL": "https://pub-7e1de38ab9a24e19891a4da10f70e3a0.r2.dev",
+    "R2_PREFIX": "stark-poc",
+    "NEXT_PUBLIC_APP_URL": "https://cyberize-cms.cyberizedev.com",
+    "NEXT_PUBLIC_SITE_URL": "https://cyberize-cms.cyberizedev.com"
+  },
+  "secret_bindings": {
+    "DATABASE_URL": {
+      "name": "cyber-cms-poc-1-database-url",
+      "version": "1"
+    },
+    "DATABASE_AUTH_TOKEN": {
+      "name": "cyber-cms-poc-1-database-auth-token",
+      "version": "1"
+    },
+    "PAYLOAD_SECRET": {
+      "name": "cyber-cms-poc-1-payload-secret",
+      "version": "1"
+    },
+    "R2_ACCESS_KEY_ID": {
+      "name": "cyber-cms-poc-1-r2-access-key-id",
+      "version": "1"
+    },
+    "R2_SECRET_ACCESS_KEY": {
+      "name": "cyber-cms-poc-1-r2-secret-access-key",
+      "version": "1"
+    }
+  },
+  "release": {
+    "security_gate": {
+      "status": "director-exception",
+      "reference": "WFV2-SEC-EXCEPTION-001 (Director; Monaco/DOMPurify advisory; scope cyber-cms-poc-1 only)",
+      "expires_on": "2026-11-29"
+    }
+  },
+  "public_verification": {
+    "paths": [
+      "/blog",
+      "/content"
+    ],
+    "article_path": "/blog/garage-door-repair-ppc-agency-get-more-leads-sales-now",
+    "revalidate_seconds": 30
+  },
+  "build": {
+    "profile": "protected-buildkit"
+  }
+}

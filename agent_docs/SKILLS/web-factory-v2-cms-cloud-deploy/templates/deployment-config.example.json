@@ -1,0 +1,73 @@
+{
+  "_notice": "EXAMPLE ONLY; websites are public: public_access has no non-public value. agent populates evidence-backed project-specific values outside upload. No secret payloads here.",
+  "app": {
+    "name": "website-placeholder",
+    "repository": "REPLACE_WITH_DISCOVERED_REPOSITORY_PATH",
+    "next_dist_dir": ".next"
+  },
+  "gcp": {
+    "project_id": "REPLACE_WITH_APPROVED_PROJECT_ID",
+    "region": "REPLACE_WITH_APPROVED_REGION",
+    "service": "REPLACE_WITH_NEW_SERVICE_NAME",
+    "artifact_repository": "REPLACE_WITH_VERIFIED_ARTIFACT_REPOSITORY",
+    "expected_operator": "REPLACE_WITH_GCLOUD_OPERATOR_EMAIL",
+    "runtime_service_account": "REPLACE_WITH_VERIFIED_RUNTIME_SA_EMAIL",
+    "build_service_account": "REPLACE_WITH_VERIFIED_DEDICATED_BUILD_SA_EMAIL",
+    "public_access": "REPLACE_WITH_allusers-invoker_OR_invoker-iam-disabled",
+    "custom_domain": "REPLACE_WITH_PUBLIC_HOSTNAME",
+    "startup_probe_path": "/health/ready",
+    "cpu_always_allocated": true,
+    "min_instances": 0,
+    "max_instances": 1,
+    "memory": "1Gi"
+  },
+  "runtime_env": {
+    "APP_ENV": "preview",
+    "DATABASE_KIND": "turso",
+    "MEDIA_STORAGE": "r2",
+    "DATABASE_TARGET_HOST": "REPLACE_WITH_APPROVED_REMOTE_TURSO_HOST",
+    "R2_BUCKET": "REPLACE_WITH_APPROVED_R2_BUCKET",
+    "R2_TARGET_BUCKET": "REPLACE_WITH_APPROVED_R2_BUCKET",
+    "R2_PUBLIC_URL": "REPLACE_WITH_APPROVED_PUBLIC_ASSET_URL",
+    "PAYLOAD_PUBLIC_SERVER_URL": "REPLACE_WITH_APPROVED_STAGING_ORIGIN"
+  },
+  "secret_bindings": {
+    "DATABASE_URL": {
+      "name": "REPLACE_WITH_SECRET_RESOURCE_NAME",
+      "version": "0"
+    },
+    "DATABASE_AUTH_TOKEN": {
+      "name": "REPLACE_WITH_SECRET_RESOURCE_NAME",
+      "version": "0"
+    },
+    "PAYLOAD_SECRET": {
+      "name": "REPLACE_WITH_SECRET_RESOURCE_NAME",
+      "version": "0"
+    },
+    "R2_ACCESS_KEY_ID": {
+      "name": "REPLACE_WITH_SECRET_RESOURCE_NAME",
+      "version": "0"
+    },
+    "R2_SECRET_ACCESS_KEY": {
+      "name": "REPLACE_WITH_SECRET_RESOURCE_NAME",
+      "version": "0"
+    }
+  },
+  "release": {
+    "security_gate": {
+      "status": "blocked",
+      "reference": "REPLACE_WITH_EVIDENCE_OR_DIRECTOR_APPROVAL_RECORD",
+      "expires_on": "REPLACE_WITH_YYYY-MM-DD_IF_EXCEPTION"
+    }
+  },
+  "public_verification": {
+    "paths": [
+      "/blog"
+    ],
+    "article_path": "/blog/REPLACE_WITH_REAL_ARTICLE_SLUG",
+    "revalidate_seconds": 30
+  },
+  "build": {
+    "profile": "runtime-only"
+  }
+}

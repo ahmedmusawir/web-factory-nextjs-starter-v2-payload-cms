@@ -1,0 +1,114 @@
+
+> stark-web-factory-starter@0.1.0 verify:local
+> node --import tsx scripts/verify-local.ts
+
+[14:27:28] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[14:27:28] [32mINFO[39m: [36mMigrating: 20261114_040213_foundation[39m
+[14:27:28] [32mINFO[39m: [36mMigrated:  20261114_040213_foundation (294ms)[39m
+[14:27:28] [32mINFO[39m: [36mMigrating: 20261114_072417_website[39m
+[14:27:28] [32mINFO[39m: [36mMigrated:  20261114_072417_website (80ms)[39m
+[14:27:28] [32mINFO[39m: [36mMigrating: 20261115_065237_wordpress_blog[39m
+[14:27:28] [32mINFO[39m: [36mMigrated:  20261115_065237_wordpress_blog (52ms)[39m
+[14:27:28] [32mINFO[39m: [36mDone.[39m
+Website import: 20 created, 0 existing records preserved, 0 conflicts.
+▲ Next.js 16.4.3 (Turbopack)
+- Environments: .env.local
+✓ Running next.config.mjs took 30ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 10.6s
+  Running TypeScript ...
+  Finished TypeScript in 10.4s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/6) ...
+  Generating static pages using 3 workers (1/6) 
+  Generating static pages using 3 workers (2/6) 
+  Generating static pages using 3 workers (4/6) 
+✓ Generating static pages using 3 workers (6/6) in 1262ms
+  Finalizing page optimization ...
+
+Route (app)                       Revalidate  Expire
+┌ ○ /                                    30s      1y
+├ ○ /_not-found
+├ ● /[slug]
+├ ƒ /admin/[[...segments]]
+├ ƒ /api/[...slug]
+├ ƒ /api/graphql
+├ ○ /blog                                30s      1y
+├ ● /blog/[slug]
+├ ○ /content                             30s      1y
+├ ● /content/[collection]/[slug]
+├ ƒ /health/ready
+├ ƒ /preview/[slug]
+└ ƒ /preview/posts/[slug]
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+Running 1 test using 1 worker
+
+  ✓  1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register (3.3s)
+
+  1 passed (5.8s)
+Initial administrator created. Log in at /admin. Credentials were not logged.
+
+Running 24 tests using 1 worker
+
+  -   1 [desktop] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+Browser admin login passed
+Page create form opened
+Page fields filled
+Page published through the browser and readable anonymously
+Image upload, variant metadata, private/public delivery and key protection passed
+Content, GraphQL, draft isolation, denied writes, upload limits and settings checks passed
+Editor can create content and cannot promote itself or create users
+  ✓   2 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (7.9s)
+  ✓   3 [desktop] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts (5.7s)
+  ✓   4 [desktop] › tests/home.spec.ts:5:2 › home: route, content, navigation and canonical capture (1.8s)
+  ✓   5 [desktop] › tests/home.spec.ts:5:2 › seo: route, content, navigation and canonical capture (1.3s)
+  ✓   6 [desktop] › tests/home.spec.ts:5:2 › ppc: route, content, navigation and canonical capture (1.9s)
+  ✓   7 [desktop] › tests/home.spec.ts:5:2 › web-design: route, content, navigation and canonical capture (1.2s)
+  ✓   8 [desktop] › tests/home.spec.ts:5:2 › web-development: route, content, navigation and canonical capture (1.1s)
+  ✓   9 [desktop] › tests/home.spec.ts:5:2 › website-support: route, content, navigation and canonical capture (1.1s)
+  ✓  10 [desktop] › tests/home.spec.ts:5:2 › contact: route, content, navigation and canonical capture (924ms)
+  ✓  11 [desktop] › tests/home.spec.ts:18:1 › 404, menu keyboard and FAQ (1.5s)
+  ✓  12 [desktop] › tests/home.spec.ts:30:1 › image fallback retains accessible label and dimensions (601ms)
+  -  13 [mobile] › tests/bootstrap.spec.ts:5:1 › empty database cannot be claimed through public first-register
+  -  14 [mobile] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence
+  -  15 [mobile] › tests/monaco.spec.ts:5:1 › characterize Monaco loading without contacting external hosts
+  ✓  16 [mobile] › tests/home.spec.ts:5:2 › home: route, content, navigation and canonical capture (1.7s)
+  ✓  17 [mobile] › tests/home.spec.ts:5:2 › seo: route, content, navigation and canonical capture (899ms)
+  ✓  18 [mobile] › tests/home.spec.ts:5:2 › ppc: route, content, navigation and canonical capture (1.1s)
+  ✓  19 [mobile] › tests/home.spec.ts:5:2 › web-design: route, content, navigation and canonical capture (849ms)
+  ✓  20 [mobile] › tests/home.spec.ts:5:2 › web-development: route, content, navigation and canonical capture (865ms)
+  ✓  21 [mobile] › tests/home.spec.ts:5:2 › website-support: route, content, navigation and canonical capture (1.1s)
+  ✓  22 [mobile] › tests/home.spec.ts:5:2 › contact: route, content, navigation and canonical capture (924ms)
+  ✓  23 [mobile] › tests/home.spec.ts:18:1 › 404, menu keyboard and FAQ (1.4s)
+  ✓  24 [mobile] › tests/home.spec.ts:30:1 › image fallback retains accessible label and dimensions (724ms)
+
+  4 skipped
+  20 passed (42.6s)
+
+Running 1 test using 1 worker
+
+Browser admin login passed
+  ✓  1 [desktop] › tests/cms.spec.ts:7:1 › CMS editing, authorization, media and restart persistence (4.2s)
+
+  1 passed (7.3s)
+[14:29:19] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+[14:29:19] [32mINFO[39m: [36mDone.[39m
+[14:29:24] [32mINFO[39m: [36mReading migration files from /home/moose/NEXTJS/NEXTJS_PAYLOAD_SQLITE_TEST/web-factory-nextjs-starter-v2-payload-cms/migrations[39m
+┌────────────────────────────────┬───────┬─────┐
+│[37m [0m[01m                          Name[0m │[37m [0m[01mBatch[0m │[37m [0m[01mRan[0m │
+├────────────────────────────────┼───────┼─────┤
+│[37m [0m[32m    20261114_040213_foundation[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+│[37m [0m[32m       20261114_072417_website[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+│[37m [0m[32m20261115_065237_wordpress_blog[0m │[37m [0m[32m    1[0m │[37m [0m[32mYes[0m │
+└────────────────────────────────┴───────┴─────┘
+[14:29:24] [32mINFO[39m: [36mDone.[39m
+LOCAL PASS: browser workflow, access controls, fresh-server persistence, and repeat migration.

@@ -1,0 +1,79 @@
+{
+ "selected": [
+  9687,
+  9673,
+  9645,
+  9628,
+  9663,
+  9657,
+  9664,
+  9675,
+  9656,
+  9666,
+  9686,
+  9653
+ ],
+ "wouldSkip": [
+  {
+   "id": 9687,
+   "rows": 1
+  },
+  {
+   "id": 9673,
+   "rows": 1
+  },
+  {
+   "id": 9645,
+   "rows": 1
+  },
+  {
+   "id": 9628,
+   "rows": 1
+  },
+  {
+   "id": 9663,
+   "rows": 1
+  },
+  {
+   "id": 9657,
+   "rows": 1
+  },
+  {
+   "id": 9664,
+   "rows": 1
+  },
+  {
+   "id": 9675,
+   "rows": 1
+  },
+  {
+   "id": 9656,
+   "rows": 1
+  },
+  {
+   "id": 9666,
+   "rows": 1
+  },
+  {
+   "id": 9686,
+   "rows": 1
+  },
+  {
+   "id": 9653,
+   "rows": 1
+  }
+ ],
+ "wouldImport": [],
+ "slugCollisions": [],
+ "duplicatePostSourceIDs": [],
+ "duplicateMediaSourceIDs": [],
+ "mediaWithSourceID": 44,
+ "uniqueIndexes": [
+  "posts_slug_idx",
+  "media_filename_idx",
+  "media_source_i_d_idx",
+  "posts_source_i_d_idx",
+  "posts_wordpress_i_d_idx"
+ ],
+ "digestsCurrent": true
+}
